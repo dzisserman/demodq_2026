@@ -1,0 +1,34 @@
+package routines;
+import java.awt.Polygon;
+import java.awt.geom.Path2D;
+
+	   public class PointInPolygon {
+	      /* public static void main(String[] args) {
+	           int[] xPoints = {10, 50, 100, 80};
+	           int[] yPoints = {20, 10, 60, 90};
+
+	           Polygon polygon = new Polygon(xPoints, yPoints, xPoints.length);
+
+	           int pointX = 60;
+	           int pointY = 40;
+
+	           if (polygon.contains(pointX, pointY)) {
+	               System.out.println("Point (" + pointX + ", " + pointY + ") is inside the polygon.");
+	           } else {
+	               System.out  .println("Point (" + pointX + ", " + pointY + ") is outside the polygon.");
+	           }
+	       }*/
+		   
+		   public static void main(String[] args) {
+			   Path2D.Double d = new Path2D.Double();
+			    d.moveTo(39.146038,-84.571381);
+			    d.lineTo(39.147103,-84.325562);
+			    d.lineTo(39.04052,-84.348907);
+			    d.lineTo(39.045853,-84.605713);
+			    d.closePath();
+			    System.out.println(d.contains(39.095963,-84.468384));
+			
+		   }
+	   }
+	   
+	   

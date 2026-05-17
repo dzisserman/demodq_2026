@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:ValidationRulesConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_Cr5pIEFSEfCsL-jPtucabQ" name="repository.metadataValidationRules" isSelect="true" type="BASIC" baseSchema="_CtLe0D_OEfCsL-jPtucabQ - metadata" isRejectLink="true">
+  <baseColumnNames>S_CHNOT</baseColumnNames>
+  <conditions xmi:id="_K-BQUEFSEfCsL-jPtucabQ" inputColumn="S_CHNOT" operator=">" value="500"/>
+</TalendMetadata:ValidationRulesConnection>

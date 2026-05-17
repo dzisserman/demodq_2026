@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x19c954d0ec8' V1='4' name='LoadForecastData_v1_Sample' incarnation='12'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='LoadForecastData'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Attributes'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='2' V281='13' V1='4' name='schemaLocation'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='5' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='MessageHeader'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='TimeDate'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='7' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Source'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='8' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Version'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='9' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='MessagePayload'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='10' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='AreaLoadCurve' checksumValid='true' checksum='AgRqVWo/2Cwg7JtV2ncoA6Vlfic='>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='11' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='description'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='12' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='startTime'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='13' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='endTime'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='14' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='forecastPeriod'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='15' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='forecastType'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='16' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='marketType'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='17' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='AggregateNode'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='18' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='mRID'>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+        <child t='167' id='19' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='CurveDatas'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='20' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='xDateTimeValue'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='21' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='22' decimalPositions='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='y1value'>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='172' id='22' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' unnamedElemsNamespace='1' V690='1' encoding='UTF-8' importDate='Wed Feb 25 16:56:26 IST 2026' importFile='file:/C:/Talend/NogaFiles/LoadForecastData_v1_Sample.xml' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    <namespaceContainers t='220' ref='Namespace Containers/LoadForecastData_v1_Sample.xml'/>
+  </defaultRep>
+  <namespaceList t='161' id='23' V161='1' namespaceUri='___osdtDummy___' V1='4'>
+  </namespaceList>
+  <namespaceList t='161' id='24' V161='1' namespaceUri='http://www.siemens.com/LoadForecastData_v1.xsd#' namespacePrefix='m' V1='4'>
+  </namespaceList>
+  <namespaceList t='161' id='25' V161='1' namespaceUri='http://www.w3.org/2001/XMLSchema-instance' namespacePrefix='xsi' V1='4'>
+  </namespaceList>
+  <child t='162' id='26' V1='4' name='Representations'>
+    <child t='172' idref='22'/>
+  </child>
+  <child t='165' id='27' V1='4' name='Document Bindings'>
+    <child t='166' id='28' V166='5' docType='1' docReposPath='/DEMODQ_NEW/Sample Data/LoadForecastData_v1_Sample/LoadForecastData_v1_Sample' V1='4' name='/m:LoadForecastData'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>

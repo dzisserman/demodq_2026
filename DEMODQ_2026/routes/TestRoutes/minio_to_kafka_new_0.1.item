@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Dk8DgOC_EfCdxv7-m5ew4g" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_Dk8DgeC_EfCdxv7-m5ew4g" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_Dk8DguC_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8Dg-C_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_Dk8DhOC_EfCdxv7-m5ew4g" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_Dk8DheC_EfCdxv7-m5ew4g" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_Dk8DhuC_EfCdxv7-m5ew4g" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8Dh-C_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DiOC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DieC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DiuC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8Di-C_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DjOC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DjeC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DjuC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8Dj-C_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DkOC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DkeC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DkuC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8Dk-C_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DlOC_EfCdxv7-m5ew4g" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_Dk8DleC_EfCdxv7-m5ew4g" componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
+    <elementParameter xmi:id="_Dk8DluC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_1" show="false"/>
+    <elementParameter xmi:id="_Dk8Dl-C_EfCdxv7-m5ew4g" field="TEXT" name="URI" value="&quot;minio:test?endpoint=http://127.0.0.1:9000&amp;accessKey=minioadmin&amp;secretKey=minioadmin&amp;objectName=keepalive.xml&amp;deleteAfterRead=false&amp;repeatCount=5&amp;delay=1000&quot;"/>
+    <elementParameter xmi:id="_Dk8DmOC_EfCdxv7-m5ew4g" field="TABLE" name="HOTLIBS">
+      <elementValue xmi:id="_Dk8DmeC_EfCdxv7-m5ew4g" elementRef="LIBPATH" value="MINIO" id="0"/>
+    </elementParameter>
+    <elementParameter xmi:id="_Dk8DmuC_EfCdxv7-m5ew4g" field="CHECK" name="USE_CUSTOM_COMPONENT" value="false"/>
+    <elementParameter xmi:id="_Dk8Dm-C_EfCdxv7-m5ew4g" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DnOC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8DneC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8DnuC_EfCdxv7-m5ew4g" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="80">
+    <elementParameter xmi:id="_Dk8Dn-C_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_Dk8DoOC_EfCdxv7-m5ew4g" field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter xmi:id="_Dk8DoeC_EfCdxv7-m5ew4g" field="TEXT" name="LOGGING_CATEGORY" value="&quot;minio_test.cLog_1&quot;"/>
+    <elementParameter xmi:id="_Dk8DouC_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_Dk8Do-C_EfCdxv7-m5ew4g" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_Dk8DpOC_EfCdxv7-m5ew4g" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_Dk8DpeC_EfCdxv7-m5ew4g" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_Dk8DpuC_EfCdxv7-m5ew4g" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_Dk8Dp-C_EfCdxv7-m5ew4g" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_Dk8DqOC_EfCdxv7-m5ew4g" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_Dk8DqeC_EfCdxv7-m5ew4g" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_Dk8DquC_EfCdxv7-m5ew4g" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_Dk8Dq-C_EfCdxv7-m5ew4g" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_Dk8DrOC_EfCdxv7-m5ew4g" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_Dk8DreC_EfCdxv7-m5ew4g" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8DruC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8Dr-C_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8DsOC_EfCdxv7-m5ew4g" componentName="cConfig" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
+    <elementParameter xmi:id="_Dk8DseC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cConfig_1" show="false"/>
+    <elementParameter xmi:id="_Dk8DsuC_EfCdxv7-m5ew4g" field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter xmi:id="_Dk8Ds-C_EfCdxv7-m5ew4g" field="MEMO_EDITOR_JAVA" name="CODE" value="&#xA;/*&#xA;*&#x9;Here you can put Java code that will be used within the route.&#xA;* &#xA;*   Usually you would register custom components in camelContext or&#xA;*   manipulate typeConverterRegistry.&#xA;*  &#xA;*   Needed libraries and import statements must be added in Advanced settings.&#xA;*&#xA;*   For example:&#xA;* &#xA;*     // Declaring a custom component in the Camel Context&#xA;*     camelContext.addComponent(&quot;component&quot;, new  org.apache.camel.component.dataset.DataSetComponent());&#xA;* &#xA;*     // Register a special type conversion &#xA;*     typeConverterRegistry.addTypeConverter(String.class, Object.class, new org.apache.camel.impl.converter.ToStringTypeConverter());&#xA;*/&#xA;"/>
+    <elementParameter xmi:id="_Dk8DtOC_EfCdxv7-m5ew4g" field="CHECK" name="USE_MDC_LOGGING" value="false"/>
+    <elementParameter xmi:id="_Dk8DteC_EfCdxv7-m5ew4g" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_Dk8DtuC_EfCdxv7-m5ew4g" field="TABLE" name="DRIVER_JAR">
+      <elementValue xmi:id="_Dk8Dt-C_EfCdxv7-m5ew4g" elementRef="JAR_NAME" value="mvn:org.talend.camel.libraries/camel-minio-alldep/4.8.1.R2025-02/jar" id="0"/>
+    </elementParameter>
+    <elementParameter xmi:id="_Dk8DuOC_EfCdxv7-m5ew4g" field="LABEL" name="WARNING" value="*Note: External JARs will not be embedded in OSGi bundle by default, to configure it please edit Route Dependencies"/>
+    <elementParameter xmi:id="_Dk8DueC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8DuuC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8Du-C_EfCdxv7-m5ew4g" componentName="cXmlParser" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+    <elementParameter xmi:id="_Dk8DvOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cXmlParser_1" show="false"/>
+    <elementParameter xmi:id="_Dk8DveC_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="XML_LIBRARY" value="jacksonxml"/>
+    <elementParameter xmi:id="_Dk8DvuC_EfCdxv7-m5ew4g" field="TEXT" name="UNMARSHAL_TYPE" value="java.util.Map.class"/>
+    <elementParameter xmi:id="_Dk8Dv-C_EfCdxv7-m5ew4g" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DwOC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8DweC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8DwuC_EfCdxv7-m5ew4g" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="240">
+    <elementParameter xmi:id="_Dk8Dw-C_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+    <elementParameter xmi:id="_Dk8DxOC_EfCdxv7-m5ew4g" field="MEMO_EDITOR_JAVA" name="CODE" value="LinkedHashMap xml = new LinkedHashMap();&#xD;&#xA;LinkedHashMap record = new LinkedHashMap();&#xD;&#xA;&#xD;&#xA;xml = exchange.getIn().getBody(LinkedHashMap.class);&#xD;&#xA;record = (LinkedHashMap)xml.get(&quot;RecordData&quot;);&#xD;&#xA;record.put(&quot;Status&quot;,&quot;99&quot;);&#xD;&#xA;record.put(&quot;StatusDescription&quot;,&quot;*TalenD POC&quot;);&#xD;&#xA;//System.out.println(xml);&#xD;&#xA;exchange.getIn().setBody(xml);&#xD;&#xA;&#xD;&#xA;&#xA;"/>
+    <elementParameter xmi:id="_Dk8DxeC_EfCdxv7-m5ew4g" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="import java.util.LinkedHashMap;&#xD;"/>
+    <elementParameter xmi:id="_Dk8DxuC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8Dx-C_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8DyOC_EfCdxv7-m5ew4g" componentName="cJsonWriter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="240">
+    <elementParameter xmi:id="_Dk8DyeC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_1" show="false"/>
+    <elementParameter xmi:id="_Dk8DyuC_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="JSON_LIBRARY" value="org.apache.camel.model.dataformat.JsonLibrary.Gson"/>
+    <elementParameter xmi:id="_Dk8Dy-C_EfCdxv7-m5ew4g" field="CHECK" name="PRETTY_PRINT" value="false"/>
+    <elementParameter xmi:id="_Dk8DzOC_EfCdxv7-m5ew4g" field="ROUTE_COMPONENT_TYPE" name="CUSTOM_REFERENCE" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8DzeC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8DzuC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8Dz-C_EfCdxv7-m5ew4g" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+    <elementParameter xmi:id="_Dk8D0OC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_Dk8D0eC_EfCdxv7-m5ew4g" field="DIRECTORY" name="URI" value="&quot;c:/studentfiles/xmltest/&quot;"/>
+    <elementParameter xmi:id="_Dk8D0uC_EfCdxv7-m5ew4g" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_Dk8D0-C_EfCdxv7-m5ew4g" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_Dk8D1OC_EfCdxv7-m5ew4g" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_Dk8D1eC_EfCdxv7-m5ew4g" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_Dk8D1uC_EfCdxv7-m5ew4g" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter xmi:id="_Dk8D1-C_EfCdxv7-m5ew4g" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter xmi:id="_Dk8D2OC_EfCdxv7-m5ew4g" field="TEXT" name="FILENAME" value="&quot;keepalive.json&quot;"/>
+    <elementParameter xmi:id="_Dk8D2eC_EfCdxv7-m5ew4g" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_Dk8D2uC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8D2-C_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8D3OC_EfCdxv7-m5ew4g" componentName="cKafka" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="240">
+    <elementParameter xmi:id="_Dk8D3eC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cKafka_1" show="false"/>
+    <elementParameter xmi:id="_Dk8D3uC_EfCdxv7-m5ew4g" field="TEXT" name="BROKER_LIST" value="&quot;localhost:9092&quot;"/>
+    <elementParameter xmi:id="_Dk8D3-C_EfCdxv7-m5ew4g" field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D4OC_EfCdxv7-m5ew4g" field="TEXT" name="TOPIC" value="&quot;json&quot;"/>
+    <elementParameter xmi:id="_Dk8D4eC_EfCdxv7-m5ew4g" field="TEXT" name="GROUP_ID" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D4uC_EfCdxv7-m5ew4g" field="TEXT" name="PARTITIONER" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D4-C_EfCdxv7-m5ew4g" field="TEXT" name="SERIALIZER_CLASS" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D5OC_EfCdxv7-m5ew4g" field="TEXT" name="KEY_SERIALIZER_CLASS" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D5eC_EfCdxv7-m5ew4g" field="OPENED_LIST" name="DESERIALIZER_CLASS" value="org.apache.kafka.common.serialization.StringDeserializer" show="false"/>
+    <elementParameter xmi:id="_Dk8D5uC_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="COMPRESSION_CODEC" value="none"/>
+    <elementParameter xmi:id="_Dk8D5-C_EfCdxv7-m5ew4g" field="CHECK" name="AUTO_COMMIT_ENABLE" value="true" show="false"/>
+    <elementParameter xmi:id="_Dk8D6OC_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="AUTO_OFFSET_RESET" value="latest" show="false"/>
+    <elementParameter xmi:id="_Dk8D6eC_EfCdxv7-m5ew4g" field="CHECK" name="USE_SCHEMA_REGISTRY" value="false"/>
+    <elementParameter xmi:id="_Dk8D6uC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D6-C_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="SCHEMA_REGISTRY_AUTH" value="NONE" show="false"/>
+    <elementParameter xmi:id="_Dk8D7OC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_BASIC_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8D7eC_EfCdxv7-m5ew4g" field="PASSWORD" name="SCHEMA_REGISTRY_BASIC_PASSWORD" value="" show="false"/>
+    <elementParameter xmi:id="_Dk8D7uC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_TOKEN_ENDPOINT" value="&quot;https://oauth.mydomain.com/token&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D7-C_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D8OC_EfCdxv7-m5ew4g" field="PASSWORD" name="SCHEMA_REGISTRY_OAUTH_CLIENT_PASSWORD" value="enc:system.encryption.key.v1:QkSa9k0ti6iKn/aXUAQCxArqZC34wAFixgGvgTo0" show="false"/>
+    <elementParameter xmi:id="_Dk8D8eC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_SCOPE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D8uC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_SCOPE_CLAIM_NAME" value="&quot;scope&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D8-C_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_SUB_CLAIM_NAME" value="&quot;sub&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D9OC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_LOGICAL_CLUSTER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D9eC_EfCdxv7-m5ew4g" field="TEXT" name="SCHEMA_REGISTRY_OAUTH_IDENTITY_POOL_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Dk8D9uC_EfCdxv7-m5ew4g" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_Dk8D9-C_EfCdxv7-m5ew4g" field="PASSWORD" name="SSL_KEY_PASSWORD" value="enc:system.encryption.key.v1:uI7e4ci2dcnXm0up4VxA7CeQqx5bfeNC4pTtQJcQ"/>
+    <elementParameter xmi:id="_Dk8D-OC_EfCdxv7-m5ew4g" field="TEXT" name="SSL_KEYSTORE_LOCATION" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D-eC_EfCdxv7-m5ew4g" field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:kOM9QSDizG0YQLcOJIojoWStVguREEaZM6AYkoCS"/>
+    <elementParameter xmi:id="_Dk8D-uC_EfCdxv7-m5ew4g" field="TEXT" name="SSL_TRUSTSTORE_LOCATION" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D--C_EfCdxv7-m5ew4g" field="PASSWORD" name="SSL_TRUSTSTORE_PASSWORD" value="enc:system.encryption.key.v1:ZQBZeQH9E2WnJNavWmzN+c2hn2ObytLBkjnoxafj"/>
+    <elementParameter xmi:id="_Dk8D_OC_EfCdxv7-m5ew4g" field="TEXT" name="SSL_CIPHER_SUITS" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D_eC_EfCdxv7-m5ew4g" field="TEXT" name="SSL_ENDPOINT_ALGORITHM" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D_uC_EfCdxv7-m5ew4g" field="TEXT" name="SASL_KERBEROS_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_Dk8D_-C_EfCdxv7-m5ew4g" field="CLOSED_LIST" name="SECURITY_PROTOCOL" value="PLAINTEXT"/>
+    <elementParameter xmi:id="_Dk8EAOC_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8EAeC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Dk8EAuC_EfCdxv7-m5ew4g" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="120">
+    <elementParameter xmi:id="_Dk8EA-C_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cProcessor_2" show="false"/>
+    <elementParameter xmi:id="_Dk8EBOC_EfCdxv7-m5ew4g" field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter xmi:id="_Dk8EBeC_EfCdxv7-m5ew4g" field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Minio To Kafka!&quot;);"/>
+    <elementParameter xmi:id="_Dk8EBuC_EfCdxv7-m5ew4g" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_Dk8EB-C_EfCdxv7-m5ew4g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dk8ECOC_EfCdxv7-m5ew4g" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_Dk8ECeC_EfCdxv7-m5ew4g" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_1" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_1" target="cXmlParser_1">
+    <elementParameter xmi:id="_Dk8ECuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_Dk8EC-C_EfCdxv7-m5ew4g" connectorName="ROUTE" label="route5" lineStyle="14" metaname="cXmlParser_1" offsetLabelX="0" offsetLabelY="0" source="cXmlParser_1" target="cProcessor_1">
+    <elementParameter xmi:id="_Dk8EDOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_Dk8EDeC_EfCdxv7-m5ew4g" connectorName="ROUTE" label="route8" lineStyle="14" metaname="cProcessor_1" offsetLabelX="0" offsetLabelY="0" source="cProcessor_1" target="cJsonWriter_1">
+    <elementParameter xmi:id="_Dk8EDuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="route8" show="false"/>
+  </connection>
+  <connection xmi:id="_Dk8ED-C_EfCdxv7-m5ew4g" connectorName="ROUTE" label="route10" lineStyle="14" metaname="cJsonWriter_1" offsetLabelX="0" offsetLabelY="0" source="cJsonWriter_1" target="cFile_1">
+    <elementParameter xmi:id="_Dk8EEOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="route10" show="false"/>
+  </connection>
+  <connection xmi:id="_Dk8EEeC_EfCdxv7-m5ew4g" connectorName="ROUTE" label="route9" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cKafka_1">
+    <elementParameter xmi:id="_Dk8EEuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="route9" show="false"/>
+  </connection>
+  <subjob xmi:id="_Dk8EE-C_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EFOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EFeC_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EFuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EF-C_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EGOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cConfig_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EGeC_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EGuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cXmlParser_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EG-C_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EHOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EHeC_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EHuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cJsonWriter_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EH-C_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EIOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EIeC_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EIuC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cKafka_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_Dk8EI-C_EfCdxv7-m5ew4g">
+    <elementParameter xmi:id="_Dk8EJOC_EfCdxv7-m5ew4g" field="TEXT" name="UNIQUE_NAME" value="cProcessor_2" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

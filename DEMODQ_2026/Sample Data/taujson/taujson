@@ -1,0 +1,50 @@
+{
+  "add-users": [
+    {
+      "username": "demouser1",
+      "auth": "ldap",
+      "firstname": "DemoA",
+      "lastname": "UserA",
+      "email": "demo1@example.tau.ac.il",
+      "createpassword": 0,
+      "idnumber": "123456789",
+      "institution": "אוניברסיטת תל אביב",
+      "department": "0124",
+      "firstnamephonetic": "דמוא",
+      "lastnamephonetic": "משתמשא",
+      "customfields": [
+        {
+          "type": "TauHospital",
+          "value": "אורתופדית בילינסון"
+        },
+        {
+          "type": "TauHospital",
+          "value": "אורתופדית מאיר"
+        }
+      ]
+    },
+    {
+      "username": "demouser2",
+      "auth": "ldap",
+      "firstname": "DemoB",
+      "lastname": "UserB",
+      "email": "demo2@example.tau.ac.il",
+      "createpassword": 0,
+      "idnumber": "123456789",
+      "institution": "אוניברסיטת תל אביב",
+      "department": "0124",
+      "firstnamephonetic": "דמוא",
+      "lastnamephonetic": "משתמשא",
+      "customfields": [
+        {
+          "type": "TauHospital",
+          "value": "אורתופדית לניאדו"
+        },
+        {
+          "type": "TauHospital",
+          "value": "אורתופדית איכילוב"
+        }
+      ]
+    }
+  ]
+}

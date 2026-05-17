@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_-5HS4A_4EfGKt52SjIpQSA" name="jsonarraytest" dataPackage="_-5HS5Q_4EfGKt52SjIpQSA" JSONFilePath="C:/Talend/jsonarraytest.json" Encoding="UTF-8" inputModel="false" outputFilePath="">
+    <root xmi:id="_HnIL4A_5EfGKt52SjIpQSA" JSONPath="/root" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="_HnIL4Q_5EfGKt52SjIpQSA" JSONPath="/root/name" RelatedColumn="name" Attribute="branch" Order="2" Type="id_String"/>
+    <root xmi:id="_HnIL4g_5EfGKt52SjIpQSA" JSONPath="/root/age" RelatedColumn="age" Attribute="branch" Order="3" Type="id_Integer"/>
+    <loop xmi:id="_HnIL4w_5EfGKt52SjIpQSA" JSONPath="/root/cars" RelatedColumn="cars" Attribute="main" Order="4" Type="id_String"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-5HS5Q_4EfGKt52SjIpQSA" name="default" dataManager="_-5HS4A_4EfGKt52SjIpQSA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-5HS5g_4EfGKt52SjIpQSA" id="_0qPEEA_4EfGKt52SjIpQSA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GktsoA_5EfGKt52SjIpQSA" name="name" label="name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GktsoQ_5EfGKt52SjIpQSA" name="age" label="age" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Gktsog_5EfGKt52SjIpQSA" name="cars" label="cars" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

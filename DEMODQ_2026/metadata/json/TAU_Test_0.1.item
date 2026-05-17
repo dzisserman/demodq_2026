@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_-Z_zIA_mEfGKt52SjIpQSA" name="TAU_Test" id="_-Z_MEA_mEfGKt52SjIpQSA" dataPackage="_-Z_zMQ_mEfGKt52SjIpQSA" JSONFilePath="C:/Talend/taujson.json" Encoding="UTF-8" inputModel="false" outputFilePath="">
+    <root xmi:id="_vkzm4A_uEfGKt52SjIpQSA" JSONPath="/root" RelatedColumn="" Attribute="main" Order="102" Type="id_String"/>
+    <root xmi:id="_vkzm4Q_uEfGKt52SjIpQSA" JSONPath="/root/add-users" RelatedColumn="" Attribute="main" Order="103" Type="id_String"/>
+    <root xmi:id="_vkzm4g_uEfGKt52SjIpQSA" JSONPath="/root/add-users/username" RelatedColumn="username" Attribute="branch" Order="104" Type="id_String"/>
+    <root xmi:id="_vkzm4w_uEfGKt52SjIpQSA" JSONPath="/root/add-users/auth" RelatedColumn="auth" Attribute="branch" Order="105" Type="id_String"/>
+    <root xmi:id="_vkzm5A_uEfGKt52SjIpQSA" JSONPath="/root/add-users/firstname" RelatedColumn="firstname" Attribute="branch" Order="106" Type="id_String"/>
+    <root xmi:id="_vkzm5Q_uEfGKt52SjIpQSA" JSONPath="/root/add-users/lastname" RelatedColumn="lastname" Attribute="branch" Order="107" Type="id_String"/>
+    <root xmi:id="_vkzm5g_uEfGKt52SjIpQSA" JSONPath="/root/add-users/email" RelatedColumn="email" Attribute="branch" Order="108" Type="id_String"/>
+    <root xmi:id="_vkzm5w_uEfGKt52SjIpQSA" JSONPath="/root/add-users/createpassword" RelatedColumn="createpassword" Attribute="branch" Order="109" Type="id_Integer"/>
+    <root xmi:id="_vkzm6A_uEfGKt52SjIpQSA" JSONPath="/root/add-users/idnumber" RelatedColumn="idnumber" Attribute="branch" Order="110" Type="id_Integer"/>
+    <root xmi:id="_vkzm6Q_uEfGKt52SjIpQSA" JSONPath="/root/add-users/institution" RelatedColumn="institution" Attribute="branch" Order="111" Type="id_String"/>
+    <root xmi:id="_vkzm6g_uEfGKt52SjIpQSA" JSONPath="/root/add-users/department" RelatedColumn="department" Attribute="branch" Order="112" Type="id_String"/>
+    <root xmi:id="_vkzm6w_uEfGKt52SjIpQSA" JSONPath="/root/add-users/firstnamephonetic" RelatedColumn="firstnamephonetic" Attribute="branch" Order="113" Type="id_String"/>
+    <root xmi:id="_vkzm7A_uEfGKt52SjIpQSA" JSONPath="/root/add-users/lastnamephonetic" RelatedColumn="lastnamephonetic" Attribute="branch" Order="114" Type="id_String"/>
+    <root xmi:id="_vkzm7Q_uEfGKt52SjIpQSA" JSONPath="/root/add-users/customfields" RelatedColumn="" Attribute="main" Order="115" Type="id_String"/>
+    <root xmi:id="_vkzm7g_uEfGKt52SjIpQSA" JSONPath="class" RelatedColumn="" DefaultValue="array" Attribute="attri" Order="116"/>
+    <root xmi:id="_vkzm7w_uEfGKt52SjIpQSA" JSONPath="/root/add-users/customfields/value" RelatedColumn="value" Attribute="branch" Order="118" Type="id_String"/>
+    <loop xmi:id="_vkzm8A_uEfGKt52SjIpQSA" JSONPath="/root/add-users/customfields/type" RelatedColumn="type" Attribute="main" Order="117" Type="id_String"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-Z_zMQ_mEfGKt52SjIpQSA" name="default" dataManager="_-Z_zIA_mEfGKt52SjIpQSA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-Z_zMg_mEfGKt52SjIpQSA" id="_U-a3wA_mEfGKt52SjIpQSA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NwA_uEfGKt52SjIpQSA" name="username" label="username" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NwQ_uEfGKt52SjIpQSA" name="auth" label="auth" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nwg_uEfGKt52SjIpQSA" name="firstname" label="firstname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nww_uEfGKt52SjIpQSA" name="lastname" label="lastname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NxA_uEfGKt52SjIpQSA" name="email" label="email" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NxQ_uEfGKt52SjIpQSA" name="createpassword" label="createpassword" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nxg_uEfGKt52SjIpQSA" name="idnumber" label="idnumber" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nxw_uEfGKt52SjIpQSA" name="institution" label="institution" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NyA_uEfGKt52SjIpQSA" name="department" label="department" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NyQ_uEfGKt52SjIpQSA" name="firstnamephonetic" label="firstnamephonetic" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nyg_uEfGKt52SjIpQSA" name="lastnamephonetic" label="lastnamephonetic" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8Nyw_uEfGKt52SjIpQSA" name="type" label="type" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iT8NzA_uEfGKt52SjIpQSA" name="value" label="value" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

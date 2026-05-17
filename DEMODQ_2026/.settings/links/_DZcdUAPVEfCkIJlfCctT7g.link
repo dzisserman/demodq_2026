@@ -1,0 +1,42 @@
+{
+  "itemId" : "_DZcdUAPVEfCkIJlfCctT7g",
+  "contextList" : [ {
+    "contextName" : "Local",
+    "repoId" : "_0lZlkAiHEfC8I5Rb0z0Uyg",
+    "parameterList" : [ {
+      "id" : "_DHDBYAiZEfC8I5Rb0z0Uyg",
+      "name" : "baseDir"
+    }, {
+      "id" : "_DHDBYQiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_db"
+    }, {
+      "id" : "_DHDBYgiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_hostname"
+    }, {
+      "id" : "_DHDBYwiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_pass"
+    }, {
+      "id" : "_DHDBZAiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_user"
+    } ]
+  }, {
+    "contextName" : "Remote",
+    "repoId" : "_0lZlkAiHEfC8I5Rb0z0Uyg",
+    "parameterList" : [ {
+      "id" : "_DHDBZQiZEfC8I5Rb0z0Uyg",
+      "name" : "baseDir"
+    }, {
+      "id" : "_DHDBZgiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_db"
+    }, {
+      "id" : "_DHDBZwiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_hostname"
+    }, {
+      "id" : "_DHDBaAiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_pass"
+    }, {
+      "id" : "_DHDBaQiZEfC8I5Rb0z0Uyg",
+      "name" : "MySQL_user"
+    } ]
+  } ]
+}

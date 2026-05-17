@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/cust-record-copybook-alt/CUST-RECORD.xml' outStruct='Structures/sample-customer-data.xml' inputRep='180' outputRep='183' nextMap='' inputStructUserName='CUST-RECORD' outputStructUserName='sample-customer-data' V1='4' name='EBCDIC_to_CSV' incarnation='498'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='613' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CUST-RECORD'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='562' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' inheritsFromCopyRule='28' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/cust-record-copybook-alt/Reference/CUST-RECORD-REF.xml' V281='13' V1='4' name='Record'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='22' dataFormat='200' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CUST-ID' description='9(5)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='103' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CUST-NAME'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='15' maxSize='15' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CUST-LAST-NAME' description='X(15)'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CUST-FIRST-NAME' description='X(10)'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
+      <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='20' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STREET-ADDRESS' description='X(20)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='20' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CITY' description='X(20)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='US-STATE' description='X(02)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='20' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OTHER-STATE-PROVINCE' description='X(20)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='COUNTRY-CODE' description='X(3)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='15' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTAL-CODE' description='X(10)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='16' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='40' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NOTES' description='X(40)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='17' V200='8' structElemExists='true' usedCount='625' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='csv'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/CUST-RECORD,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='18' V200='8' rowElem='true' structElemExists='true' usedCount='572' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/CUST-RECORD/Record,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='19' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='custId'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/CUST-ID</value>
+      </child>
+      <child t='200' id='20' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='custFirstName'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/CUST-NAME/CUST-FIRST-NAME</value>
+      </child>
+      <child t='200' id='21' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='custLastName'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/CUST-NAME/CUST-LAST-NAME</value>
+      </child>
+      <child t='200' id='22' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='streetAddress'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/STREET-ADDRESS</value>
+      </child>
+      <child t='200' id='23' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/CITY</value>
+      </child>
+      <child t='200' id='24' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='usState'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/US-STATE</value>
+      </child>
+      <child t='200' id='25' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='otherStateProvince'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/OTHER-STATE-PROVINCE</value>
+      </child>
+      <child t='200' id='26' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='countryCode'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/COUNTRY-CODE</value>
+      </child>
+      <child t='200' id='27' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='postalCode'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>|</delimTerminator>
+        <value>in$/CUST-RECORD/Record/POSTAL-CODE</value>
+      </child>
+      <child t='200' id='28' V200='8' structElemExists='true' usedCount='52' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='notes'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/CUST-RECORD/Record/NOTES</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='703' id='40' V703='2' byteOrder='BIG_ENDIAN' largeOccursErrorThreshold='10000' allowSpacesForPackedDecimals='true' allowAnyCharForPackedDecimals='true' inputAcceptEarlyEndOfFile='true' inputApplyDefaultChoiceStrategyToAllAlternatives='true' V690='1' encoding='IBM037' trimInput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='706' id='30' V706='1' defaultHeader='Col' delimiter='\t' quoteCharacter='"' quoteMode='4' ignoreSurroundingSpaces='true' ignoreEmptyLines='true' newLineType='3' newLine='&#xA;' trim='true' V690='1' encoding='UTF-8'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='41' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='32' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='33' V166='5' docType='1' docReposPath='/DEMODQ_NEW/Sample Data/cust-record-copybook/CUST-RECORD/sample-customer-data-tsv.txt' V1='4' name='in$/CUST-RECORD'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='37' V166='5' docType='2' V1='4' name='out$/csv'>
+      <elemNode t='200' idref='17'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>

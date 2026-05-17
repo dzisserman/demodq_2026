@@ -1,0 +1,701 @@
+[
+  {
+    "total": {
+      "total": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 2081,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "131 / 6",
+          "mufsakimValue": 6,
+          "outageCustomers": 1885,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 6,
+          "totalFualts": 131
+        },
+        "obj4": {
+          "value": "2771 / 54",
+          "mufsakimValue": 54,
+          "outageCustomers": 142,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 54,
+          "totalFualts": 2771
+        },
+        "obj5": {
+          "value": 8,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "195 / 22",
+          "mufsakimValue": 22,
+          "outageCustomers": 54,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 22,
+          "totalFualts": 195
+        },
+        "obj9": {
+          "value": "11 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 11,
+          "faultsMufsakim": 0
+        }
+      }
+    },
+    "NorHai": {
+      "haifa": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 32,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "16 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 0,
+          "totalFualts": 16
+        },
+        "obj4": {
+          "value": "409 / 3",
+          "mufsakimValue": 3,
+          "outageCustomers": 3,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 3,
+          "totalFualts": 409
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "50 / 3",
+          "mufsakimValue": 3,
+          "outageCustomers": 29,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 3,
+          "totalFualts": 50
+        },
+        "obj9": {
+          "value": "1 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 1,
+          "faultsMufsakim": 0
+        }
+      },
+      "total": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 306,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "36 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 250,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 36
+        },
+        "obj4": {
+          "value": "821 / 21",
+          "mufsakimValue": 21,
+          "outageCustomers": 21,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 21,
+          "totalFualts": 821
+        },
+        "obj5": {
+          "value": 5,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "83 / 8",
+          "mufsakimValue": 8,
+          "outageCustomers": 35,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 8,
+          "totalFualts": 83
+        },
+        "obj9": {
+          "value": "4 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 4,
+          "faultsMufsakim": 0
+        }
+      },
+      "hadera": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 19,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "2 / 1",
+          "mufsakimValue": 1,
+          "outageCustomers": 10,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 1,
+          "totalFualts": 2
+        },
+        "obj4": {
+          "value": "187 / 6",
+          "mufsakimValue": 6,
+          "outageCustomers": 6,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 6,
+          "totalFualts": 187
+        },
+        "obj5": {
+          "value": 5,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "12 / 3",
+          "mufsakimValue": 3,
+          "outageCustomers": 3,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 3,
+          "totalFualts": 12
+        },
+        "obj9": {
+          "value": "2 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 2,
+          "faultsMufsakim": 0
+        }
+      },
+      "galil": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 255,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "18 / 1",
+          "mufsakimValue": 1,
+          "outageCustomers": 240,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 1,
+          "totalFualts": 18
+        },
+        "obj4": {
+          "value": "225 / 12",
+          "mufsakimValue": 12,
+          "outageCustomers": 12,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 12,
+          "totalFualts": 225
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "21 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 3,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 2,
+          "totalFualts": 21
+        },
+        "obj9": {
+          "value": "1 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 1,
+          "faultsMufsakim": 0
+        }
+      }
+    },
+    "DanHof": {
+      "dan": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 15,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "10 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 0,
+          "totalFualts": 10
+        },
+        "obj4": {
+          "value": "670 / 11",
+          "mufsakimValue": 11,
+          "outageCustomers": 11,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 11,
+          "totalFualts": 670
+        },
+        "obj5": {
+          "value": 4,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "20 / 4",
+          "mufsakimValue": 4,
+          "outageCustomers": 4,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 4,
+          "totalFualts": 20
+        },
+        "obj9": {
+          "value": "0 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 0,
+          "faultsMufsakim": 0
+        }
+      },
+      "total": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 618,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "42 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 501,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 42
+        },
+        "obj4": {
+          "value": "859 / 23",
+          "mufsakimValue": 23,
+          "outageCustomers": 100,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 23,
+          "totalFualts": 859
+        },
+        "obj5": {
+          "value": 4,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "35 / 12",
+          "mufsakimValue": 12,
+          "outageCustomers": 17,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 12,
+          "totalFualts": 35
+        },
+        "obj9": {
+          "value": "3 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 3,
+          "faultsMufsakim": 0
+        }
+      },
+      "sharon": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 33,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "21 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 0,
+          "totalFualts": 21
+        },
+        "obj4": {
+          "value": "154 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 24,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 154
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "10 / 4",
+          "mufsakimValue": 4,
+          "outageCustomers": 9,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 4,
+          "totalFualts": 10
+        },
+        "obj9": {
+          "value": "1 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 1,
+          "faultsMufsakim": 0
+        }
+      },
+      "shfela": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 570,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "11 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 501,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 11
+        },
+        "obj4": {
+          "value": "35 / 10",
+          "mufsakimValue": 10,
+          "outageCustomers": 65,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 10,
+          "totalFualts": 35
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "5 / 4",
+          "mufsakimValue": 4,
+          "outageCustomers": 4,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 4,
+          "totalFualts": 5
+        },
+        "obj9": {
+          "value": "2 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 2,
+          "faultsMufsakim": 0
+        }
+      }
+    },
+    "JerNeg": {
+      "jer": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 1139,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "4 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 1134,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 4
+        },
+        "obj4": {
+          "value": "413 / 5",
+          "mufsakimValue": 5,
+          "outageCustomers": 5,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 5,
+          "totalFualts": 413
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "40 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 0,
+          "totalFualts": 40
+        },
+        "obj9": {
+          "value": "0 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 0,
+          "faultsMufsakim": 0
+        }
+      },
+      "total": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 1157,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "53 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 1134,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 53
+        },
+        "obj4": {
+          "value": "1091 / 10",
+          "mufsakimValue": 10,
+          "outageCustomers": 21,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 10,
+          "totalFualts": 1091
+        },
+        "obj5": {
+          "value": 8,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "77 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 2,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 2,
+          "totalFualts": 77
+        },
+        "obj9": {
+          "value": "4 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 4,
+          "faultsMufsakim": 0
+        }
+      },
+      "neg": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 4,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "19 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 0,
+          "totalFualts": 19
+        },
+        "obj4": {
+          "value": "91 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 2,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 2,
+          "totalFualts": 91
+        },
+        "obj5": {
+          "value": 3,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "17 / 2",
+          "mufsakimValue": 2,
+          "outageCustomers": 2,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 2,
+          "totalFualts": 17
+        },
+        "obj9": {
+          "value": "3 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 3,
+          "faultsMufsakim": 0
+        }
+      },
+      "ayalon": {
+        "obj1": {
+          "value": 0,
+          "icon": "icons_dashboard10.png",
+          "label": "ccons"
+        },
+        "obj2": {
+          "value": 14,
+          "icon": "icons_dashboard10.png",
+          "label": "scons"
+        },
+        "obj3": {
+          "value": "30 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard7.png",
+          "label": "hvfaults",
+          "faultsMufsakim": 0,
+          "totalFualts": 30
+        },
+        "obj4": {
+          "value": "587 / 3",
+          "mufsakimValue": 3,
+          "outageCustomers": 14,
+          "icon": "icons_dashboard5.png",
+          "label": "lvfaults",
+          "faultsMufsakim": 3,
+          "totalFualts": 587
+        },
+        "obj5": {
+          "value": 8,
+          "icon": "icons_dashboard7.png",
+          "label": "exfix"
+        },
+        "obj6": {
+          "value": "20 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "",
+          "faultsMufsakim": 0,
+          "totalFualts": 20
+        },
+        "obj9": {
+          "value": "1 / 0",
+          "mufsakimValue": 0,
+          "outageCustomers": 0,
+          "icon": "icons_dashboard4.png",
+          "label": "highVolt",
+          "totalFualts": 1,
+          "faultsMufsakim": 0
+        }
+      }
+    }
+  }
+]

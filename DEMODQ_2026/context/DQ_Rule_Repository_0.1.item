@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Jk0ucI8vEeyYSsbxirxGiw" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_Jk0ucY8vEeyYSsbxirxGiw" comment="" name="Endpoint" prompt="Endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.eu.cloud.talend.com/rulerepository/api/v1"/>
+  <contextParameter xmi:id="_Jk0uco8vEeyYSsbxirxGiw" comment="" name="API_Token" prompt="API_Token?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:+rNIsBI6KMjLfBE+bwWnErJC4GGeEjl0rZCObX1suyLCxgiTeiR+I3coosMv0mbmRPCLLhHcUO0b3QI4fAJ+qNf+vNQnxgyq8nYyVg2grYSsCKcoPst/rd1hT8M="/>
+</talendfile:ContextType>

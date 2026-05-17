@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:WSDLSchemaConnection xmi:id="_F8o04Ag2EfGnfMsYHCoQGA" name="repository.metadataWSDLSchema" id="_F8oN0Ag2EfGnfMsYHCoQGA" dataPackage="_F8o08Qg2EfGnfMsYHCoQGA" WSDL="http://webservices.daehosting.com/services/isbnservice.wso?WSDL" methodName="IsValidISBN13(parameters):boolean" timeOut="20" isInputModel="false" serverNameSpace="http://webservices.daehosting.com/ISBN" serverName="ISBNService" portNameSpace="http://webservices.daehosting.com/ISBN" portName="ISBNServiceSoap">
+    <parameterValue xmi:id="_5LZ54Ag8EfGnfMsYHCoQGA" Element="parameters"/>
+    <parameterValue xmi:id="_5LZ54Qg8EfGnfMsYHCoQGA" Element="parameters.sISBN" Expression="input.ISBN"/>
+    <parameterValue xmi:id="_5LZ54gg8EfGnfMsYHCoQGA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <parameterValue xmi:id="_5LZ54wg8EfGnfMsYHCoQGA" ParameterInfo="sISBN" ParameterInfoParent="parameters"/>
+    <parameterValue xmi:id="_5LZ55Ag8EfGnfMsYHCoQGA" Column="ISBN"/>
+    <parameterValue xmi:id="_5LZ55Qg8EfGnfMsYHCoQGA" source="ISBN"/>
+    <outputParameter xmi:id="_5LZ55gg8EfGnfMsYHCoQGA" Element="parameters"/>
+    <outputParameter xmi:id="_5LZ55wg8EfGnfMsYHCoQGA" Element="parameters.IsValidISBN13Result"/>
+    <outputParameter xmi:id="_5LZ56Ag8EfGnfMsYHCoQGA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <outputParameter xmi:id="_5LZ56Qg8EfGnfMsYHCoQGA" ParameterInfo="IsValidISBN13Result" ParameterInfoParent="parameters"/>
+    <outputParameter xmi:id="_5LZ56gg8EfGnfMsYHCoQGA" Column="ISVALID" Expression="parameters.IsValidISBN13Result"/>
+    <outputParameter xmi:id="_5LZ56wg8EfGnfMsYHCoQGA" source="parameters.IsValidISBN13Result"/>
+  </TalendMetadata:WSDLSchemaConnection>
+  <TalendMetadata:GenericPackage xmi:id="_F8o08Qg2EfGnfMsYHCoQGA" name="repository.metadataWSDLSchema" dataManager="_F8o04Ag2EfGnfMsYHCoQGA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_F8o08gg2EfGnfMsYHCoQGA" id="_z4Vh8Ag1EfGnfMsYHCoQGA" label="Output">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2ZM4AAg8EfGnfMsYHCoQGA" name="ISVALID" label="ISVALID" talendType="id_Boolean"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_F8o09Ag2EfGnfMsYHCoQGA" id="_0_L1QAg1EfGnfMsYHCoQGA" label="Input">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-Anx0Ag7EfGnfMsYHCoQGA" name="ISBN" label="ISBN" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

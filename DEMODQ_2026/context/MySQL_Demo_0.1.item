@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_htwK0P2qEe-lUuAzP7iGeQ" name="Local">
+    <contextParameter xmi:id="_hu7PgP2qEe-lUuAzP7iGeQ" comment="" name="MySQL_hostname" prompt="MySQL_hostname?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_hu7Pgf2qEe-lUuAzP7iGeQ" comment="" name="MySQL_user" prompt="MySQL_user?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_hu7Pgv2qEe-lUuAzP7iGeQ" comment="" name="MySQL_pass" prompt="MySQL_pass?" promptNeeded="false" type="id_Password" value="root"/>
+    <contextParameter xmi:id="_hu7Pg_2qEe-lUuAzP7iGeQ" comment="" name="MySQL_db" prompt="MySQL_db?" promptNeeded="false" type="id_String" value="demo"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_htwK0f2qEe-lUuAzP7iGeQ" name="Remote">
+    <contextParameter xmi:id="_hu7PhP2qEe-lUuAzP7iGeQ" comment="" name="MySQL_hostname" prompt="MySQL_hostname?" promptNeeded="false" type="id_String" value="51.16.221.35"/>
+    <contextParameter xmi:id="_hu7Phf2qEe-lUuAzP7iGeQ" comment="" name="MySQL_user" prompt="MySQL_user?" promptNeeded="false" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_hu7Phv2qEe-lUuAzP7iGeQ" comment="" name="MySQL_pass" prompt="MySQL_pass?" promptNeeded="false" type="id_Password" value="T@lend!@345"/>
+    <contextParameter xmi:id="_hu7Ph_2qEe-lUuAzP7iGeQ" comment="" name="MySQL_db" prompt="MySQL_db?" promptNeeded="false" type="id_String" value="training"/>
+  </talendfile:ContextType>
+</xmi:XMI>

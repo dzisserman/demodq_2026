@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_PYNvMFp2EfCkQqXdmF7CeA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_PYNvMVp2EfCkQqXdmF7CeA" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_PYNvMlp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYNvM1p2EfCkQqXdmF7CeA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_PYNvNFp2EfCkQqXdmF7CeA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_PYNvNVp2EfCkQqXdmF7CeA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_PYNvNlp2EfCkQqXdmF7CeA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvN1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvOFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvOVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvOlp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvO1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvPFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvPVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvPlp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvP1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvQFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvQVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvQlp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvQ1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvRFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_PYNvRVp2EfCkQqXdmF7CeA" id="_zOwssNFqEeqQaMcAqCBpSw" name="DQTechnical"/>
+    <routinesParameter xmi:id="_PYNvRlp2EfCkQqXdmF7CeA" id="_zN-pkNFqEeqQaMcAqCBpSw" name="DataMasking"/>
+    <routinesParameter xmi:id="_PYNvR1p2EfCkQqXdmF7CeA" id="_yxdFoNFqEeqQaMcAqCBpSw" name="DataOperation"/>
+    <routinesParameter xmi:id="_PYNvSFp2EfCkQqXdmF7CeA" id="_zOaucNFqEeqQaMcAqCBpSw" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_PYNvSVp2EfCkQqXdmF7CeA" id="_zOPIQNFqEeqQaMcAqCBpSw" name="DataQuality"/>
+    <routinesParameter xmi:id="_PYNvSlp2EfCkQqXdmF7CeA" id="_zOm7sNFqEeqQaMcAqCBpSw" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_PYNvS1p2EfCkQqXdmF7CeA" id="_zPBLYNFqEeqQaMcAqCBpSw" name="MDM"/>
+    <routinesParameter xmi:id="_PYNvTFp2EfCkQqXdmF7CeA" id="_zLqVYNFqEeqQaMcAqCBpSw" name="Mathematical"/>
+    <routinesParameter xmi:id="_PYNvTVp2EfCkQqXdmF7CeA" id="_zMBhwNFqEeqQaMcAqCBpSw" name="Numeric"/>
+    <routinesParameter xmi:id="_PYNvTlp2EfCkQqXdmF7CeA" id="_zMSngNFqEeqQaMcAqCBpSw" name="Relational"/>
+    <routinesParameter xmi:id="_PYNvT1p2EfCkQqXdmF7CeA" id="_zNxOMNFqEeqQaMcAqCBpSw" name="SQLike"/>
+    <routinesParameter xmi:id="_PYNvUFp2EfCkQqXdmF7CeA" id="_zMjGMNFqEeqQaMcAqCBpSw" name="StringHandling"/>
+    <routinesParameter xmi:id="_PYNvUVp2EfCkQqXdmF7CeA" id="_zM4dYNFqEeqQaMcAqCBpSw" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_PYNvUlp2EfCkQqXdmF7CeA" id="_zNFRsNFqEeqQaMcAqCBpSw" name="TalendDate"/>
+    <routinesParameter xmi:id="_PYNvU1p2EfCkQqXdmF7CeA" id="_zNfhYNFqEeqQaMcAqCBpSw" name="TalendStringUtil"/>
+    <routinesParameter xmi:id="_PYNvVFp2EfCkQqXdmF7CeA" id="_zNStENFqEeqQaMcAqCBpSw" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_PYNvVVp2EfCkQqXdmF7CeA" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter xmi:id="_PYNvVlp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_PYNvV1p2EfCkQqXdmF7CeA" field="DIRECTORY" name="URI" value="&quot;/StudentFiles/routes/r05_redirectMessage/input&quot;"/>
+    <elementParameter xmi:id="_PYNvWFp2EfCkQqXdmF7CeA" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_PYNvWVp2EfCkQqXdmF7CeA" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_PYNvWlp2EfCkQqXdmF7CeA" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_PYNvW1p2EfCkQqXdmF7CeA" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_PYNvXFp2EfCkQqXdmF7CeA" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_PYNvXVp2EfCkQqXdmF7CeA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_PYNvXlp2EfCkQqXdmF7CeA" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_PYNvX1p2EfCkQqXdmF7CeA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_PYNvYFp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYNvYVp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYNvYlp2EfCkQqXdmF7CeA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+    <elementParameter xmi:id="_PYNvY1p2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_PYNvZFp2EfCkQqXdmF7CeA" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_PYNvZVp2EfCkQqXdmF7CeA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_2"/>
+    <elementParameter xmi:id="_PYNvZlp2EfCkQqXdmF7CeA" field="TEXT" name="NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_PYNvZ1p2EfCkQqXdmF7CeA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_PYNvaFp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYNvaVp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYNvalp2EfCkQqXdmF7CeA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
+    <elementParameter xmi:id="_PYNva1p2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_PYNvbFp2EfCkQqXdmF7CeA" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_PYNvbVp2EfCkQqXdmF7CeA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_PYNvblp2EfCkQqXdmF7CeA" field="TEXT" name="NAME" value="&quot;mySecondRoute&quot;"/>
+    <elementParameter xmi:id="_PYNvb1p2EfCkQqXdmF7CeA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_PYNvcFp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYNvcVp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYNvclp2EfCkQqXdmF7CeA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter xmi:id="_PYNvc1p2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_PYNvdFp2EfCkQqXdmF7CeA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;r05_redirectMessage.cLog_1&quot;"/>
+    <elementParameter xmi:id="_PYNvdVp2EfCkQqXdmF7CeA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_PYNvdlp2EfCkQqXdmF7CeA" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_PYNvd1p2EfCkQqXdmF7CeA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_PYNveFp2EfCkQqXdmF7CeA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_PYNveVp2EfCkQqXdmF7CeA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_PYNvelp2EfCkQqXdmF7CeA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_PYNve1p2EfCkQqXdmF7CeA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_PYNvfFp2EfCkQqXdmF7CeA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_PYNvfVp2EfCkQqXdmF7CeA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_PYNvflp2EfCkQqXdmF7CeA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_PYNvf1p2EfCkQqXdmF7CeA" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_PYNvgFp2EfCkQqXdmF7CeA" field="TEXT" name="MESSAGE" value="&quot;${in.body}&quot;"/>
+    <elementParameter xmi:id="_PYNvgVp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYNvglp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_PYNvg1p2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cDirect_1">
+    <elementParameter xmi:id="_PYNvhFp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_PYNvhVp2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cDirect_2" offsetLabelX="0" offsetLabelY="0" source="cDirect_2" target="cLog_1">
+    <elementParameter xmi:id="_PYNvhlp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <subjob xmi:id="_PYNvh1p2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYNviFp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_PYNviVp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYNvilp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYNvi1p2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYNvjFp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_PYNvjVp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYNvjlp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYNvj1p2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYNvkFp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_PYNvkVp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYNvklp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYNvk1p2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYNvlFp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_PYNvlVp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYNvllp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

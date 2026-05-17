@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:RX4cVofKntbKOfbxcVlQ1ByOjYTaqQGpBY8QyVHb" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace-tac/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zZbvV5FxKW3LQGfitK0RC+MO1swz0xlCF1S17QOg" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputXML" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input|XML" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputXML" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\8.0.1\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_aiv4MNEKEfCLVdI5ULtv4w - metadata" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/talend_file/railtest.xml&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/IPISXML/File/Record&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="from_date" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;@from_date&quot;" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="to_date" id="3"/>
+      <elementValue elementRef="QUERY" value="&quot;@to_date&quot;" id="4"/>
+      <elementValue elementRef="NODECHECK" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="schedule_type" id="6"/>
+      <elementValue elementRef="QUERY" value="&quot;@schedule_type&quot;" id="7"/>
+      <elementValue elementRef="NODECHECK" value="false" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="update_type" id="9"/>
+      <elementValue elementRef="QUERY" value="&quot;@update_type&quot;" id="10"/>
+      <elementValue elementRef="NODECHECK" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="schedule_source" id="12"/>
+      <elementValue elementRef="QUERY" value="&quot;@schedule_source&quot;" id="13"/>
+      <elementValue elementRef="NODECHECK" value="false" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="launch_date" id="15"/>
+      <elementValue elementRef="QUERY" value="&quot;@launch_date&quot;" id="16"/>
+      <elementValue elementRef="NODECHECK" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="launch_time" id="18"/>
+      <elementValue elementRef="QUERY" value="&quot;@launch_time&quot;" id="19"/>
+      <elementValue elementRef="NODECHECK" value="false" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="train_no" id="21"/>
+      <elementValue elementRef="QUERY" value="&quot;@train_no&quot;" id="22"/>
+      <elementValue elementRef="NODECHECK" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_sunday" id="24"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_sunday&quot;" id="25"/>
+      <elementValue elementRef="NODECHECK" value="false" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_monday" id="27"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_monday&quot;" id="28"/>
+      <elementValue elementRef="NODECHECK" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_tuesday" id="30"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_tuesday&quot;" id="31"/>
+      <elementValue elementRef="NODECHECK" value="false" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_wednesday" id="33"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_wednesday&quot;" id="34"/>
+      <elementValue elementRef="NODECHECK" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_thursday" id="36"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_thursday&quot;" id="37"/>
+      <elementValue elementRef="NODECHECK" value="false" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_friday" id="39"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_friday&quot;" id="40"/>
+      <elementValue elementRef="NODECHECK" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_saturday" id="42"/>
+      <elementValue elementRef="QUERY" value="&quot;@trip_saturday&quot;" id="43"/>
+      <elementValue elementRef="NODECHECK" value="false" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_trains" id="45"/>
+      <elementValue elementRef="QUERY" value="&quot;@No_trains&quot;" id="46"/>
+      <elementValue elementRef="NODECHECK" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_sunday" id="48"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_sunday&quot;" id="49"/>
+      <elementValue elementRef="NODECHECK" value="false" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_monday" id="51"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_monday&quot;" id="52"/>
+      <elementValue elementRef="NODECHECK" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_tuesday" id="54"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_tuesday&quot;" id="55"/>
+      <elementValue elementRef="NODECHECK" value="false" id="56"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_wednesday" id="57"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_wednesday&quot;" id="58"/>
+      <elementValue elementRef="NODECHECK" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_thursday" id="60"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_thursday&quot;" id="61"/>
+      <elementValue elementRef="NODECHECK" value="false" id="62"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_friday" id="63"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_friday&quot;" id="64"/>
+      <elementValue elementRef="NODECHECK" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="platform_saturday" id="66"/>
+      <elementValue elementRef="QUERY" value="&quot;@platform_saturday&quot;" id="67"/>
+      <elementValue elementRef="NODECHECK" value="false" id="68"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Line" id="69"/>
+      <elementValue elementRef="QUERY" value="&quot;@Service_Line&quot;" id="70"/>
+      <elementValue elementRef="NODECHECK" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="train_past_midnight" id="72"/>
+      <elementValue elementRef="QUERY" value="&quot;@train_past_midnight&quot;" id="73"/>
+      <elementValue elementRef="NODECHECK" value="false" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="station_sequence" id="75"/>
+      <elementValue elementRef="QUERY" value="&quot;@station_sequence&quot;" id="76"/>
+      <elementValue elementRef="NODECHECK" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="station_code" id="78"/>
+      <elementValue elementRef="QUERY" value="&quot;@station_code&quot;" id="79"/>
+      <elementValue elementRef="NODECHECK" value="false" id="80"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_time_planned" id="81"/>
+      <elementValue elementRef="QUERY" value="&quot;@arrival_time_planned&quot;" id="82"/>
+      <elementValue elementRef="NODECHECK" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="departure_time_planned" id="84"/>
+      <elementValue elementRef="QUERY" value="&quot;@departure_time_planned&quot;" id="85"/>
+      <elementValue elementRef="NODECHECK" value="false" id="86"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stop_station" id="87"/>
+      <elementValue elementRef="QUERY" value="&quot;@stop_station&quot;" id="88"/>
+      <elementValue elementRef="NODECHECK" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="direction" id="90"/>
+      <elementValue elementRef="QUERY" value="&quot;@direction&quot;" id="91"/>
+      <elementValue elementRef="NODECHECK" value="false" id="92"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="distance" id="93"/>
+      <elementValue elementRef="QUERY" value="&quot;@distance&quot;" id="94"/>
+      <elementValue elementRef="NODECHECK" value="false" id="95"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value="50"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_DTD" value="false"/>
+    <elementParameter field="FILE" name="TMP_FILENAME" value="&quot;C:/Talend/8.0.1/studio/workspace-tac/temp.xml&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-1255&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputXML_1">
+      <column comment="" key="false" length="-1" name="from_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="to_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="schedule_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="update_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="schedule_source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="launch_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="launch_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="train_no" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="No_trains" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Service_Line" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="train_past_midnight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_sequence" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="arrival_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="departure_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="stop_station" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="direction" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="distance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="-1" name="from_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="to_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="schedule_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="update_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="schedule_source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="launch_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="launch_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="train_no" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="No_trains" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Service_Line" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="train_past_midnight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_sequence" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="arrival_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="departure_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="stop_station" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="direction" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="distance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_qRTcAFZZEfCFTZGT_Wf57A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="from_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="to_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="schedule_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="update_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="schedule_source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="launch_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="launch_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="train_no" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trip_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="No_trains" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_sunday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_monday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_tuesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_wednesday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_thursday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_friday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="platform_saturday" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Service_Line" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="train_past_midnight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_sequence" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="station_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="arrival_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="departure_time_planned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="stop_station" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="direction" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="distance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="from_date" expression="row1.from_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="to_date" expression="row1.to_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="schedule_type" expression="row1.schedule_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="update_type" expression="row1.update_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="schedule_source" expression="row1.schedule_source " type="id_String" nullable="true"/>
+        <mapperTableEntries name="launch_date" expression="row1.launch_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="launch_time" expression="row1.launch_time " type="id_String" nullable="true"/>
+        <mapperTableEntries name="train_no" expression="row1.train_no " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_sunday" expression="row1.trip_sunday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_monday" expression="row1.trip_monday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_tuesday" expression="row1.trip_tuesday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_wednesday" expression="row1.trip_wednesday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_thursday" expression="row1.trip_thursday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_friday" expression="row1.trip_friday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_saturday" expression="row1.trip_saturday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_trains" expression="row1.No_trains " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_sunday" expression="row1.platform_sunday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_monday" expression="row1.platform_monday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_tuesday" expression="row1.platform_tuesday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_wednesday" expression="row1.platform_wednesday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_thursday" expression="row1.platform_thursday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_friday" expression="row1.platform_friday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_saturday" expression="row1.platform_saturday " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Line" expression="row1.Service_Line " type="id_String" nullable="true"/>
+        <mapperTableEntries name="train_past_midnight" expression="row1.train_past_midnight " type="id_String" nullable="true"/>
+        <mapperTableEntries name="station_sequence" expression="row1.station_sequence " type="id_String" nullable="true"/>
+        <mapperTableEntries name="station_code" expression="row1.station_code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="arrival_time_planned" expression="row1.arrival_time_planned " type="id_String" nullable="true"/>
+        <mapperTableEntries name="departure_time_planned" expression="row1.departure_time_planned " type="id_String" nullable="true"/>
+        <mapperTableEntries name="stop_station" expression="row1.stop_station " type="id_String" nullable="true"/>
+        <mapperTableEntries name="direction" expression="row1.direction " type="id_String" nullable="true"/>
+        <mapperTableEntries name="distance" expression="row1.distance " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="from_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="to_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="schedule_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="update_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="schedule_source" type="id_String" nullable="true"/>
+        <mapperTableEntries name="launch_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="launch_time" type="id_String" nullable="true"/>
+        <mapperTableEntries name="train_no" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_sunday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_monday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_tuesday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_wednesday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_thursday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_friday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="trip_saturday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="No_trains" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_sunday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_monday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_tuesday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_wednesday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_thursday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_friday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="platform_saturday" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Line" type="id_String" nullable="true"/>
+        <mapperTableEntries name="train_past_midnight" type="id_String" nullable="true"/>
+        <mapperTableEntries name="station_sequence" type="id_String" nullable="true"/>
+        <mapperTableEntries name="station_code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="arrival_time_planned" type="id_String" nullable="true"/>
+        <mapperTableEntries name="departure_time_planned" type="id_String" nullable="true"/>
+        <mapperTableEntries name="stop_station" type="id_String" nullable="true"/>
+        <mapperTableEntries name="direction" type="id_String" nullable="true"/>
+        <mapperTableEntries name="distance" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out2" name="out2">
+      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="out1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="from_date" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="out1/from_date" objID="n1648314997"/>
+        <nodes name="to_date" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="out1/to_date" objID="n1585291507"/>
+        <nodes name="schedule_type" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="out1/schedule_type" objID="n425818390"/>
+        <nodes name="update_type" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="out1/update_type" objID="n686548222"/>
+        <nodes name="schedule_source" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="out1/schedule_source" objID="n1770509672"/>
+        <nodes name="launch_date" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="out1/launch_date" objID="n967733354"/>
+        <nodes name="launch_time" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="out1/launch_time" objID="n1471717793"/>
+        <nodes name="train_no" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="out1/train_no" objID="n628435989"/>
+        <nodes name="trip_sunday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="out1/trip_sunday" objID="n2121789974"/>
+        <nodes name="trip_monday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.9" xpath="out1/trip_monday" objID="n418589052"/>
+        <nodes name="trip_tuesday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.10" xpath="out1/trip_tuesday" objID="n2010602897"/>
+        <nodes name="trip_wednesday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.11" xpath="out1/trip_wednesday" objID="n1712367270"/>
+        <nodes name="trip_thursday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.12" xpath="out1/trip_thursday" objID="n449508897"/>
+        <nodes name="trip_friday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.13" xpath="out1/trip_friday" objID="n607601915"/>
+        <nodes name="trip_saturday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.14" xpath="out1/trip_saturday" objID="n1448042056"/>
+        <nodes name="No_trains" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.15" xpath="out1/No_trains" objID="n1824325973"/>
+        <nodes name="platform_sunday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.16" xpath="out1/platform_sunday" objID="n1633195974"/>
+        <nodes name="platform_monday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.17" xpath="out1/platform_monday" objID="n1226286735"/>
+        <nodes name="platform_tuesday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.18" xpath="out1/platform_tuesday" objID="n891004115"/>
+        <nodes name="platform_wednesday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.19" xpath="out1/platform_wednesday" objID="n28984013"/>
+        <nodes name="platform_thursday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.20" xpath="out1/platform_thursday" objID="n895699315"/>
+        <nodes name="platform_friday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.21" xpath="out1/platform_friday" objID="n1568459782"/>
+        <nodes name="platform_saturday" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.22" xpath="out1/platform_saturday" objID="n2034509345"/>
+        <nodes name="Service_Line" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.23" xpath="out1/Service_Line" objID="n1431795716"/>
+        <nodes name="train_past_midnight" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.24" xpath="out1/train_past_midnight" objID="n1102473427"/>
+        <nodes name="station_sequence" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.25" xpath="out1/station_sequence" objID="n2132117103"/>
+        <nodes name="station_code" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.26" xpath="out1/station_code" objID="n662411812"/>
+        <nodes name="arrival_time_planned" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.27" xpath="out1/arrival_time_planned" objID="n1042377214"/>
+        <nodes name="departure_time_planned" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.28" xpath="out1/departure_time_planned" objID="n1878386409"/>
+        <nodes name="stop_station" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.29" xpath="out1/stop_station" objID="n1173911059"/>
+        <nodes name="direction" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.30" xpath="out1/direction" objID="n1855263777"/>
+        <nodes name="distance" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.31" xpath="out1/distance" objID="n1291510476"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="out2" allInOne="true">
+        <nodes name="Status" expression="&quot;Accept&quot;" type="id_String" xpath="out2/Status" pattern="" objID="n1518240842"/>
+        <nodes name="Body" expression="" type="id_Document" xpath="out2/Body" pattern="" objID="n91099169">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="IPISXML" type="id_String" xpath="out2.Body:/IPISXML" main="true" objID="n784867881">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="File" expression="" type="id_String" xpath="out2.Body:/IPISXML/File" main="true" objID="n691992268">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Record" type="id_String" xpath="out2.Body:/IPISXML/File/Record" loop="true" main="true" objID="n2128186783">
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="from_date" expression="out1.from_date" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out2.Body:/IPISXML/File/Record/@from_date" nodeType="ATTRIBUT" objID="n1315418067"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="to_date" expression="out1.to_date" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="out2.Body:/IPISXML/File/Record/@to_date" nodeType="ATTRIBUT" objID="n111073175"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="schedule_type" expression="out1.schedule_type" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="out2.Body:/IPISXML/File/Record/@schedule_type" nodeType="ATTRIBUT" objID="n1066325021"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="update_type" expression="out1.update_type" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="out2.Body:/IPISXML/File/Record/@update_type" nodeType="ATTRIBUT" objID="n2078788683"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="schedule_source" expression="out1.schedule_source" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="out2.Body:/IPISXML/File/Record/@schedule_source" nodeType="ATTRIBUT" objID="n1003946991"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="launch_date" expression="out1.launch_date" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="out2.Body:/IPISXML/File/Record/@launch_date" nodeType="ATTRIBUT" objID="n602271237"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="launch_time" expression="out1.launch_time" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="out2.Body:/IPISXML/File/Record/@launch_time" nodeType="ATTRIBUT" objID="n1048009503"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="train_no" expression="out1.train_no" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="out2.Body:/IPISXML/File/Record/@train_no" nodeType="ATTRIBUT" objID="n1326004344"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_sunday" expression="out1.trip_sunday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="out2.Body:/IPISXML/File/Record/@trip_sunday" nodeType="ATTRIBUT" objID="n1041778530"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_monday" expression="out1.trip_monday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="out2.Body:/IPISXML/File/Record/@trip_monday" nodeType="ATTRIBUT" objID="n1494942360"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_tuesday" expression="out1.trip_tuesday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="out2.Body:/IPISXML/File/Record/@trip_tuesday" nodeType="ATTRIBUT" objID="n1236782144"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_wednesday" expression="out1.trip_wednesday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="out2.Body:/IPISXML/File/Record/@trip_wednesday" nodeType="ATTRIBUT" objID="n1681356898"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_thursday" expression="out1.trip_thursday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="out2.Body:/IPISXML/File/Record/@trip_thursday" nodeType="ATTRIBUT" objID="n496954512"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_friday" expression="out1.trip_friday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="out2.Body:/IPISXML/File/Record/@trip_friday" nodeType="ATTRIBUT" objID="n797927050"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="trip_saturday" expression="out1.trip_saturday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="out2.Body:/IPISXML/File/Record/@trip_saturday" nodeType="ATTRIBUT" objID="n463359477"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="No_trains" expression="out1.No_trains" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="out2.Body:/IPISXML/File/Record/@No_trains" nodeType="ATTRIBUT" objID="n1188141647"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_sunday" expression="out1.platform_sunday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="out2.Body:/IPISXML/File/Record/@platform_sunday" nodeType="ATTRIBUT" objID="n1228498354"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_monday" expression="out1.platform_monday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.17" xpath="out2.Body:/IPISXML/File/Record/@platform_monday" nodeType="ATTRIBUT" objID="n221898495"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_tuesday" expression="out1.platform_tuesday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.18" xpath="out2.Body:/IPISXML/File/Record/@platform_tuesday" nodeType="ATTRIBUT" objID="n37869558"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_wednesday" expression="out1.platform_wednesday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.19" xpath="out2.Body:/IPISXML/File/Record/@platform_wednesday" nodeType="ATTRIBUT" objID="n1484931826"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_thursday" expression="out1.platform_thursday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.20" xpath="out2.Body:/IPISXML/File/Record/@platform_thursday" nodeType="ATTRIBUT" objID="n1079153878"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_friday" expression="out1.platform_friday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.21" xpath="out2.Body:/IPISXML/File/Record/@platform_friday" nodeType="ATTRIBUT" objID="n642677419"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="platform_saturday" expression="out1.platform_saturday" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.22" xpath="out2.Body:/IPISXML/File/Record/@platform_saturday" nodeType="ATTRIBUT" objID="n163621383"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Service_Line" expression="out1.Service_Line" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.23" xpath="out2.Body:/IPISXML/File/Record/@Service_Line" nodeType="ATTRIBUT" objID="n128883829"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="train_past_midnight" expression="out1.train_past_midnight" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.24" xpath="out2.Body:/IPISXML/File/Record/@train_past_midnight" nodeType="ATTRIBUT" objID="n1947994036"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="station_sequence" expression="out1.station_sequence" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.25" xpath="out2.Body:/IPISXML/File/Record/@station_sequence" nodeType="ATTRIBUT" objID="n640876351"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="station_code" expression="out1.station_code" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.26" xpath="out2.Body:/IPISXML/File/Record/@station_code" nodeType="ATTRIBUT" objID="n1392799938"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="arrival_time_planned" expression="out1.arrival_time_planned" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.27" xpath="out2.Body:/IPISXML/File/Record/@arrival_time_planned" nodeType="ATTRIBUT" objID="n1477322968"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="departure_time_planned" expression="out1.departure_time_planned" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.28" xpath="out2.Body:/IPISXML/File/Record/@departure_time_planned" nodeType="ATTRIBUT" objID="n2123203571"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="stop_station" expression="out1.stop_station" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.29" xpath="out2.Body:/IPISXML/File/Record/@stop_station" nodeType="ATTRIBUT" objID="n1880644527"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="direction" expression="out1.direction" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.30" xpath="out2.Body:/IPISXML/File/Record/@direction" nodeType="ATTRIBUT" objID="n1849456925"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="distance" expression="out1.distance" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.31" xpath="out2.Body:/IPISXML/File/Record/@distance" nodeType="ATTRIBUT" objID="n1496396263"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1648314997" target="n1315418067"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1585291507" target="n111073175"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n425818390" target="n1066325021"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n686548222" target="n2078788683"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1770509672" target="n1003946991"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n967733354" target="n602271237"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1471717793" target="n1048009503"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n628435989" target="n1326004344"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2121789974" target="n1041778530"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n418589052" target="n1494942360"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2010602897" target="n1236782144"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1712367270" target="n1681356898"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n449508897" target="n496954512"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n607601915" target="n797927050"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1448042056" target="n463359477"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1824325973" target="n1188141647"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1633195974" target="n1228498354"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1226286735" target="n221898495"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n891004115" target="n37869558"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n28984013" target="n1484931826"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n895699315" target="n1079153878"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1568459782" target="n642677419"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2034509345" target="n163621383"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1431795716" target="n128883829"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1102473427" target="n1947994036"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2132117103" target="n640876351"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n662411812" target="n1392799938"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1042377214" target="n1477322968"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1878386409" target="n2123203571"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1173911059" target="n1880644527"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1855263777" target="n1849456925"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1291510476" target="n1496396263"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Body" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out2" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWriteXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteXMLField_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/IPISXML" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="1" id="4"/>
+      <elementValue elementRef="PATH" value="/IPISXML/File" id="5"/>
+      <elementValue elementRef="COLUMN" value="" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="8"/>
+      <elementValue elementRef="ORDER" value="2" id="9"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/IPISXML/File/Record" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="3" id="4"/>
+      <elementValue elementRef="PATH" value="from_date" id="5"/>
+      <elementValue elementRef="COLUMN" value="from_date" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="8"/>
+      <elementValue elementRef="ORDER" value="4" id="9"/>
+      <elementValue elementRef="PATH" value="to_date" id="10"/>
+      <elementValue elementRef="COLUMN" value="to_date" id="11"/>
+      <elementValue elementRef="VALUE" value="" id="12"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="13"/>
+      <elementValue elementRef="ORDER" value="5" id="14"/>
+      <elementValue elementRef="PATH" value="schedule_type" id="15"/>
+      <elementValue elementRef="COLUMN" value="schedule_type" id="16"/>
+      <elementValue elementRef="VALUE" value="" id="17"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="18"/>
+      <elementValue elementRef="ORDER" value="6" id="19"/>
+      <elementValue elementRef="PATH" value="update_type" id="20"/>
+      <elementValue elementRef="COLUMN" value="update_type" id="21"/>
+      <elementValue elementRef="VALUE" value="" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="23"/>
+      <elementValue elementRef="ORDER" value="7" id="24"/>
+      <elementValue elementRef="PATH" value="schedule_source" id="25"/>
+      <elementValue elementRef="COLUMN" value="schedule_source" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="28"/>
+      <elementValue elementRef="ORDER" value="8" id="29"/>
+      <elementValue elementRef="PATH" value="launch_date" id="30"/>
+      <elementValue elementRef="COLUMN" value="launch_date" id="31"/>
+      <elementValue elementRef="VALUE" value="" id="32"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="33"/>
+      <elementValue elementRef="ORDER" value="9" id="34"/>
+      <elementValue elementRef="PATH" value="launch_time" id="35"/>
+      <elementValue elementRef="COLUMN" value="launch_time" id="36"/>
+      <elementValue elementRef="VALUE" value="" id="37"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="38"/>
+      <elementValue elementRef="ORDER" value="10" id="39"/>
+      <elementValue elementRef="PATH" value="train_no" id="40"/>
+      <elementValue elementRef="COLUMN" value="train_no" id="41"/>
+      <elementValue elementRef="VALUE" value="" id="42"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="43"/>
+      <elementValue elementRef="ORDER" value="11" id="44"/>
+      <elementValue elementRef="PATH" value="trip_sunday" id="45"/>
+      <elementValue elementRef="COLUMN" value="trip_sunday" id="46"/>
+      <elementValue elementRef="VALUE" value="" id="47"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="48"/>
+      <elementValue elementRef="ORDER" value="12" id="49"/>
+      <elementValue elementRef="PATH" value="trip_monday" id="50"/>
+      <elementValue elementRef="COLUMN" value="trip_monday" id="51"/>
+      <elementValue elementRef="VALUE" value="" id="52"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="53"/>
+      <elementValue elementRef="ORDER" value="13" id="54"/>
+      <elementValue elementRef="PATH" value="trip_tuesday" id="55"/>
+      <elementValue elementRef="COLUMN" value="trip_tuesday" id="56"/>
+      <elementValue elementRef="VALUE" value="" id="57"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="58"/>
+      <elementValue elementRef="ORDER" value="14" id="59"/>
+      <elementValue elementRef="PATH" value="trip_wednesday" id="60"/>
+      <elementValue elementRef="COLUMN" value="trip_wednesday" id="61"/>
+      <elementValue elementRef="VALUE" value="" id="62"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="63"/>
+      <elementValue elementRef="ORDER" value="15" id="64"/>
+      <elementValue elementRef="PATH" value="trip_thursday" id="65"/>
+      <elementValue elementRef="COLUMN" value="trip_thursday" id="66"/>
+      <elementValue elementRef="VALUE" value="" id="67"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="68"/>
+      <elementValue elementRef="ORDER" value="16" id="69"/>
+      <elementValue elementRef="PATH" value="trip_friday" id="70"/>
+      <elementValue elementRef="COLUMN" value="trip_friday" id="71"/>
+      <elementValue elementRef="VALUE" value="" id="72"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="73"/>
+      <elementValue elementRef="ORDER" value="17" id="74"/>
+      <elementValue elementRef="PATH" value="trip_saturday" id="75"/>
+      <elementValue elementRef="COLUMN" value="trip_saturday" id="76"/>
+      <elementValue elementRef="VALUE" value="" id="77"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="78"/>
+      <elementValue elementRef="ORDER" value="18" id="79"/>
+      <elementValue elementRef="PATH" value="No_trains" id="80"/>
+      <elementValue elementRef="COLUMN" value="No_trains" id="81"/>
+      <elementValue elementRef="VALUE" value="" id="82"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="83"/>
+      <elementValue elementRef="ORDER" value="19" id="84"/>
+      <elementValue elementRef="PATH" value="platform_sunday" id="85"/>
+      <elementValue elementRef="COLUMN" value="platform_sunday" id="86"/>
+      <elementValue elementRef="VALUE" value="" id="87"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="88"/>
+      <elementValue elementRef="ORDER" value="20" id="89"/>
+      <elementValue elementRef="PATH" value="platform_monday" id="90"/>
+      <elementValue elementRef="COLUMN" value="platform_monday" id="91"/>
+      <elementValue elementRef="VALUE" value="" id="92"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="93"/>
+      <elementValue elementRef="ORDER" value="21" id="94"/>
+      <elementValue elementRef="PATH" value="platform_tuesday" id="95"/>
+      <elementValue elementRef="COLUMN" value="platform_tuesday" id="96"/>
+      <elementValue elementRef="VALUE" value="" id="97"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="98"/>
+      <elementValue elementRef="ORDER" value="22" id="99"/>
+      <elementValue elementRef="PATH" value="platform_wednesday" id="100"/>
+      <elementValue elementRef="COLUMN" value="platform_wednesday" id="101"/>
+      <elementValue elementRef="VALUE" value="" id="102"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="103"/>
+      <elementValue elementRef="ORDER" value="23" id="104"/>
+      <elementValue elementRef="PATH" value="platform_thursday" id="105"/>
+      <elementValue elementRef="COLUMN" value="platform_thursday" id="106"/>
+      <elementValue elementRef="VALUE" value="" id="107"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="108"/>
+      <elementValue elementRef="ORDER" value="24" id="109"/>
+      <elementValue elementRef="PATH" value="platform_friday" id="110"/>
+      <elementValue elementRef="COLUMN" value="platform_friday" id="111"/>
+      <elementValue elementRef="VALUE" value="" id="112"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="113"/>
+      <elementValue elementRef="ORDER" value="25" id="114"/>
+      <elementValue elementRef="PATH" value="platform_saturday" id="115"/>
+      <elementValue elementRef="COLUMN" value="platform_saturday" id="116"/>
+      <elementValue elementRef="VALUE" value="" id="117"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="118"/>
+      <elementValue elementRef="ORDER" value="26" id="119"/>
+      <elementValue elementRef="PATH" value="Service_Line" id="120"/>
+      <elementValue elementRef="COLUMN" value="Service_Line" id="121"/>
+      <elementValue elementRef="VALUE" value="" id="122"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="123"/>
+      <elementValue elementRef="ORDER" value="27" id="124"/>
+      <elementValue elementRef="PATH" value="train_past_midnight" id="125"/>
+      <elementValue elementRef="COLUMN" value="train_past_midnight" id="126"/>
+      <elementValue elementRef="VALUE" value="" id="127"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="128"/>
+      <elementValue elementRef="ORDER" value="28" id="129"/>
+      <elementValue elementRef="PATH" value="station_sequence" id="130"/>
+      <elementValue elementRef="COLUMN" value="station_sequence" id="131"/>
+      <elementValue elementRef="VALUE" value="" id="132"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="133"/>
+      <elementValue elementRef="ORDER" value="29" id="134"/>
+      <elementValue elementRef="PATH" value="station_code" id="135"/>
+      <elementValue elementRef="COLUMN" value="station_code" id="136"/>
+      <elementValue elementRef="VALUE" value="" id="137"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="138"/>
+      <elementValue elementRef="ORDER" value="30" id="139"/>
+      <elementValue elementRef="PATH" value="arrival_time_planned" id="140"/>
+      <elementValue elementRef="COLUMN" value="arrival_time_planned" id="141"/>
+      <elementValue elementRef="VALUE" value="" id="142"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="143"/>
+      <elementValue elementRef="ORDER" value="31" id="144"/>
+      <elementValue elementRef="PATH" value="departure_time_planned" id="145"/>
+      <elementValue elementRef="COLUMN" value="departure_time_planned" id="146"/>
+      <elementValue elementRef="VALUE" value="" id="147"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="148"/>
+      <elementValue elementRef="ORDER" value="32" id="149"/>
+      <elementValue elementRef="PATH" value="stop_station" id="150"/>
+      <elementValue elementRef="COLUMN" value="stop_station" id="151"/>
+      <elementValue elementRef="VALUE" value="" id="152"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="153"/>
+      <elementValue elementRef="ORDER" value="33" id="154"/>
+      <elementValue elementRef="PATH" value="direction" id="155"/>
+      <elementValue elementRef="COLUMN" value="direction" id="156"/>
+      <elementValue elementRef="VALUE" value="" id="157"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="158"/>
+      <elementValue elementRef="ORDER" value="34" id="159"/>
+      <elementValue elementRef="PATH" value="distance" id="160"/>
+      <elementValue elementRef="COLUMN" value="distance" id="161"/>
+      <elementValue elementRef="VALUE" value="" id="162"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="163"/>
+      <elementValue elementRef="ORDER" value="35" id="164"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="INPUT_COLUMN" value="" id="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
+    <elementParameter field="CHECK" name="IGNORE_SERVICE_ATTRIBUTES_FOR_EMPTY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXPAND_EMPTY_ELM" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
+    <elementParameter field="FILE" name="XSD_FILE" value="&quot;C:/Talend/8.0.1/studio/workspace-tac/file.xsd&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteXMLField_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteXMLField_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

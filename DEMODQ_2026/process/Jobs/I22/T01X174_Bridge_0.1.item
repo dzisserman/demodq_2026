@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="I22_SOURCE_FILE_FIELD" prompt="" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;337&quot;" internalId="_hWIRwPdwEfC6bvoLzTbuPQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/8.0.1/studio/workspace-tac/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:fSRfiNquofScqmBCzktWWkYw0F68XTkFxW2CVQK2" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace-tac/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/Yu2rrv0dm2l52+Jihms88NnxzzjIicdP/S7j0Xp" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_jrmf8Nx9EeSjqYUxcSCzLg" name="MITI"/>
+  </parameters>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="670" posY="453">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="S_T01X174_stg1_Key_to_PD"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:DRxhrcFavS8UprLzMbt67vFEqgcy7nf5KuYlJ/Ja"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value=""/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$S_T01X174_stg1_Key_to_PD.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Related_Inv_Party_Id" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Structure_Type_Code" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Relationship_Type_Co" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Demographic_Item_Id" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Involvement_Demog_Value_Id" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Involvement_Demog_Start_Date" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Involvement_Demog_End_Date" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="15"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_3">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1172" posY="439">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="ML_T01X174_PD_to_ML_0"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Create the data file and script file for MultiLoad T06X30 to the TeraData.&#xA;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:b9h6sAKr6rqvepRX3SQMeBvwGg33yOyp9Lz8GvqF"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;Output for table&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Related_Inv_Party_Id" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Structure_Type_Code" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Relationship_Type_Co" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Demographic_Source_Code" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Demographic_Item_Id" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Start_Date" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_End_Date" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Value_Id" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Nbr" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Amt" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Date" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Current_Ind" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Source_file" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Last_Change_Date_In_Source" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Date_Updated_To_DW" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Action_Code" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="false"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCOutput_1">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="848" posY="196">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="PD_T01X174_Out_PD_T01X174"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:suDQPGBZ+PAltkktHVIeWX8pR1ZNx3NFUtsKYvNu"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value=""/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$PD_T01X174_Out_PD_T01X174.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Related_Inv_Party_Id" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Structure_Type_Code" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Relationship_Type_Co" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Demographic_Item_Id" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Involvement_Demog_Value_Id" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_2">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="8" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="844" posY="313">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_2" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Inv_Party_Id" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Demographic_Item_Id" id="0"/>
+      <elementValue elementRef="FUNCTION" value="last" id="1"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Demographic_Item_Id" id="2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Inv_Party_Relationship_Type_Co" id="4"/>
+      <elementValue elementRef="FUNCTION" value="last" id="5"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Inv_Party_Relationship_Type_Co" id="6"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Inv_Party_Structure_Type_Code" id="8"/>
+      <elementValue elementRef="FUNCTION" value="last" id="9"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Inv_Party_Structure_Type_Code" id="10"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="11"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Involvement_Demog_Value_Id" id="12"/>
+      <elementValue elementRef="FUNCTION" value="last" id="13"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Involvement_Demog_Value_Id" id="14"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="15"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Related_Inv_Party_Id" id="16"/>
+      <elementValue elementRef="FUNCTION" value="last" id="17"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Related_Inv_Party_Id" id="18"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="19"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="PD_T01X174_Out_PD_T01X174_SurviveFields"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_2">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="8" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="673">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCOutput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Test_DSLink597"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:0epEKnnoDuOtsCd5CEkFDL2n2bPpRr/wfCAPsfmD"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;Output for file&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Action_Code" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Id" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Related_Inv_Party_Id" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Structure_Type_Code" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Relationship_Type_Co" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Demographic_Source_Code" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Demographic_Item_Id" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Start_Date" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_End_Date" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Value_Id" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Nbr" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Amt" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Date" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Current_Ind" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Source_file" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Last_Change_Date_In_Source" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Date_Updated_To_DW" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="false"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCOutput_3">
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="431">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tTxi8PeFEfC6bvoLzTbuPQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Trns_T01X174_PD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Check for changes :&#xA;a. set the record as new 'I' if the record is not exsist in the PDfile&#xA;b. set the record as Slowly Changing Dimension 'S' if it had changed"/>
+    <metadata connector="FLOW" name="row4">
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="row10">
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Source_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Involvement_Demog_Nbr" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="15" name="Involvement_Demog_Amt" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="3" name="Current_Ind" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="5" name="Source_file" nullable="false" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Last_Change_Date_In_Source" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Date_Updated_To_DW" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="1" name="Action_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="svActionCode" expression="IF MITI.IIF(Out_PD_T01X174.NOTFOUND, &quot;I&quot;, IF MITI.IIF((! MITI.equals(Key_to_PD.Involvement_Demog_Value_Id, Out_PD_T01X174.Involvement_Demog_Value_Id) || (MITI.equals(MITI.len(StringHandling.TRIM(Key_to_PD.Involvement_Demog_Value_Id )), 0) &amp;&amp; MITI.len(StringHandling.TRIM(Out_PD_T01X174.Involvement_Demog_Value_Id )) > 0) || (MITI.len(StringHandling.TRIM(Key_to_PD.Involvement_Demog_Value_Id )) > 0 &amp;&amp; MITI.equals(MITI.len(StringHandling.TRIM(Out_PD_T01X174.Involvement_Demog_Value_Id )), 0))), &quot;S&quot;, &quot;R&quot;))" type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="row4" reject="true">
+        <mapperTableEntries name="Action_Code" expression="svActionCode" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Id" expression="Key_to_PD.Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="Key_to_PD.Related_Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="Key_to_PD.Inv_Party_Structure_Type_Code" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="Key_to_PD.Inv_Party_Relationship_Type_Co" type="id_String"/>
+        <mapperTableEntries name="Demographic_Source_Code" expression="context.I22_SOURCE_FILE_FIELD" type="id_String"/>
+        <mapperTableEntries name="Demographic_Item_Id" expression="Key_to_PD.Demographic_Item_Id" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Start_Date" expression="MITI.DateConvertToTD(StringHandling.TRIM(I22_LAST_CHANGE_DATE_IN_SOURCE ))" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_End_Date" expression="MITI.DateConvertToTD(StringHandling.TRIM(Key_to_PD.Involvement_Demog_End_Date ))" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_Value_Id" expression="Key_to_PD.Involvement_Demog_Value_Id" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Nbr" expression="@null" type="id_Short"/>
+        <mapperTableEntries name="Involvement_Demog_Amt" expression="@null" type="id_Double"/>
+        <mapperTableEntries name="Involvement_Demog_Date" expression="@null" type="id_Date"/>
+        <mapperTableEntries name="Current_Ind" expression="1" type="id_Short"/>
+        <mapperTableEntries name="Source_file" expression="context.I22_SOURCE_FILE_FIELD" type="id_Short"/>
+        <mapperTableEntries name="Last_Change_Date_In_Source" expression="MITI.DateConvertToTD(StringHandling.TRIM(I22_LAST_CHANGE_DATE_IN_SOURCE ))" type="id_Date"/>
+        <mapperTableEntries name="Date_Updated_To_DW" expression="MITI.DateConvertToTD(StringHandling.TRIM(GLB_DATE_UPDATE_TO_DW ))" type="id_Date"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="row10" expressionFilter="! MITI.equals(svActionCode, &quot;R&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="Inv_Party_Id" expression="Key_to_PD.Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="Key_to_PD.Related_Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="Key_to_PD.Inv_Party_Structure_Type_Code" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="Key_to_PD.Inv_Party_Relationship_Type_Co" type="id_String"/>
+        <mapperTableEntries name="Demographic_Source_Code" expression="context.I22_SOURCE_FILE_FIELD" type="id_String"/>
+        <mapperTableEntries name="Demographic_Item_Id" expression="Key_to_PD.Demographic_Item_Id" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Start_Date" expression="MITI.DateConvertToTD(StringHandling.TRIM(I22_LAST_CHANGE_DATE_IN_SOURCE ))" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_End_Date" expression="MITI.DateConvertToTD(StringHandling.TRIM(Key_to_PD.Involvement_Demog_End_Date ))" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_Value_Id" expression="Key_to_PD.Involvement_Demog_Value_Id" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Nbr" expression="@null" type="id_Short"/>
+        <mapperTableEntries name="Involvement_Demog_Amt" expression="@null" type="id_Double"/>
+        <mapperTableEntries name="Involvement_Demog_Date" expression="@null" type="id_Date"/>
+        <mapperTableEntries name="Current_Ind" expression="1" type="id_Short"/>
+        <mapperTableEntries name="Source_file" expression="context.I22_SOURCE_FILE_FIELD" type="id_Short"/>
+        <mapperTableEntries name="Last_Change_Date_In_Source" expression="MITI.DateConvertToTD(StringHandling.TRIM(I22_LAST_CHANGE_DATE_IN_SOURCE ))" type="id_Date"/>
+        <mapperTableEntries name="Date_Updated_To_DW" expression="MITI.DateConvertToTD(StringHandling.TRIM(GLB_DATE_UPDATE_TO_DW ))" type="id_Date"/>
+        <mapperTableEntries name="Action_Code" expression="svActionCode" type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Key_to_PD" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Inv_Party_Id" expression="" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="" type="id_String"/>
+        <mapperTableEntries name="Demographic_Item_Id" expression="" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Value_Id" expression="" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Start_Date" expression="" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_End_Date" expression="" type="id_Date"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Out_PD_T01X174" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Inv_Party_Id" expression="Key_to_PD.Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="Key_to_PD.Related_Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="Key_to_PD.Inv_Party_Structure_Type_Code" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="Key_to_PD.Inv_Party_Relationship_Type_Co" type="id_String"/>
+        <mapperTableEntries name="Demographic_Item_Id" expression="Key_to_PD.Demographic_Item_Id" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Value_Id" expression="" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="48" posY="432">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Src_T01X174_In_T0174"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="T0128 'meforaq' file"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:+z2SdtiWHoFX9hwsx7C9SRIMWHa91RVlsBxjxVjY"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value=""/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$Src_T01X174_In_T0174.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Id_Ck" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Related_Inv_Party_Id" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Relat_Start_Date" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Structure_Type_Code" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Relationship_Type_Co" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Branch_Changing_Reason_Code" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Relat_End_Date" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MGNETICRDRFSL" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="15"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DEBITCRDRFSL" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="17"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="REFUSAL_REASON" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="19"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_4">
+      <column key="false" length="40" name="Inv_Party_Id_Ck" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="40" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="10" name="Inv_Party_Relat_Start_Date" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="7" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Branch_Changing_Reason_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relat_End_Date" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="2" name="MGNETICRDRFSL" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="2" name="DEBITCRDRFSL" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="3" name="REFUSAL_REASON" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="240" posY="246">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="IP_CkGk_T01X174_CkGk_T01X174"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="PartyCkGk file"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:LaRWOFOmHGjL04zD+HYAw64w8isp4F2FOh0ZRu2l"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value=""/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$IP_CkGk_T01X174_CkGk_T01X174.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Id_Ck" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="Inv_Party_Id" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_1">
+      <column comment="&lt;none>" key="true" length="50" name="Inv_Party_Id_Ck" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="4" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="339">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Inv_Party_Id_Ck" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Inv_Party_Id_Ck" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="FUNCTION" value="last" id="1"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Inv_Party_Id" id="2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IP_CkGk_T01X174_CkGk_T01X174_SurviveFields"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="&lt;none>" key="true" length="50" name="Inv_Party_Id_Ck" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="4" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="630" posY="428">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="S_T01X174_stg1_L_MGNETICRDRFSL"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:rJGVOVRc6sa51d7HmOXGfmFsy+2nb1bp1ICZzoD4"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;Output for file&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Id" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Related_Inv_Party_Id" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Structure_Type_Code" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Inv_Party_Relationship_Type_Co" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Demographic_Item_Id" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Value_Id" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_Start_Date" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="Involvement_Demog_End_Date" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="false"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCOutput_2">
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="433" posY="427">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tTxi8PeFEfC6bvoLzTbuPQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Trns_Filter"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="row7">
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Demographic_Item_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Value_Id" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_Start_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Involvement_Demog_End_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="row7" expressionFilter="MITI.len(StringHandling.TRIM(L_out_T01X174_Temp.MGNETICRDRFSL )) > 0" activateExpressionFilter="true">
+        <mapperTableEntries name="Inv_Party_Id" expression="L_out_T01X174_Temp.Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="L_out_T01X174_Temp.Related_Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="L_out_T01X174_Temp.Inv_Party_Structure_Type_Code" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="L_out_T01X174_Temp.Inv_Party_Relationship_Type_Co" type="id_String"/>
+        <mapperTableEntries name="Demographic_Item_Id" expression="&quot;T301V160&quot;" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Value_Id" expression="L_out_T01X174_Temp.MGNETICRDRFSL" type="id_String"/>
+        <mapperTableEntries name="Involvement_Demog_Start_Date" expression="L_out_T01X174_Temp.Inv_Party_Relat_Start_Date" type="id_Date"/>
+        <mapperTableEntries name="Involvement_Demog_End_Date" expression="L_out_T01X174_Temp.Inv_Party_Relat_End_Date" type="id_Date"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="L_out_T01X174_Temp" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Inv_Party_Id" expression="" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_Start_Date" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_End_Date" expression="" type="id_String"/>
+        <mapperTableEntries name="MGNETICRDRFSL" expression="" type="id_String"/>
+        <mapperTableEntries name="DEBITCRDRFSL" expression="" type="id_String"/>
+        <mapperTableEntries name="REFUSAL_REASON" expression="" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="432">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tTxi8PeFEfC6bvoLzTbuPQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Trns_T01X174_Key"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="switch partyCkGk key"/>
+    <metadata connector="FLOW" name="L_out_T01X174_Temp">
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Related_Inv_Party_Id" nullable="false" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Structure_Type_Code" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relationship_Type_Co" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="10" name="Inv_Party_Relat_Start_Date" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="Inv_Party_Relat_End_Date" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="2" name="MGNETICRDRFSL" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="2" name="DEBITCRDRFSL" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="3" name="REFUSAL_REASON" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="L_out_T01X174_Temp">
+        <mapperTableEntries name="Inv_Party_Id" expression="CkGk_T01X174.Inv_Party_Id" type="id_Integer"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="111" type="id_Integer"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="In_T0174.Inv_Party_Structure_Type_Code" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="StringHandling.TRIM(In_T0174.Inv_Party_Relationship_Type_Co )" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_Start_Date" expression="In_T0174.Inv_Party_Relat_Start_Date" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_End_Date" expression="In_T0174.Inv_Party_Relat_End_Date" type="id_String"/>
+        <mapperTableEntries name="MGNETICRDRFSL" expression="In_T0174.MGNETICRDRFSL" type="id_String"/>
+        <mapperTableEntries name="DEBITCRDRFSL" expression="In_T0174.DEBITCRDRFSL" type="id_String"/>
+        <mapperTableEntries name="REFUSAL_REASON" expression="In_T0174.REFUSAL_REASON" type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="In_T0174" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Inv_Party_Id_Ck" expression="" type="id_String"/>
+        <mapperTableEntries name="Related_Inv_Party_Id" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_Start_Date" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Structure_Type_Code" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relationship_Type_Co" expression="" type="id_String"/>
+        <mapperTableEntries name="Branch_Changing_Reason_Code" expression="" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Relat_End_Date" expression="" type="id_String"/>
+        <mapperTableEntries name="MGNETICRDRFSL" expression="" type="id_String"/>
+        <mapperTableEntries name="DEBITCRDRFSL" expression="" type="id_String"/>
+        <mapperTableEntries name="REFUSAL_REASON" expression="" type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="CkGk_T01X174" minimized="true" expressionFilter="StringHandling.TRIM(In_T0174.Inv_Party_Id_Ck ) == CkGk_T01X174.Inv_Party_Id_Ck" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Inv_Party_Id_Ck" expression="TRIM(In_T0174.Inv_Party_Id_Ck)" type="id_String"/>
+        <mapperTableEntries name="Inv_Party_Id" expression="" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <connection connectorName="FLOW" label="Key_to_PD" lineStyle="0" metaname="tJDBCInput_3" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_3" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Key_to_PD" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJDBCInput_2" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_2" target="tAggregateRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_PD_T01X174" lineStyle="8" metaname="tAggregateRow_2" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Out_PD_T01X174" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="row4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="tJDBCOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="row10" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="tJDBCOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="In_T0174" lineStyle="0" metaname="tJDBCInput_4" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_4" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="In_T0174" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJDBCInput_1" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="CkGk_T01X174" lineStyle="8" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CkGk_T01X174" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="row7" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJDBCOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="L_out_T01X174_Temp" lineStyle="0" metaname="L_out_T01X174_Temp" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="L_out_T01X174_Temp" show="false"/>
+  </connection>
+  <note opaque="true" posX="608" posY="32" sizeHeight="193" sizeWidth="545" text="IP_CkGk_T01X174_CkGk_T01X174&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;Trns_Filter&#xD;&#xA;&#x9;Original stage had Abort constraint which is not exported&#xD;&#xA;PD_T01X174_Out_PD_T01X174&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;Test_DSLink597&#xD;&#xA;&#x9;ODBC writer is not supported by the Talend, used JDBC instead&#xD;&#xA;S_T01X174_stg1_Key_to_PD&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;S_T01X174_stg1_L_MGNETICRDRFSL&#xD;&#xA;&#x9;ODBC writer is not supported by the Talend, used JDBC instead&#xD;&#xA;Trns_T01X174_PD&#xD;&#xA;&#x9;Original stage had Abort constraint which is not exported&#xD;&#xA;&#x9;Original stage had Abort constraint which is not exported&#xD;&#xA;&#x9;Check Trns_T01X174_PD component join expressions.&#xD;&#xA;Trns_T01X174_Key&#xD;&#xA;&#x9;Original stage had Abort constraint which is not exported&#xD;&#xA;&#x9;Check Trns_T01X174_Key component join expressions.&#xD;&#xA;Src_T01X174_In_T0174&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;ML_T01X174_PD_to_ML_0&#xD;&#xA;&#x9;ODBC writer is not supported by the Talend, used JDBC instead&#xD;&#xA;">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_3" show="false"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_4" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

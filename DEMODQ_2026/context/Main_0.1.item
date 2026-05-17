@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_M7EoMJhOEem44-mMkW8cSQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_M7EoMZhOEem44-mMkW8cSQ" comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Tools/Misc/"/>
+  <contextParameter xmi:id="_M7EoMphOEem44-mMkW8cSQ" comment="" name="Threshold" prompt="Threshold?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="90"/>
+  <contextParameter xmi:id="_M7EoM5hOEem44-mMkW8cSQ" comment="" name="CatID" prompt="CatID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+  <contextParameter xmi:id="_M7EoNJhOEem44-mMkW8cSQ" comment="" name="CatName" prompt="CatName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+  <contextParameter xmi:id="_M7EoNZhOEem44-mMkW8cSQ" comment="" name="Locale" prompt="Locale?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+  <contextParameter xmi:id="_M7EoNphOEem44-mMkW8cSQ" comment="" name="SiteID" prompt="SiteID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_M7EoN5hOEem44-mMkW8cSQ" comment="" name="bulkSize" prompt="bulkSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="100000"/>
+  <contextParameter xmi:id="_M7EoOJhOEem44-mMkW8cSQ" comment="" name="cnt" prompt="cnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+  <contextParameter xmi:id="_M7EoOZhOEem44-mMkW8cSQ" comment="" name="Done" prompt="Done?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_M7EoOphOEem44-mMkW8cSQ" comment="" name="iteration" prompt="iteration?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_M7EoO5hOEem44-mMkW8cSQ" comment="" name="prodCount" prompt="prodCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_M7EoPJhOEem44-mMkW8cSQ" comment="" name="query" prompt="query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+  <contextParameter xmi:id="_M7EoPZhOEem44-mMkW8cSQ" comment="" name="multi" prompt="multi?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_M7EoPphOEem44-mMkW8cSQ" comment="" name="fileInput" prompt="fileInput?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+  <contextParameter xmi:id="_M7EoP5hOEem44-mMkW8cSQ" comment="" name="modnum" prompt="modnum?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+  <contextParameter xmi:id="_M7EoQJhOEem44-mMkW8cSQ" comment="" name="fileOutput" prompt="fileOutput?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+  <contextParameter xmi:id="_M7EoQZhOEem44-mMkW8cSQ" comment="" name="LocaleID" prompt="LocaleID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_M7EoQphOEem44-mMkW8cSQ" comment="" name="DomainID" prompt="DomainID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_M7EoQ5hOEem44-mMkW8cSQ" comment="" name="TDUser" prompt="TDUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_M7EoRJhOEem44-mMkW8cSQ" comment="" name="TDPass" prompt="TDPass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cm9BibkkYkqM7/ZXbkz0GuPRqtx2YMzjvqicP7M/72g1y9JGFDWiXqotCwOj"/>
+  <contextParameter xmi:id="_M7EoRZhOEem44-mMkW8cSQ" comment="" name="proxyPass" prompt="proxyPass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_M7EoRphOEem44-mMkW8cSQ" comment="" name="queryPrefix" prompt="queryPrefix?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_M7EoR5hOEem44-mMkW8cSQ" comment="" name="startTimeStamp" prompt="startTimeStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_M7EoSJhOEem44-mMkW8cSQ" comment="" name="mpsOnly" prompt="mpsOnly?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_M7EoSZhOEem44-mMkW8cSQ" comment="" name="CategID" prompt="CategID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_4PpCEGPlEeuMCNzD1Nk60w" comment="" name="PropName" prompt="PropName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_-WV6kGPlEeuMCNzD1Nk60w" comment="" name="VDM" prompt="VDM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;default&quot;"/>
+  <contextParameter xmi:id="_nilbYOrbEeuhcpxmFNfHwg" comment="" name="Fsize" prompt="Fsize?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_qvJeAOrbEeuhcpxmFNfHwg" comment="" name="runEnv" prompt="runEnv?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

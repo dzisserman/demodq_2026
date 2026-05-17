@@ -1,0 +1,16 @@
+package routines;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class RmiRegistryChecker {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.getRegistry("172.18.167.42", 1101); // Or the specific host/port
+            registry.list(); // Attempt to list registered objects
+            System.out.println("RMI Registry is running and accessible.");
+        } catch (Exception e) {
+            System.err.println("RMI Registry is not running or accessible: " + e.getMessage());
+        }
+    }
+}

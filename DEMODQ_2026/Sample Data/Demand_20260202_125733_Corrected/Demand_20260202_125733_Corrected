@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workbook>
+	<DocumentProperties>
+		<CreateDate>2026/02/02</CreateDate>
+		<CreateTime>12:57:33</CreateTime>
+		<Revision>1</Revision>
+		<Title>Automatic </Title>
+		<Type>Day</Type>
+		<LastAuthor>Auto Scheduler</LastAuthor>
+		<Plant>Demand</Plant>
+		<Category>Automatic</Category>
+		<Author>Auto Scheduler</Author>
+		<Company>DEMAND</Company>
+	</DocumentProperties>
+    <DemandForecast>
+		<DateTime value="00:30" date="02.02.2026">6769.00</DateTime>
+		<DateTime value="01:00" date="02.02.2026">6534.00</DateTime>
+		<DateTime value="01:30" date="02.02.2026">2205.00</DateTime>
+		<DateTime value="02:00" date="02.02.2026">3133.00</DateTime>
+		<DateTime value="02:30" date="02.02.2026">6152.00</DateTime>
+		<DateTime value="03:00" date="02.02.2026">6176.00</DateTime>
+		<DateTime value="03:30" date="02.02.2026">6191.00</DateTime>
+		<DateTime value="04:00" date="02.02.2026">6317.00</DateTime>
+		<DateTime value="04:30" date="02.02.2026">6514.00</DateTime>
+		<DateTime value="05:00" date="02.02.2026">9373.00</DateTime>
+		<DateTime value="05:30" date="02.02.2026">7123.00</DateTime>
+		<DateTime value="06:00" date="02.02.2026">7571.00</DateTime>
+		<DateTime value="06:30" date="02.02.2026">7859.00</DateTime>
+		<DateTime value="07:00" date="02.02.2026">8015.00</DateTime>
+		<DateTime value="07:30" date="02.02.2026">7939.00</DateTime>
+		<DateTime value="08:00" date="02.02.2026">7992.00</DateTime>
+		<DateTime value="08:30" date="02.02.2026">8010.00</DateTime>
+		<DateTime value="09:00" date="02.02.2026">7999.00</DateTime>
+		<DateTime value="09:30" date="02.02.2026">8144.00</DateTime>
+		<DateTime value="10:00" date="02.02.2026">6615.00</DateTime>
+		<DateTime value="10:30" date="02.02.2026">8175.00</DateTime>
+		<DateTime value="11:00" date="02.02.2026">6639.00</DateTime>
+		<DateTime value="11:30" date="02.02.2026">6695.00</DateTime>
+		<DateTime value="12:00" date="02.02.2026">8372.00</DateTime>
+		<DateTime value="12:30" date="02.02.2026">1231.00</DateTime>
+		<DateTime value="13:00" date="02.02.2026">8516.00</DateTime>
+		<DateTime value="13:30" date="02.02.2026">8543.00</DateTime>
+		<DateTime value="14:00" date="02.02.2026">8616.00</DateTime>
+		<DateTime value="14:30" date="02.02.2026">8722.00</DateTime>
+		<DateTime value="15:00" date="02.02.2026">8712.00</DateTime>
+		<DateTime value="15:30" date="02.02.2026">8885.00</DateTime>
+		<DateTime value="16:00" date="02.02.2026">9128.00</DateTime>
+		<DateTime value="16:30" date="02.02.2026">9518.00</DateTime>
+		<DateTime value="17:00" date="02.02.2026">9874.00</DateTime>
+		<DateTime value="17:30" date="02.02.2026">26563.00</DateTime>
+		<DateTime value="18:00" date="02.02.2026">44312.00</DateTime>
+		<DateTime value="18:30" date="02.02.2026">44325.00</DateTime>
+		<DateTime value="19:00" date="02.02.2026">10246.00</DateTime>
+		<DateTime value="19:30" date="02.02.2026">26521.00</DateTime>
+		<DateTime value="20:00" date="02.02.2026">9961.00</DateTime>
+		<DateTime value="20:30" date="02.02.2026">9763.00</DateTime>
+		<DateTime value="21:00" date="02.02.2026">9532.00</DateTime>
+		<DateTime value="12:00" date="03.02.2026">10070.00</DateTime>
+		<DateTime value="12:30" date="03.02.2026">26505.00</DateTime>
+		<DateTime value="13:00" date="03.02.2026">26520.00</DateTime>
+		<DateTime value="13:30" date="03.02.2026">26526.00</DateTime>
+		<DateTime value="14:00" date="03.02.2026">26556.00</DateTime>
+		<DateTime value="14:30" date="03.02.2026">44338.00</DateTime>
+		<DateTime value="15:00" date="03.02.2026">10425.00</DateTime>
+		<DateTime value="15:30" date="03.02.2026">25685.00</DateTime>
+		<DateTime value="16:00" date="03.02.2026">10599.00</DateTime>
+		<DateTime value="16:30" date="03.02.2026">11586.00</DateTime>
+		<DateTime value="17:00" date="03.02.2026">11541.00</DateTime>
+		<DateTime value="03:30" date="04.02.2026">6795.00</DateTime>
+		<DateTime value="04:00" date="04.02.2026">6976.00</DateTime>
+		<DateTime value="04:30" date="04.02.2026">7216.00</DateTime>
+		<DateTime value="05:00" date="04.02.2026">7602.00</DateTime>
+		<DateTime value="05:30" date="04.02.2026">8061.00</DateTime>
+		<DateTime value="06:00" date="04.02.2026">8713.00</DateTime>
+		<DateTime value="06:30" date="04.02.2026">9196.00</DateTime>
+		<DateTime value="07:00" date="04.02.2026">9497.00</DateTime>
+		<DateTime value="07:30" date="04.02.2026">9408.00</DateTime>
+		<DateTime value="08:00" date="04.02.2026">9476.00</DateTime>
+		<DateTime value="08:30" date="04.02.2026">9495.00</DateTime>
+		<DateTime value="09:00" date="04.02.2026">9485.00</DateTime>
+		<DateTime value="09:30" date="04.02.2026">9429.00</DateTime>
+		<DateTime value="10:00" date="04.02.2026">9375.00</DateTime>
+		<DateTime value="10:30" date="04.02.2026">9388.00</DateTime>
+		<DateTime value="11:00" date="04.02.2026">9350.00</DateTime>
+		<DateTime value="11:30" date="04.02.2026">9340.00</DateTime>
+		<DateTime value="12:00" date="04.02.2026">9591.00</DateTime>
+		<DateTime value="12:30" date="04.02.2026">9435.00</DateTime>
+		<DateTime value="13:00" date="04.02.2026">9431.00</DateTime>
+		<DateTime value="13:30" date="04.02.2026">9576.00</DateTime>
+		<DateTime value="14:00" date="04.02.2026">9932.00</DateTime>
+		<DateTime value="14:30" date="04.02.2026">9756.00</DateTime>
+		<DateTime value="15:00" date="04.02.2026">9938.00</DateTime>
+		<DateTime value="15:30" date="04.02.2026">10076.00</DateTime>
+		<DateTime value="16:00" date="04.02.2026">10423.00</DateTime>
+		<DateTime value="16:30" date="04.02.2026">10831.00</DateTime>
+		<DateTime value="17:00" date="04.02.2026">11306.00</DateTime>
+		<DateTime value="17:30" date="04.02.2026">11605.00</DateTime>
+		<DateTime value="18:00" date="04.02.2026">11816.00</DateTime>
+		<DateTime value="18:30" date="04.02.2026">11860.00</DateTime>
+		<DateTime value="19:00" date="04.02.2026">11838.00</DateTime>
+		<DateTime value="19:30" date="04.02.2026">11730.00</DateTime>
+		<DateTime value="20:00" date="04.02.2026">11545.00</DateTime>
+		<DateTime value="20:30" date="04.02.2026">11280.00</DateTime>
+		<DateTime value="21:00" date="04.02.2026">10949.00</DateTime>
+		<DateTime value="21:30" date="04.02.2026">25691.00</DateTime>
+		<DateTime value="22:00" date="04.02.2026">26565.00</DateTime>
+		<DateTime value="22:30" date="04.02.2026">9632.00</DateTime>
+		<DateTime value="07:30" date="05.02.2026">9354.00</DateTime>
+		<DateTime value="08:00" date="05.02.2026">9415.00</DateTime>
+		<DateTime value="08:30" date="05.02.2026">9438.00</DateTime>
+		<DateTime value="09:00" date="05.02.2026">9379.00</DateTime>
+		<DateTime value="09:30" date="05.02.2026">9312.00</DateTime>
+		<DateTime value="10:00" date="05.02.2026">9205.00</DateTime>
+		<DateTime value="10:30" date="05.02.2026">9193.00</DateTime>
+		<DateTime value="11:00" date="05.02.2026">9074.00</DateTime>
+		<DateTime value="11:30" date="05.02.2026">8961.00</DateTime>
+		<DateTime value="12:00" date="05.02.2026">8991.00</DateTime>
+		<DateTime value="12:30" date="05.02.2026">9556.00</DateTime>
+		<DateTime value="13:00" date="05.02.2026">9121.00</DateTime>
+		<DateTime value="13:30" date="05.02.2026">9233.00</DateTime>
+		<DateTime value="21:00" date="05.02.2026">1664.00</DateTime>
+		<DateTime value="21:30" date="05.02.2026">1034.00</DateTime>
+		<DateTime value="22:00" date="05.02.2026">2658.00</DateTime>
+		<DateTime value="22:30" date="05.02.2026">9526.00</DateTime>
+		<DateTime value="23:00" date="05.02.2026">9039.00</DateTime>
+		<DateTime value="23:30" date="05.02.2026">1218.00</DateTime>
+	</DemandForecast>
+</Workbook>

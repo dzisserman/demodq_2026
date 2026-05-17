@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_XB_b0T_OEfCsL-jPtucabQ" name="FL_COSTS" id="_XB_b0D_OEfCsL-jPtucabQ" dataPackage="_XB_b0j_OEfCsL-jPtucabQ" Server="Localhost 127.0.0.1" FilePath="C:/Talend/Fox/FL_COSTS.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XB_b0j_OEfCsL-jPtucabQ" name="default" dataManager="_XB_b0T_OEfCsL-jPtucabQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XB_b0z_OEfCsL-jPtucabQ" id="_DgSWwD_OEfCsL-jPtucabQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b1D_OEfCsL-jPtucabQ" label="PCHVRA" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b1T_OEfCsL-jPtucabQ" label="PCPRIT_Qlik" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b1z_OEfCsL-jPtucabQ" label="PCKOD" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b2j_OEfCsL-jPtucabQ" label="PCFRTR" length="8" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b2T_OEfCsL-jPtucabQ" label="PCMTBA" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b2D_OEfCsL-jPtucabQ" label="PCPRIC" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XB_b1j_OEfCsL-jPtucabQ" label="PCPRIT" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

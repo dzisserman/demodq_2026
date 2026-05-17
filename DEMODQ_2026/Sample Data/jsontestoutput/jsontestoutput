@@ -1,0 +1,22 @@
+{
+	"root": [
+		{
+			"name": "abc",
+			"age": 10,
+			"carsarray": [
+				{
+					"car_make": "BMW",
+					"car_model": "X3"
+				},
+				{
+					"car_make": "BMW",
+					"car_model": "X5"
+				},
+				{
+					"car_make": "Tesla",
+					"car_model": "Y"
+				}
+			]
+		}
+	]
+}

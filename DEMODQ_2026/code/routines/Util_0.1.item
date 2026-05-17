@@ -1,0 +1,10 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Util {
+
+    public static HashSet<String> tempset = new HashSet<String>();
+    public static ArrayList<String> templist = new ArrayList<String>();
+}

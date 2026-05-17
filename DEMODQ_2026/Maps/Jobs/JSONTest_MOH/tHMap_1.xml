@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11'
+	inStruct='Examples:Structures/JSON/JSONExample.xml'
+	outStruct='Examples:Structures/CSV/FlatComponents.xml' inputRep='177'
+	outputRep='172' nextMap='' inputStructUserName='JSONExample'
+	outputStructUserName='FlatComponents' V1='4' name='tHMap_1'
+	incarnation='167'>
+	<inputMapElem t='200' id='2' V200='8' input='true'
+		structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1'
+		minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+		visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+		<mapNode t='190' idref='1' />
+		<child t='200' id='3' V200='8' input='true'
+			structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+			minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+			visible='true' inheritsFrom='' V281='13' V1='4' name='interface'>
+			<mapNode t='190' idref='1' />
+			<child t='200' id='4' V200='8' input='true'
+				structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+				minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+				visible='true' inheritsFrom='' V281='13' V1='4' name='function'>
+				<mapNode t='190' idref='1' />
+				<child t='200' id='5' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='name'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='6' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='action'>
+					<mapNode t='190' idref='1' />
+				</child>
+			</child>
+			<child t='200' id='7' V200='8' input='true'
+				structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+				minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+				visible='true' inheritsFrom='' V281='13' V1='4' name='value'>
+				<mapNode t='190' idref='1' />
+				<child t='200' id='8' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='property'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='9' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='-1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='type'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='10' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='-1'
+					minSize='-1' maxSize='-1' dataType='12' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='typeint'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='11' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='-1'
+					minSize='-1' maxSize='-1' dataType='21' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='typedouble'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='12' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='-1'
+					minSize='-1' maxSize='-1' dataType='1' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='typeboolean'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='13' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='12' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='policynumber'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='14' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='21' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4'
+					name='policynumberdouble'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='15' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='-1'
+					minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='objectarray'>
+					<mapNode t='190' idref='1' />
+					<child t='200' id='16' V200='8' input='true'
+						structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+						minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+						visible='true' inheritsFrom='' V281='13' V1='4' name='member1'>
+						<mapNode t='190' idref='1' />
+					</child>
+					<child t='200' id='17' V200='8' input='true'
+						structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+						minSize='-1' maxSize='-1' dataType='12' repHandlerStruct=''
+						visible='true' inheritsFrom='' V281='13' V1='4' name='memberint2'>
+						<mapNode t='190' idref='1' />
+					</child>
+				</child>
+				<child t='200' id='18' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='1' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='issued'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='19' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='address1'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='20' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='address2'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='21' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='city'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='22' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='zip'>
+					<mapNode t='190' idref='1' />
+				</child>
+				<child t='200' id='23' V200='8' input='true'
+					structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1'
+					minSize='-1' maxSize='-1' dataType='2' repHandlerStruct=''
+					visible='true' inheritsFrom='' V281='13' V1='4' name='state'>
+					<mapNode t='190' idref='1' />
+				</child>
+			</child>
+		</child>
+	</inputMapElem>
+	<outputMapElem t='200' id='24' V200='8'
+		structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1'
+		minSize='-1' maxSize='-1' groupType='1' repHandlerStruct=''
+		visible='true' inheritsFrom='' V281='13'
+		modifiedFromParent_loop='true' V1='4' name='FlatComponents'>
+		<mapNode t='190' idref='1' />
+		<loop>SimpleLoop([autoAdded="true"],in$/Root,{Filter},{Sort
+			Keys},{Contexts})</loop>
+	</outputMapElem>
+	<inputRepRuntime t='697' id='25' V697='1' V690='1'
+		padOutput='true' encoding='UTF-8'>
+	</inputRepRuntime>
+	<outputRepRuntime t='692' id='26' V692='1' V690='1'>
+	</outputRepRuntime>
+	<valueSets></valueSets>
+	<inputXmlRepRuntime t='692' id='27' V692='1'
+		V690='1'>
+	</inputXmlRepRuntime>
+	<outputXmlRepRuntime t='692' idref='26' />
+	<child t='165' id='28' V1='4' name='Document Bindings'>
+		<child t='166' id='29' V166='5' docType='1'
+			docReposPath='/Examples/Sample Data/JSON/JSONExample/example1.json'
+			V1='4' name='in$/Root'>
+			<elemNode t='200' idref='2' />
+		</child>
+		<child t='166' id='30' V166='5' docType='2'
+			docReposPath='/Examples/Sample Data/CSV/FlatComponents/FlatSample.csv'
+			V1='4' name='out$/FlatComponents'>
+			<elemNode t='200' idref='24' />
+		</child>
+	</child>
+	<child t='201' id='31' V1='4' name='Inherits From'>
+	</child>
+</root>

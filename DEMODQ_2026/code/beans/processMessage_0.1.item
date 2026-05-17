@@ -1,0 +1,14 @@
+package beans;
+
+
+public class processMessage {
+
+   public static String toUpper(String s)
+   {
+	   return s.toUpperCase();
+   }
+   
+   public static void main(String[] args) {
+	System.out.println(toUpper("anc"));
+}
+}

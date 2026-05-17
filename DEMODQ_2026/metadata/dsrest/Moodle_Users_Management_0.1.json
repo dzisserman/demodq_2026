@@ -1,0 +1,761 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Moodle User Management API - Search, create, update, and delete users",
+    "version" : "v1",
+    "title" : "Moodle_Users_Management"
+  },
+  "host" : "apigwit.tau.ac.il",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/test/moodle/2025/v1/users/search" : {
+      "post" : {
+        "tags" : [ "moodleUsersManagement" ],
+        "description" : "Search for users by username, id, or idnumber. All search parameters are optional - provide at least one.",
+        "operationId" : "searchUsers",
+        "consumes" : [ "application/json; charset=utf-8" ],
+        "produces" : [ "application/json; charset=utf-8" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "description" : "User search criteria (at least one field required)",
+          "schema" : {
+            "$ref" : "#/definitions/UserSearchRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/UserSearchResponse"
+            }
+          },
+          "400" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "400"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Bad Request"
+                }
+              }
+            }
+          },
+          "403" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "403"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Forbidden"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "500"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Backend Application Error"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "apiKey" : [ ]
+        } ]
+      },
+      "parameters" : [ ]
+    },
+    "/test/moodle/2025/v1/users" : {
+      "post" : {
+        "tags" : [ "moodleUsersManagement" ],
+        "description" : "Create new users in bulk. Accepts an array of user objects.",
+        "operationId" : "createUsers",
+        "consumes" : [ "application/json; charset=utf-8" ],
+        "produces" : [ "application/json; charset=utf-8" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "description" : "Array of users to create",
+          "schema" : {
+            "$ref" : "#/definitions/CreateUsersRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success - returns array of created users [{id, username}] or MoodleException object on error",
+            "schema" : {
+              "$ref" : "#/definitions/CreateUsersResponse"
+            }
+          },
+          "400" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "400"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Bad Request"
+                }
+              }
+            }
+          },
+          "403" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "403"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Forbidden"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "500"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Backend Application Error"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "apiKey" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "moodleUsersManagement" ],
+        "description" : "Delete a user by id",
+        "operationId" : "deleteUser",
+        "consumes" : [ "application/json; charset=utf-8" ],
+        "produces" : [ "application/json; charset=utf-8" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : true,
+          "type" : "string",
+          "description" : "User ID to delete"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success - returns null on success, or MoodleException object on error"
+          },
+          "400" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "400"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Bad Request"
+                }
+              }
+            }
+          },
+          "403" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "403"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Forbidden"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "500"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Backend Application Error"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "apiKey" : [ ]
+        } ]
+      },
+      "patch" : {
+        "tags" : [ "moodleUsersManagement" ],
+        "description" : "Update existing users in bulk. Accepts an array of user objects with id.",
+        "operationId" : "updateUsers",
+        "consumes" : [ "application/json; charset=utf-8" ],
+        "produces" : [ "application/json; charset=utf-8" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "description" : "Array of users to update",
+          "schema" : {
+            "$ref" : "#/definitions/UpdateUsersRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/UpdateUsersResponse"
+            }
+          },
+          "400" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "400"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Bad Request"
+                }
+              }
+            }
+          },
+          "403" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "403"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Forbidden"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Backend Error",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "errCode" : {
+                  "type" : "string",
+                  "example" : "500"
+                },
+                "errDesc" : {
+                  "type" : "string",
+                  "example" : "Backend Application Error"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "apiKey" : [ ]
+        } ]
+      },
+      "parameters" : [ ]
+    }
+  },
+  "securityDefinitions" : {
+    "apiKey" : {
+      "description" : "API client identifier for authentication",
+      "type" : "apiKey",
+      "name" : "x-client-id",
+      "in" : "header"
+    }
+  },
+  "definitions" : {
+    "UserSearchRequest" : {
+      "type" : "object",
+      "properties" : {
+        "username" : {
+          "type" : "string",
+          "description" : "Username to search for (optional)",
+          "example" : "demouser1"
+        },
+        "id" : {
+          "type" : "string",
+          "description" : "User ID to search for (optional)",
+          "example" : "12345"
+        },
+        "idnumber" : {
+          "type" : "string",
+          "description" : "ID number to search for (optional)",
+          "example" : "ID9999999"
+        }
+      },
+      "description" : "Search criteria for users. At least one field must be provided."
+    },
+    "UserSearchResponse" : {
+      "type" : "object",
+      "properties" : {
+        "users" : {
+          "type" : "array",
+          "description" : "Array of matching users",
+          "items" : {
+            "$ref" : "#/definitions/UserDetail"
+          }
+        },
+        "warnings" : {
+          "type" : "array",
+          "description" : "Array of warnings",
+          "items" : {
+            "type" : "object",
+            "properties" : { }
+          }
+        }
+      },
+      "description" : "Search results containing array of users"
+    },
+    "UserDetail" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "description" : "User ID",
+          "example" : 12345
+        },
+        "username" : {
+          "type" : "string",
+          "description" : "Username",
+          "example" : "demouser1"
+        },
+        "firstname" : {
+          "type" : "string",
+          "description" : "First name",
+          "example" : "DemoA"
+        },
+        "lastname" : {
+          "type" : "string",
+          "description" : "Last name",
+          "example" : "UserA"
+        },
+        "fullname" : {
+          "type" : "string",
+          "description" : "Full name (may be in Hebrew)",
+          "example" : "דמו משתמש א"
+        },
+        "email" : {
+          "type" : "string",
+          "description" : "Email address",
+          "example" : "demo1@example.tau.ac.il"
+        },
+        "department" : {
+          "type" : "string",
+          "description" : "Department code",
+          "example" : "123456789"
+        },
+        "institution" : {
+          "type" : "string",
+          "description" : "Institution",
+          "example" : "123456789"
+        },
+        "idnumber" : {
+          "type" : "string",
+          "description" : "ID number",
+          "example" : "123456789"
+        },
+        "firstaccess" : {
+          "type" : "integer",
+          "description" : "First access timestamp",
+          "example" : 0
+        },
+        "lastaccess" : {
+          "type" : "integer",
+          "description" : "Last access timestamp",
+          "example" : 0
+        },
+        "auth" : {
+          "type" : "string",
+          "description" : "Authentication method",
+          "example" : "ldap"
+        },
+        "suspended" : {
+          "type" : "boolean",
+          "description" : "Is user suspended",
+          "example" : false
+        },
+        "confirmed" : {
+          "type" : "boolean",
+          "description" : "Is user confirmed",
+          "example" : true
+        },
+        "lang" : {
+          "type" : "string",
+          "description" : "Language preference",
+          "example" : "he"
+        },
+        "theme" : {
+          "type" : "string",
+          "description" : "Theme preference",
+          "example" : ""
+        },
+        "timezone" : {
+          "type" : "string",
+          "description" : "Timezone",
+          "example" : "99"
+        },
+        "mailformat" : {
+          "type" : "integer",
+          "description" : "Mail format preference",
+          "example" : 1
+        },
+        "trackforums" : {
+          "type" : "integer",
+          "description" : "Track forums setting",
+          "example" : 1
+        },
+        "city" : {
+          "type" : "string",
+          "description" : "City",
+          "example" : "תל אביב"
+        },
+        "country" : {
+          "type" : "string",
+          "description" : "Country code",
+          "example" : "IL"
+        },
+        "profileimageurlsmall" : {
+          "type" : "string",
+          "description" : "Small profile image URL",
+          "example" : "https://moodle-test.tau.ac.il/moodle2025/moodle2025_ETL/theme/image.php/tauboostunion/core/1770637296/u/f2"
+        },
+        "profileimageurl" : {
+          "type" : "string",
+          "description" : "Profile image URL",
+          "example" : "https://moodle-test.tau.ac.il/moodle2025/moodle2025_ETL/theme/image.php/tauboostunion/core/1770637296/u/f1"
+        },
+        "customfields" : {
+          "type" : "array",
+          "description" : "Array of custom fields",
+          "items" : {
+            "$ref" : "#/definitions/CustomFieldResponse"
+          }
+        }
+      },
+      "description" : "Detailed user information"
+    },
+    "CustomFieldResponse" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "description" : "Field type (text, menu, etc.)",
+          "example" : "text"
+        },
+        "value" : {
+          "type" : "string",
+          "description" : "Field value",
+          "example" : "0"
+        },
+        "displayvalue" : {
+          "type" : "string",
+          "description" : "Display value",
+          "example" : "0"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Field name (may be in Hebrew)",
+          "example" : "מינוי"
+        },
+        "shortname" : {
+          "type" : "string",
+          "description" : "Field short name",
+          "example" : "TauAppointment"
+        }
+      },
+      "description" : "Custom field in user response"
+    },
+    "CreateUsersRequest" : {
+      "type" : "object",
+      "required" : [ "add-users" ],
+      "properties" : {
+        "add-users" : {
+          "type" : "array",
+          "description" : "Array of users to create",
+          "items" : {
+            "$ref" : "#/definitions/UserCreateObject"
+          }
+        }
+      },
+      "description" : "Request to create users in bulk"
+    },
+    "UserCreateObject" : {
+      "type" : "object",
+      "required" : [ "auth", "email", "firstname", "lastname", "username" ],
+      "properties" : {
+        "username" : {
+          "type" : "string",
+          "description" : "Username",
+          "example" : "demouser1"
+        },
+        "auth" : {
+          "type" : "string",
+          "description" : "Authentication method (e.g., ldap)",
+          "example" : "ldap"
+        },
+        "createpassword" : {
+          "type" : "integer",
+          "description" : "Create password flag (0 or 1)",
+          "example" : 0
+        },
+        "firstname" : {
+          "type" : "string",
+          "description" : "First name",
+          "example" : "DemoA"
+        },
+        "lastname" : {
+          "type" : "string",
+          "description" : "Last name",
+          "example" : "UserA"
+        },
+        "email" : {
+          "type" : "string",
+          "description" : "Email address",
+          "example" : "demo1@example.tau.ac.il"
+        },
+        "idnumber" : {
+          "type" : "string",
+          "description" : "ID number",
+          "example" : "123456789"
+        },
+        "institution" : {
+          "type" : "string",
+          "description" : "Institution name",
+          "example" : "אוניברסיטת תל אביב"
+        },
+        "department" : {
+          "type" : "string",
+          "description" : "Department code",
+          "example" : "0124"
+        },
+        "firstnamephonetic" : {
+          "type" : "string",
+          "description" : "First name phonetic (Hebrew)",
+          "example" : "דמוא"
+        },
+        "lastnamephonetic" : {
+          "type" : "string",
+          "description" : "Last name phonetic (Hebrew)",
+          "example" : "משתמשא"
+        },
+        "customfields" : {
+          "type" : "array",
+          "description" : "Array of custom fields",
+          "items" : {
+            "$ref" : "#/definitions/CustomFieldRequest"
+          }
+        }
+      },
+      "description" : "User object for creation"
+    },
+    "CustomFieldRequest" : {
+      "type" : "object",
+      "required" : [ "type", "value" ],
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "description" : "Field type identifier",
+          "example" : "TauHospital"
+        },
+        "value" : {
+          "type" : "string",
+          "description" : "Field value",
+          "example" : "אורתופדית מאיר"
+        }
+      },
+      "description" : "Custom field for user creation/update"
+    },
+    "CreateUsersResponse" : {
+      "type" : "array",
+      "description" : "Array of created users",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Created user ID",
+            "example" : 12347
+          },
+          "username" : {
+            "type" : "string",
+            "description" : "Created username",
+            "example" : "demouser1"
+          }
+        }
+      }
+    },
+    "UpdateUsersRequest" : {
+      "type" : "object",
+      "required" : [ "upd-users" ],
+      "properties" : {
+        "upd-users" : {
+          "type" : "array",
+          "description" : "Array of users to update",
+          "items" : {
+            "$ref" : "#/definitions/UserUpdateObject"
+          }
+        }
+      },
+      "description" : "Request to update users in bulk"
+    },
+    "UserUpdateObject" : {
+      "type" : "object",
+      "required" : [ "id" ],
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "User ID to update (required)",
+          "example" : "12345"
+        },
+        "username" : {
+          "type" : "string",
+          "description" : "Username",
+          "example" : "demouser1"
+        },
+        "firstname" : {
+          "type" : "string",
+          "description" : "First name",
+          "example" : "DemoA"
+        },
+        "lastname" : {
+          "type" : "string",
+          "description" : "Last name",
+          "example" : "UserA"
+        },
+        "email" : {
+          "type" : "string",
+          "description" : "Email address",
+          "example" : "demo1@example.tau.ac.il"
+        },
+        "idnumber" : {
+          "type" : "string",
+          "description" : "ID number",
+          "example" : "123456789"
+        },
+        "institution" : {
+          "type" : "string",
+          "description" : "Institution name",
+          "example" : "אוניברסיטת תל אביב"
+        },
+        "department" : {
+          "type" : "string",
+          "description" : "Department code",
+          "example" : "0124"
+        },
+        "firstnamephonetic" : {
+          "type" : "string",
+          "description" : "First name phonetic (Hebrew)",
+          "example" : "דמוא"
+        },
+        "lastnamephonetic" : {
+          "type" : "string",
+          "description" : "Last name phonetic (Hebrew)",
+          "example" : "משתמשא"
+        },
+        "customfields" : {
+          "type" : "array",
+          "description" : "Array of custom fields",
+          "items" : {
+            "$ref" : "#/definitions/CustomFieldRequest"
+          }
+        }
+      },
+      "description" : "User object for update"
+    },
+    "UpdateUsersResponse" : {
+      "type" : "object",
+      "properties" : {
+        "warnings" : {
+          "type" : "array",
+          "description" : "Array of warnings",
+          "items" : {
+            "type" : "object",
+            "properties" : { }
+          }
+        }
+      },
+      "description" : "Response from bulk user update"
+    },
+    "MoodleException" : {
+      "type" : "object",
+      "properties" : {
+        "exception" : {
+          "type" : "string",
+          "description" : "Exception type",
+          "example" : "dml_missing_record_exception"
+        },
+        "errorcode" : {
+          "type" : "string",
+          "description" : "Error code",
+          "example" : "invaliduser"
+        },
+        "message" : {
+          "type" : "string",
+          "description" : "Error message (may be in Hebrew)",
+          "example" : "משתמש שגוי"
+        },
+        "debuginfo" : {
+          "type" : "string",
+          "description" : "Debug information",
+          "example" : "SELECT * FROM {user} WHERE id = ? AND deleted = ?\\n[array (\\n  0 => 12340,\\n  1 => 0,\\n)]"
+        }
+      },
+      "description" : "Moodle exception response (HTTP 200)"
+    }
+  }
+}

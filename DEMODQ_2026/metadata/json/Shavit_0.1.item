@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_7E_V4AqmEfGnfMsYHCoQGA" name="Shavit" dataPackage="_7E_V4wqmEfGnfMsYHCoQGA" JSONFilePath="C:/Talend/NogaFiles/Output/shavit_trans.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_7E_V4QqmEfGnfMsYHCoQGA" LimitBoucle="50" AbsoluteXPathQuery="$[*]" flag="ROOT_OBJECT">
+      <schemaTargets xmi:id="_lyAKUAqvEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj1.value" TagName="NorHaihaifaccons"/>
+      <schemaTargets xmi:id="_x5qfsAqvEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj2.value" TagName="NorHaihaifascons"/>
+      <schemaTargets xmi:id="_0Wu_EAqvEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj3.totalFualts" TagName="NorHaihaifahvfaults"/>
+      <schemaTargets xmi:id="_IueUQAqwEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj3.faultsMufsakim" TagName="NorHaihaifahvfaultsdisab"/>
+      <schemaTargets xmi:id="_OS93kAqwEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj4.totalFualts" TagName="NorHaihaifalvfaults"/>
+      <schemaTargets xmi:id="_0tkVQAqwEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj4.faultsMufsakim" TagName="NorHaihaifalvfaultsdisab"/>
+      <schemaTargets xmi:id="_hasWYAqwEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj5.value" TagName="NorHaihaifaexfix"/>
+      <schemaTargets xmi:id="_oG36gAqwEfGnfMsYHCoQGA" RelativeXPathQuery="NorHai.haifa.obj9.value" TagName="NorHaihaifahighVolt"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_7E_V4wqmEfGnfMsYHCoQGA" name="default" dataManager="_7E_V4AqmEfGnfMsYHCoQGA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7E_V5AqmEfGnfMsYHCoQGA" id="_u9BegAqmEfGnfMsYHCoQGA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W8AqwEfGnfMsYHCoQGA" label="NorHaihaifaccons" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W8QqwEfGnfMsYHCoQGA" label="NorHaihaifascons" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W8gqwEfGnfMsYHCoQGA" label="NorHaihaifahvfaults" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W8wqwEfGnfMsYHCoQGA" label="NorHaihaifahvfaultsdisab" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W9AqwEfGnfMsYHCoQGA" label="NorHaihaifalvfaults" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W9QqwEfGnfMsYHCoQGA" label="NorHaihaifalvfaultsdisab" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W9gqwEfGnfMsYHCoQGA" label="NorHaihaifaexfix" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7x8W9wqwEfGnfMsYHCoQGA" label="NorHaihaifahighVolt" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

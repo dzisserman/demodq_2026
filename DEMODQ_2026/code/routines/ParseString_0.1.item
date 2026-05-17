@@ -1,0 +1,236 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+
+public class ParseString 
+{
+	
+	public static String toSQL (List<String> list)
+	{
+		return "('"+list.toString().substring(1,list.toString().length()-1).replace(", ","','").replaceAll("\\s+","")+"')";
+	}
+	
+	public static String toSQLInt (List<String> list)
+	{
+		return "("+list.toString().substring(1,list.toString().length()-1).replaceAll("\\s+","")+")";
+	}
+	
+	public static String toSQL (String str)
+	{
+		return "('"+str.replace(",","','").replaceAll("\\s+","")+"')";
+	}
+	
+	public static String toSQLProps (String str)
+	{
+		String out = "'"+str.replace(", ",",").replace(" ,",",").replace("'","''").replace(",","','")+"'";
+		return out.trim();
+	}
+	
+	public static LinkedList<String> StringToList (String str)
+	{
+		LinkedList<String> strList = new LinkedList<String>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				strList.add(str.substring(start,i));
+				start = i+1;
+			}
+		}
+		strList.add(str.substring(start));
+		
+		return strList;
+	}
+	
+	public static ArrayList<String> StringToArrayList (String str)
+	{
+		ArrayList<String> strList = new ArrayList<String>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				strList.add(str.substring(start,i).trim());
+				start = i+1;
+			}
+		}
+		strList.add(str.substring(start).trim());
+		
+		return strList;
+	}
+	
+	public static HashSet<String> toHashSet (String str)
+	{
+		HashSet<String> strSet = new HashSet<>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				strSet.add(str.substring(start,i).trim());
+				start = i+1;
+			}
+		}
+		strSet.add(str.substring(start).trim());
+		
+		return strSet;
+		
+	}
+	
+	public static String toHashSetString (String str)
+	{
+		HashSet<String> strSet = new HashSet<>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				strSet.add(str.substring(start,i).trim());
+				start = i+1;
+			}
+		}
+		strSet.add(str.substring(start).trim());
+		
+		return strSet.toString().replaceAll("^\\[","").replaceAll("\\]$","");
+	}
+	
+	
+	
+	public static HashSet<Character> charSet (String str)
+	{
+		HashSet<Character> strSet = new HashSet<>();
+		char[] chars = str.toCharArray();
+		
+		for (char chr : chars)
+		{strSet.add(chr);}
+		return strSet;
+	}
+	
+	
+	
+	public static ArrayList<String> toArrayList (String str)
+	{
+		ArrayList<String> strList = new ArrayList<String>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				strList.add(str.substring(start,i));
+				start = i+1;
+			}
+		}
+		strList.add(str.substring(start));
+		
+		return strList;
+	}
+	
+	public static ArrayList<Long> StringToListLong (String str)
+	{
+		ArrayList<Long> longList = new ArrayList<Long>();
+		int start = 0;
+		for (int i=0;i<str.length()-1;i++)
+		{
+			if (str.charAt(i) == ',')
+			{
+				longList.add(Long.parseLong(str.substring(start,i)));
+				start = i+1;
+			}
+		}
+		longList.add(Long.parseLong(str.substring(start)));
+		
+		return longList;
+	}
+	
+	public static String Categories (String str)
+	{
+		StringBuilder workstring = new StringBuilder();
+		String strtemp;
+		LinkedList<String> strList = StringToList(str);
+		
+		if (strList.size()>1)
+		{
+			workstring.append("OR(");
+			for (int i=0;i<strList.size();i++)
+			{
+				strtemp = "EQ(AllCats,"+strList.get(i)+")";
+				workstring.append(strtemp);
+				if (i < strList.size()-1)
+				{workstring.append(",");}
+				else
+				{workstring.append(")");}
+			}
+		}
+		else
+		workstring.append("EQ(AllCats,"+strList.get(0)+")");
+		
+		
+		return workstring.toString();	
+	}
+	
+	public static String Catalogs (String str)
+	{
+		StringBuilder workstring = new StringBuilder();
+		String strtemp;
+		LinkedList<String> strList = StringToList(str);
+		
+		if (strList.size()>1)
+		{
+			workstring.append("OR(");
+			for (int i=0;i<strList.size();i++)
+			{
+				strtemp = "EQ(ATTR(7),"+strList.get(i)+")";
+				workstring.append(strtemp);
+				if (i < strList.size()-1)
+				{workstring.append(",");}
+				else
+				{workstring.append(")");}
+			}
+		}
+		else
+		workstring.append("EQ(ATTR(7),"+strList.get(0)+")");
+		
+		
+		return workstring.toString();
+	}
+	
+	public static String vcsGood (String str)
+	{
+		StringBuilder workstring = new StringBuilder();
+		String strtemp;
+		LinkedList<String> strList = StringToList(str);
+		for (int i=0;i<strList.size();i++)
+			{
+				strtemp = "NOT(EQ(ATTR(11),"+strList.get(i)+"))";
+				workstring.append(strtemp);
+				if (i < strList.size()-1)
+				{workstring.append(",");}
+			}
+							
+		return workstring.toString();
+	}
+	
+	public static Integer phraseCount (String str, String phrase)
+	{
+		int cnt = 0;
+		for (int i=0;i<str.length()-phrase.length()-1;i+=phrase.length())
+		{
+			if (str.substring(i,i+phrase.length()).equals(phrase))
+			{
+				cnt++;
+			}
+		}
+		return cnt;
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println(phraseCount("abc; cde; dsfsdfsd; ;;",";;"));
+	}
+}
+
+

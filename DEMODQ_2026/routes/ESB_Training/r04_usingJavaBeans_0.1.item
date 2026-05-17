@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_PYGacFp2EfCkQqXdmF7CeA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_PYGacVp2EfCkQqXdmF7CeA" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_PYGaclp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGac1p2EfCkQqXdmF7CeA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_PYGadFp2EfCkQqXdmF7CeA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_PYGadVp2EfCkQqXdmF7CeA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_PYGadlp2EfCkQqXdmF7CeA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_PYGad1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaeFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaeVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaelp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_PYGae1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_PYGafFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_PYGafVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaflp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaf1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_PYGagFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_PYGagVp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_PYGaglp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_PYGag1p2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_PYGahFp2EfCkQqXdmF7CeA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_PYGahVp2EfCkQqXdmF7CeA" componentName="cTimer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter xmi:id="_PYGahlp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cTimer_1" show="false"/>
+    <elementParameter xmi:id="_PYGah1p2EfCkQqXdmF7CeA" field="TEXT" name="PERIOD" value="1000"/>
+    <elementParameter xmi:id="_PYGaiFp2EfCkQqXdmF7CeA" field="TEXT" name="REPEATCOUNT" value="0"/>
+    <elementParameter xmi:id="_PYGaiVp2EfCkQqXdmF7CeA" field="TEXT" name="DELAY" value="1000"/>
+    <elementParameter xmi:id="_PYGailp2EfCkQqXdmF7CeA" field="CHECK" name="FIXEDRATE" value="false"/>
+    <elementParameter xmi:id="_PYGai1p2EfCkQqXdmF7CeA" field="CHECK" name="DAEMON" value="true"/>
+    <elementParameter xmi:id="_PYGajFp2EfCkQqXdmF7CeA" field="CHECK" name="SET_TIME" value="false"/>
+    <elementParameter xmi:id="_PYGajVp2EfCkQqXdmF7CeA" field="TEXT" name="TIME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_PYGajlp2EfCkQqXdmF7CeA" field="LABEL" name="NOTE" value="(yyyy-MM-dd HH:mm:ss | yyyy-MM-dd'T'HH:mm:ss)" show="false"/>
+    <elementParameter xmi:id="_PYGaj1p2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGakFp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYGakVp2EfCkQqXdmF7CeA" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
+    <elementParameter xmi:id="_PYGaklp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_PYGak1p2EfCkQqXdmF7CeA" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_PYGalFp2EfCkQqXdmF7CeA" elementRef="NAME" value="&quot;company&quot;" id="0"/>
+      <elementValue xmi:id="_PYGalVp2EfCkQqXdmF7CeA" elementRef="LANGUAGE" value="constant" id="1"/>
+      <elementValue xmi:id="_PYGallp2EfCkQqXdmF7CeA" elementRef="EXPRESSION" value="&quot;Talend&quot;" id="2"/>
+    </elementParameter>
+    <elementParameter xmi:id="_PYGal1p2EfCkQqXdmF7CeA" field="TABLE" name="CLEAN_VALUES"/>
+    <elementParameter xmi:id="_PYGamFp2EfCkQqXdmF7CeA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_PYGamVp2EfCkQqXdmF7CeA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_PYGamlp2EfCkQqXdmF7CeA" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_PYGam1p2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGanFp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYGanVp2EfCkQqXdmF7CeA" componentName="cBean" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter xmi:id="_PYGanlp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBean_1" show="false"/>
+    <elementParameter xmi:id="_PYGan1p2EfCkQqXdmF7CeA" field="RADIO" name="FROM_REGISTRY" value="false"/>
+    <elementParameter xmi:id="_PYGaoFp2EfCkQqXdmF7CeA" field="RADIO" name="FROM_CLASS" value="true"/>
+    <elementParameter xmi:id="_PYGaoVp2EfCkQqXdmF7CeA" field="TEXT" name="BEAN" value="beans.processMessage.class"/>
+    <elementParameter xmi:id="_PYGaolp2EfCkQqXdmF7CeA" field="TEXT" name="REF_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_PYGao1p2EfCkQqXdmF7CeA" field="CHECK" name="SPECIFY_METHOD" value="true"/>
+    <elementParameter xmi:id="_PYGapFp2EfCkQqXdmF7CeA" field="TEXT" name="METHOD" value="&quot;updateMessageBody&quot;"/>
+    <elementParameter xmi:id="_PYGapVp2EfCkQqXdmF7CeA" field="TEXT" name="LABEL" value="generateMessage"/>
+    <elementParameter xmi:id="_PYGaplp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGap1p2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYGaqFp2EfCkQqXdmF7CeA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="160">
+    <elementParameter xmi:id="_PYGaqVp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_PYGaqlp2EfCkQqXdmF7CeA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;Bean&quot;"/>
+    <elementParameter xmi:id="_PYGaq1p2EfCkQqXdmF7CeA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_PYGarFp2EfCkQqXdmF7CeA" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_PYGarVp2EfCkQqXdmF7CeA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_PYGarlp2EfCkQqXdmF7CeA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_PYGar1p2EfCkQqXdmF7CeA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_PYGasFp2EfCkQqXdmF7CeA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_PYGasVp2EfCkQqXdmF7CeA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_PYGaslp2EfCkQqXdmF7CeA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_PYGas1p2EfCkQqXdmF7CeA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_PYGatFp2EfCkQqXdmF7CeA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_PYGatVp2EfCkQqXdmF7CeA" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_PYGatlp2EfCkQqXdmF7CeA" field="TEXT" name="MESSAGE" value="&quot;Bean route says -> \n ${in.body}&quot;"/>
+    <elementParameter xmi:id="_PYGat1p2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGauFp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYGauVp2EfCkQqXdmF7CeA" componentName="cBeanRegister" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="40">
+    <elementParameter xmi:id="_PYGaulp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+    <elementParameter xmi:id="_PYGau1p2EfCkQqXdmF7CeA" field="TEXT" name="ID" value="&quot;myBean&quot;"/>
+    <elementParameter xmi:id="_PYGavFp2EfCkQqXdmF7CeA" field="RADIO" name="SIMPLE_CONFIG" value="true"/>
+    <elementParameter xmi:id="_PYGavVp2EfCkQqXdmF7CeA" field="RADIO" name="CONFIG_BY_CODE" value="false"/>
+    <elementParameter xmi:id="_PYGavlp2EfCkQqXdmF7CeA" field="TEXT" name="CLASS_QUALIFIED_NAME" value="beans.processMessage"/>
+    <elementParameter xmi:id="_PYGav1p2EfCkQqXdmF7CeA" field="CHECK" name="SPECIFY_ARGUMENTS" value="false"/>
+    <elementParameter xmi:id="_PYGawFp2EfCkQqXdmF7CeA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_PYGawVp2EfCkQqXdmF7CeA" field="LABEL" name="NOTE" value="Note: Provide own codes to specify *beanInstance* variable" show="false"/>
+    <elementParameter xmi:id="_PYGawlp2EfCkQqXdmF7CeA" field="MEMO_EDITOR_JAVA" name="CODE" value="// beanInstance = ....;" show="false"/>
+    <elementParameter xmi:id="_PYGaw1p2EfCkQqXdmF7CeA" field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;" show="false"/>
+    <elementParameter xmi:id="_PYGaxFp2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGaxVp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_PYGaxlp2EfCkQqXdmF7CeA" componentName="cBean" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="160">
+    <elementParameter xmi:id="_PYGax1p2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBean_2" show="false"/>
+    <elementParameter xmi:id="_PYGayFp2EfCkQqXdmF7CeA" field="RADIO" name="FROM_REGISTRY" value="true"/>
+    <elementParameter xmi:id="_PYGayVp2EfCkQqXdmF7CeA" field="RADIO" name="FROM_CLASS" value="false"/>
+    <elementParameter xmi:id="_PYGaylp2EfCkQqXdmF7CeA" field="TEXT" name="BEAN" value="beans.MyBean.class" show="false"/>
+    <elementParameter xmi:id="_PYGay1p2EfCkQqXdmF7CeA" field="TEXT" name="REF_ID" value="&quot;myBean&quot;"/>
+    <elementParameter xmi:id="_PYGazFp2EfCkQqXdmF7CeA" field="CHECK" name="SPECIFY_METHOD" value="true"/>
+    <elementParameter xmi:id="_PYGazVp2EfCkQqXdmF7CeA" field="TEXT" name="METHOD" value="&quot;incrementMessages&quot;"/>
+    <elementParameter xmi:id="_PYGazlp2EfCkQqXdmF7CeA" field="TEXT" name="LABEL" value="countMessages"/>
+    <elementParameter xmi:id="_PYGaz1p2EfCkQqXdmF7CeA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_PYGa0Fp2EfCkQqXdmF7CeA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_PYGa0Vp2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cTimer_1" offsetLabelX="0" offsetLabelY="0" source="cTimer_1" target="cSetHeader_1">
+    <elementParameter xmi:id="_PYGa0lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_PYGa01p2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cSetHeader_1" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_1" target="cBean_1">
+    <elementParameter xmi:id="_PYGa1Fp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_PYGa1Vp2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cBean_1" offsetLabelX="0" offsetLabelY="0" source="cBean_1" target="cBean_2">
+    <elementParameter xmi:id="_PYGa1lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_PYGa11p2EfCkQqXdmF7CeA" connectorName="ROUTE" label="route4" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cBean_2" target="cLog_1">
+    <elementParameter xmi:id="_PYGa2Fp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <subjob xmi:id="_PYGa2Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa2lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cTimer_1" show="false"/>
+    <elementParameter xmi:id="_PYGa21p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa3Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYGa3Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa3lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_PYGa31p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa4Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYGa4Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa4lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBean_1" show="false"/>
+    <elementParameter xmi:id="_PYGa41p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa5Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYGa5Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa5lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_PYGa51p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa6Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYGa6Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa6lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+    <elementParameter xmi:id="_PYGa61p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa7Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_PYGa7Vp2EfCkQqXdmF7CeA">
+    <elementParameter xmi:id="_PYGa7lp2EfCkQqXdmF7CeA" field="TEXT" name="UNIQUE_NAME" value="cBean_2" show="false"/>
+    <elementParameter xmi:id="_PYGa71p2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_PYGa8Fp2EfCkQqXdmF7CeA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

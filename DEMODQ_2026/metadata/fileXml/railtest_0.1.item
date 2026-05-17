@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_aiv4MdEKEfCLVdI5ULtv4w" name="railtest" dataPackage="_aiv4U9EKEfCLVdI5ULtv4w" XmlFilePath="C:/talend_file/railtest.xml" Encoding="windows-1255" fileContent="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2277696E646F77732D31323535223F3E0D0A3C49504953584D4C3E3C46696C653E3C5265636F72642066726F6D5F646174653D2232303235313030362220746F5F646174653D22323032353130303622207363686564756C655F747970653D224461696C7922207570646174655F747970653D2244656C65746522207363686564756C655F736F757263653D2270736966617322206C61756E63685F646174653D2230342F31312F3230323522206C61756E63685F74696D653D2231313A33362220747261696E5F6E6F3D22363033302220747269705F73756E6461793D222220747269705F6D6F6E6461793D222220747269705F747565736461793D222220747269705F7765646E65736461793D222220747269705F74687572736461793D222220747269705F6672696461793D222220747269705F73617475726461793D2222204E6F5F747261696E733D222220706C6174666F726D5F73756E6461793D222220706C6174666F726D5F6D6F6E6461793D222220706C6174666F726D5F747565736461793D222220706C6174666F726D5F7765646E65736461793D222220706C6174666F726D5F74687572736461793D222220706C6174666F726D5F6672696461793D222220706C6174666F726D5F73617475726461793D222220536572766963655F4C696E653D222220747261696E5F706173745F6D69646E696768743D22222073746174696F6E5F73657175656E63653D22222073746174696F6E5F636F64653D2222206172726976616C5F74696D655F706C616E6E65643D2222206465706172747572655F74696D655F706C616E6E65643D22222073746F705F73746174696F6E3D222220646972656374696F6E3D22222064697374616E63653D22222F3E3C5265636F72642066726F6D5F646174653D2232303235313030362220746F5F646174653D22323032353130303622207363686564756C655F747970653D224461696C7922207570646174655F747970653D2244656C65746522207363686564756C655F736F757263653D2270736966617322206C61756E63685F646174653D2230342F31312F3230323522206C61756E63685F74696D653D2231313A33362220747261696E5F6E6F3D22363033322220747269705F73756E6461793D222220747269705F6D6F6E6461793D222220747269705F747565736461793D222220747269705F7765646E65736461793D222220747269705F74687572736461793D222220747269705F6672696461793D222220747269705F73617475726461793D2222204E6F5F747261696E733D222220706C6174666F726D5F73756E6461793D222220706C6174666F726D5F6D6F6E6461793D222220706C6174666F726D5F747565736461793D222220706C6174666F726D5F7765646E65736461793D222220706C6174666F726D5F74687572736461793D222220706C6174666F726D5F6672696461793D222220706C6174666F726D5F73617475726461793D222220536572766963655F4C696E653D222220747261696E5F706173745F6D69646E696768743D22222073746174696F6E5F73657175656E63653D22222073746174696F6E5F636F64653D2222206172726976616C5F74696D655F706C616E6E65643D2222206465706172747572655F74696D655F706C616E6E65643D22222073746F705F73746174696F6E3D222220646972656374696F6E3D22222064697374616E63653D22222F3E3C2F46696C653E3C2F49504953584D4C3E0D0A0D0A20">
+    <schema xmi:id="_aiv4MtEKEfCLVdI5ULtv4w" LimitBoucle="50" AbsoluteXPathQuery="/IPISXML/File/Record">
+      <schemaTargets xmi:id="_aiv4M9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@from_date" TagName="from_date"/>
+      <schemaTargets xmi:id="_aiv4NNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@to_date" TagName="to_date"/>
+      <schemaTargets xmi:id="_aiv4NdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@schedule_type" TagName="schedule_type"/>
+      <schemaTargets xmi:id="_aiv4NtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@update_type" TagName="update_type"/>
+      <schemaTargets xmi:id="_aiv4N9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@schedule_source" TagName="schedule_source"/>
+      <schemaTargets xmi:id="_aiv4ONEKEfCLVdI5ULtv4w" RelativeXPathQuery="@launch_date" TagName="launch_date"/>
+      <schemaTargets xmi:id="_aiv4OdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@launch_time" TagName="launch_time"/>
+      <schemaTargets xmi:id="_aiv4OtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@train_no" TagName="train_no"/>
+      <schemaTargets xmi:id="_aiv4O9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_sunday" TagName="trip_sunday"/>
+      <schemaTargets xmi:id="_aiv4PNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_monday" TagName="trip_monday"/>
+      <schemaTargets xmi:id="_aiv4PdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_tuesday" TagName="trip_tuesday"/>
+      <schemaTargets xmi:id="_aiv4PtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_wednesday" TagName="trip_wednesday"/>
+      <schemaTargets xmi:id="_aiv4P9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_thursday" TagName="trip_thursday"/>
+      <schemaTargets xmi:id="_aiv4QNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_friday" TagName="trip_friday"/>
+      <schemaTargets xmi:id="_aiv4QdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@trip_saturday" TagName="trip_saturday"/>
+      <schemaTargets xmi:id="_aiv4QtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@No_trains" TagName="No_trains"/>
+      <schemaTargets xmi:id="_aiv4Q9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_sunday" TagName="platform_sunday"/>
+      <schemaTargets xmi:id="_aiv4RNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_monday" TagName="platform_monday"/>
+      <schemaTargets xmi:id="_aiv4RdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_tuesday" TagName="platform_tuesday"/>
+      <schemaTargets xmi:id="_aiv4RtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_wednesday" TagName="platform_wednesday"/>
+      <schemaTargets xmi:id="_aiv4R9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_thursday" TagName="platform_thursday"/>
+      <schemaTargets xmi:id="_aiv4SNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_friday" TagName="platform_friday"/>
+      <schemaTargets xmi:id="_aiv4SdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@platform_saturday" TagName="platform_saturday"/>
+      <schemaTargets xmi:id="_aiv4StEKEfCLVdI5ULtv4w" RelativeXPathQuery="@Service_Line" TagName="Service_Line"/>
+      <schemaTargets xmi:id="_aiv4S9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@train_past_midnight" TagName="train_past_midnight"/>
+      <schemaTargets xmi:id="_aiv4TNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@station_sequence" TagName="station_sequence"/>
+      <schemaTargets xmi:id="_aiv4TdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@station_code" TagName="station_code"/>
+      <schemaTargets xmi:id="_aiv4TtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@arrival_time_planned" TagName="arrival_time_planned"/>
+      <schemaTargets xmi:id="_aiv4T9EKEfCLVdI5ULtv4w" RelativeXPathQuery="@departure_time_planned" TagName="departure_time_planned"/>
+      <schemaTargets xmi:id="_aiv4UNEKEfCLVdI5ULtv4w" RelativeXPathQuery="@stop_station" TagName="stop_station"/>
+      <schemaTargets xmi:id="_aiv4UdEKEfCLVdI5ULtv4w" RelativeXPathQuery="@direction" TagName="direction"/>
+      <schemaTargets xmi:id="_aiv4UtEKEfCLVdI5ULtv4w" RelativeXPathQuery="@distance" TagName="distance"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_aiv4U9EKEfCLVdI5ULtv4w" name="default" dataManager="_aiv4MdEKEfCLVdI5ULtv4w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_aiv4VNEKEfCLVdI5ULtv4w" id="_PQuxYNEKEfCLVdI5ULtv4w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4VdEKEfCLVdI5ULtv4w" label="from_date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4VtEKEfCLVdI5ULtv4w" label="to_date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4V9EKEfCLVdI5ULtv4w" label="schedule_type" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4WNEKEfCLVdI5ULtv4w" label="update_type" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4WdEKEfCLVdI5ULtv4w" label="schedule_source" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4WtEKEfCLVdI5ULtv4w" label="launch_date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4W9EKEfCLVdI5ULtv4w" label="launch_time" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4XNEKEfCLVdI5ULtv4w" label="train_no" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4XdEKEfCLVdI5ULtv4w" label="trip_sunday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4XtEKEfCLVdI5ULtv4w" label="trip_monday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4X9EKEfCLVdI5ULtv4w" label="trip_tuesday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4YNEKEfCLVdI5ULtv4w" label="trip_wednesday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4YdEKEfCLVdI5ULtv4w" label="trip_thursday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4YtEKEfCLVdI5ULtv4w" label="trip_friday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4Y9EKEfCLVdI5ULtv4w" label="trip_saturday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4ZNEKEfCLVdI5ULtv4w" label="No_trains" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4ZdEKEfCLVdI5ULtv4w" label="platform_sunday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4ZtEKEfCLVdI5ULtv4w" label="platform_monday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4Z9EKEfCLVdI5ULtv4w" label="platform_tuesday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4aNEKEfCLVdI5ULtv4w" label="platform_wednesday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4adEKEfCLVdI5ULtv4w" label="platform_thursday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4atEKEfCLVdI5ULtv4w" label="platform_friday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4a9EKEfCLVdI5ULtv4w" label="platform_saturday" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4bNEKEfCLVdI5ULtv4w" label="Service_Line" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4bdEKEfCLVdI5ULtv4w" label="train_past_midnight" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4btEKEfCLVdI5ULtv4w" label="station_sequence" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4b9EKEfCLVdI5ULtv4w" label="station_code" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4cNEKEfCLVdI5ULtv4w" label="arrival_time_planned" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4cdEKEfCLVdI5ULtv4w" label="departure_time_planned" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4ctEKEfCLVdI5ULtv4w" label="stop_station" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4c9EKEfCLVdI5ULtv4w" label="direction" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aiv4dNEKEfCLVdI5ULtv4w" label="distance" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

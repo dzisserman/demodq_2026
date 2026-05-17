@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_psNfsO7DEe-4QKecQiAXGA" confirmationNeeded="false" hide="false" name="Linux">
+    <contextParameter xmi:id="_ps5cMO7DEe-4QKecQiAXGA" comment="" name="mySQL_host" prompt="mySQL_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51.16.221.35"/>
+    <contextParameter xmi:id="_ps5cMe7DEe-4QKecQiAXGA" comment="" name="mySQL_user" prompt="mySQL_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_ps5cMu7DEe-4QKecQiAXGA" comment="" name="mySQL_pass" prompt="mySQL_pass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:m52rHLj35eLjgmw/JEDMTjYfGjzpTvc0JXthbHmQEQVzgWYyPoir"/>
+    <contextParameter xmi:id="_ps5cM-7DEe-4QKecQiAXGA" comment="" name="mySQL_dbname" prompt="mySQL_dbname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="training"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_psOGwO7DEe-4QKecQiAXGA" confirmationNeeded="false" hide="false" name="Windows">
+    <contextParameter xmi:id="_ps5cNO7DEe-4QKecQiAXGA" comment="" name="mySQL_host" prompt="mySQL_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_ps5cNe7DEe-4QKecQiAXGA" comment="" name="mySQL_user" prompt="mySQL_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_ps5cNu7DEe-4QKecQiAXGA" comment="" name="mySQL_pass" prompt="mySQL_pass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:CzpRKY4XU2tXzMOqsrIBo7h3zEWgAd4WMTv5DGcAFes="/>
+    <contextParameter xmi:id="_ps5cN-7DEe-4QKecQiAXGA" comment="" name="mySQL_dbname" prompt="mySQL_dbname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo"/>
+  </talendfile:ContextType>
+</xmi:XMI>

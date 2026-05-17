@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5qAsYL4-Ee2YtdRyUzZwow" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_5qAsYb4-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Password" prompt="MySQL_DB_Northwind1_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3E23LJt2XU7t9ZEU98kcGCFb6kadd0gY77Y91G2R2ySKj2M="/>
+    <contextParameter xmi:id="_5qAsYr4-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Server" prompt="MySQL_DB_Northwind1_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_5qAsY74-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Port" prompt="MySQL_DB_Northwind1_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5qAsZL4-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_AdditionalParams" prompt="MySQL_DB_Northwind1_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1,useSSL=false"/>
+    <contextParameter xmi:id="_5qAsZb4-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Login" prompt="MySQL_DB_Northwind1_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_5qAsZr4-Ee2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Database" prompt="MySQL_DB_Northwind1_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="northwind"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Z1ImsL5YEe2YtdRyUzZwow" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_Z1Imsb5YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Password" prompt="MySQL_DB_Northwind1_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:7mUdpkNpBUNw9z7YR41mnZnOKX2QpUyRa0qRZl9fjfcO7VY="/>
+    <contextParameter xmi:id="_Z1Imsr5YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Server" prompt="MySQL_DB_Northwind1_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="87.180.42.13"/>
+    <contextParameter xmi:id="_Z1Ims75YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Port" prompt="MySQL_DB_Northwind1_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_Z1ImtL5YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_AdditionalParams" prompt="MySQL_DB_Northwind1_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1,useSSL=false"/>
+    <contextParameter xmi:id="_Z1Imtb5YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Login" prompt="MySQL_DB_Northwind1_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_Z1Imtr5YEe2YtdRyUzZwow" comment="" name="MySQL_DB_Northwind1_Database" prompt="MySQL_DB_Northwind1_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="northwind"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_4KYQ4AT-EfGhsoXpBKVERQ" name="Noga_Demand_Input" id="_4KJnYAT-EfGhsoXpBKVERQ" dataPackage="_4KYQ4QT-EfGhsoXpBKVERQ" Server="Localhost 127.0.0.1" FilePath="C:/Talend/NogaFiles/forecast.dat" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_4KYQ4QT-EfGhsoXpBKVERQ" name="default" dataManager="_4KYQ4AT-EfGhsoXpBKVERQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_4KYQ4gT-EfGhsoXpBKVERQ" id="_NfOkAAT-EfGhsoXpBKVERQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4KYQ4wT-EfGhsoXpBKVERQ" label="DateTime" length="-1" talendType="id_Date" pattern="&quot;dd.MM.yyyy HH:mm&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4KYQ5AT-EfGhsoXpBKVERQ" label="Demand" length="-1" precision="2" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4KYQ5QT-EfGhsoXpBKVERQ" label="PV" length="-1" precision="2" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

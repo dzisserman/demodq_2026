@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_jKpIgQDXEeqVj6QJJXVNMA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_jKpIggDXEeqVj6QJJXVNMA" comment="" name="dataprep_url" prompt="dataprep_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tdp.eu.cloud.talend.com"/>
+  <contextParameter xmi:id="_jKpIgwDXEeqVj6QJJXVNMA" comment="" name="dataprep_username" prompt="dataprep_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="apfangert@oha.talend.com"/>
+  <contextParameter xmi:id="_jKpIhADXEeqVj6QJJXVNMA" comment="" name="dataprep_password" prompt="dataprep_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:SbeGHT3ITnXa/ZCKeSEP+bTRYa89n7YAGvJ/tWqT1A6Y3caK5jj40tI9PA=="/>
+</talendfile:ContextType>

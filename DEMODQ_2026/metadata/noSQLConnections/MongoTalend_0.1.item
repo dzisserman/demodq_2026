@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendNoSQLMetadata:NoSQLConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmi:id="_MgOFAA7gEfCcG7glRxdjQw" name="MongoTalend" id="_MgDF4A7gEfCcG7glRxdjQw" label="MongoTalend" dbType="MONGODB">
+  <attributes xmi:id="_fnmwIA7hEfCcG7glRxdjQw" key="DB_VERSION" value="MONGODB_4_4_X"/>
+  <attributes xmi:id="_fnmwIQ7hEfCcG7glRxdjQw" key="HOST" value="localhost"/>
+  <attributes xmi:id="_fnmwIg7hEfCcG7glRxdjQw" key="PORT" value="27017"/>
+  <attributes xmi:id="_fnmwIw7hEfCcG7glRxdjQw" key="DATABASE" value="Talend"/>
+  <attributes xmi:id="_fnmwJA7hEfCcG7glRxdjQw" key="USE_CONNECTION_STRING" value="false"/>
+  <attributes xmi:id="_fnmwJQ7hEfCcG7glRxdjQw" key="CONNECTION_STRING" value=""/>
+  <attributes xmi:id="_fnmwJg7hEfCcG7glRxdjQw" key="REQUIRED_AUTHENTICATION" value="false"/>
+  <attributes xmi:id="_fnmwJw7hEfCcG7glRxdjQw" key="USERNAME" value=""/>
+  <attributes xmi:id="_fnmwKA7hEfCcG7glRxdjQw" key="PASSWORD" value=""/>
+  <attributes xmi:id="_fnmwKQ7hEfCcG7glRxdjQw" key="REQUIRED_ENCRYPTION" value="false"/>
+  <attributes xmi:id="_fnmwKg7hEfCcG7glRxdjQw" key="USE_REPLICA_SET" value="false"/>
+  <attributes xmi:id="_fnmwKw7hEfCcG7glRxdjQw" key="AUTHENTICATION_MECHANISM" value="SCRAMSHA1_MEC"/>
+  <attributes xmi:id="_fnmwLA7hEfCcG7glRxdjQw" key="SET_AUTHENTICATION_DATABASE" value="false"/>
+  <attributes xmi:id="_fnmwLQ7hEfCcG7glRxdjQw" key="AUTHENTICATION_DATABASE" value=""/>
+  <attributes xmi:id="_fnmwLg7hEfCcG7glRxdjQw" key="KRB_USER_PRINCIPAL" value=""/>
+  <attributes xmi:id="_fnmwLw7hEfCcG7glRxdjQw" key="KRB_REALM" value=""/>
+  <attributes xmi:id="_fnmwMA7hEfCcG7glRxdjQw" key="KRB_KDC" value=""/>
+  <attributes xmi:id="_fnmwMQ7hEfCcG7glRxdjQw" key="SSLPEMKEYFILE" value=""/>
+  <attributes xmi:id="_fnmwMg7hEfCcG7glRxdjQw" key="X509_CERT_KEYSTORE_PASSWORD" value=""/>
+  <attributes xmi:id="_fnmwMw7hEfCcG7glRxdjQw" key="USE_SSLCAFILE" value="false"/>
+  <attributes xmi:id="_fnmwNA7hEfCcG7glRxdjQw" key="SSLCAFILE" value=""/>
+  <attributes xmi:id="_fnmwNQ7hEfCcG7glRxdjQw" key="X509_CERT_AUTH_TRUSTSTORE_PASSWORD" value=""/>
+  <attributes xmi:id="_fnmwNg7hEfCcG7glRxdjQw" key="REPLICA_SET" value="[]"/>
+</TalendNoSQLMetadata:NoSQLConnection>

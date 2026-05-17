@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="25" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/Talend-Studio-20231027_1100-V8.0.1/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:hURMoI1ihM/J4IaTuGRGVmOxRTvRyy0LGKVo8sbG" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Talend-Studio-20231027_1100-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4S+2yQAI0j+YmnCA2eCHY6wz8Tj+CtImyLGwgUCR" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_jrmf8Nx9EeSjqYUxcSCzLg" name="MITI"/>
+  </parameters>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="240" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="MRR_SOA_ORDERS_L_MRR_SOA_ORDERS"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:bosxBkW5+JkN9TyVU/Sw9pXiakEqlf2x6bCNYdQo"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$MRR_SOA_ORDERS_L_MRR_SOA_ORDERS.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_ID" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PURCHASING_MEMBER_ID" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DATE" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DT" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="RECEIPT_NUMBER" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLUB_ID" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MEMBER_ID_NUMBER" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="TOTAL_PAID" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="15"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="TOTAL_VALUE" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="17"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_CURRENCY_CODE" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="19"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MEMBER_TYPE_ID" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="21"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_ID" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="23"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREATE_DATE" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="25"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREATE_DT" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="27"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="INSERT_DATE" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="29"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SALE_CATEGORY_ID" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="31"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SALE_SUB_CATEGORY_ID" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="33"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_SOURCE" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="35"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PERSON_GK" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="37"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREDIT_MONTH" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="39"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_2">
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_MEMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_ID_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_PAID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_VALUE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_TYPE_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="CREATE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="H_MRR_SOA_ORDERS_L_MRR_SOA_ORDERS"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:F9jwoxHfk9Zjg6q0971u2GRLUAO4HWwYUSvdPwdX"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;Output for file&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_ID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PURCHASING_MEMBER_ID" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_DATE" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_DT" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="RECEIPT_NUMBER" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CLUB_ID" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MEMBER_ID_NUMBER" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TOTAL_PAID" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TOTAL_VALUE" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_CURRENCY_CODE" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MEMBER_TYPE_ID" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_ID" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CREATE_DATE" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CREATE_DT" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INSERT_DATE" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SALE_CATEGORY_ID" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SALE_SUB_CATEGORY_ID" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_SOURCE" id="85"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PERSON_GK" id="90"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CREDIT_MONTH" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="99"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="false"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCOutput_1">
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_MEMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_ID_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_PAID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_VALUE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_TYPE_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="CREATE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_MEMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_ID_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_PAID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_VALUE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_TYPE_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="CREATE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="90" posY="510">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="MRR_SOA_ORDER_ITEM_L_MRR_SOA_ORDER_ITEM"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:AJJjjFHztoRvo0Dd8mfKRKwTWmUivdLWz4cBAwVf"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$MRR_SOA_ORDER_ITEM_L_MRR_SOA_ORDER_ITEM.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SNAPSHOTID" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_ID" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_ITEM_ID" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_ID" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_ID" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DATE" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DT" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRICELIST_ID" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="15"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_BROKER_ID" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="17"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PROVIDER_ID" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="19"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ELIGIBILITY_TYPE_ID" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="21"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ELIGIBILITY_USED" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="23"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="25"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PAID_AMOUNT" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="27"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SUBSIDY_AMOUNT" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="29"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DISCOUNTED_PRICE" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="31"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLUB_PRICE" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="33"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_STATUS_DATE" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="35"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CURRENCY_CODE" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="37"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_DT" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="39"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_DATE" id="40"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="41"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_HALL_ID" id="42"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="43"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_HALL_BLOCK_ID" id="44"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="45"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_SEAT_ROW" id="46"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="47"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VENUE_SEAT_NUMBER" id="48"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="49"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ELIGIBILITY_CATEGORIES" id="50"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="51"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="INSERT_DATE" id="52"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="53"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLUB_REFERENCE_1" id="54"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="55"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLUB_REFERENCE_2" id="56"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="57"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_TYPE_ID" id="58"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="59"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_STATUS_ID" id="60"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="61"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BUSINESS_ID" id="62"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="63"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_LIMIT_PER_MEBMER" id="64"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="65"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_LIMIT_PERIOD_ID" id="66"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="67"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VALUE_AMOUNT" id="68"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="69"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_LIMIT_PERIOD_COUNT" id="70"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="71"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CALC_SUBSIDY_ALLOWED" id="72"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="73"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="REQUEST_DATE" id="74"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="75"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SAVED_AMOUNT" id="76"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="77"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="IS_PREFERRED_BENEFIT" id="78"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="79"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_3">
+      <column comment="&lt;none>" key="false" length="38" name="SNAPSHOTID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_ITEM_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="200" name="PRODUCT_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PRICELIST_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CODE_BROKER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PROVIDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="ELIGIBILITY_TYPE_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ELIGIBILITY_USED" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PAID_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="SUBSIDY_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="DISCOUNTED_PRICE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_PRICE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CODE_STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="VENUE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="VENUE_HALL_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="VENUE_HALL_BLOCK_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="VENUE_SEAT_ROW" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="VENUE_SEAT_NUMBER" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="ELIGIBILITY_CATEGORIES" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="50" name="CLUB_REFERENCE_1" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="CLUB_REFERENCE_2" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="CODE_TYPE_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="CODE_STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="BUSINESS_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PRODUCT_LIMIT_PER_MEBMER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PRODUCT_LIMIT_PERIOD_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="VALUE_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PRODUCT_LIMIT_PERIOD_COUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CALC_SUBSIDY_ALLOWED" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="REQUEST_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SAVED_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="IS_PREFERRED_BENEFIT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="H_MRR_SOA_ORDERS_Lkp_MRR_SOA_ORDERS"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:D1QSF/4FVHGZEX+ap4x4AoI8mq4Vg5z6qatF29fb"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;$H_MRR_SOA_ORDERS_Lkp_MRR_SOA_ORDERS.READER.Query&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_ID" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PURCHASING_MEMBER_ID" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DATE" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_DT" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="RECEIPT_NUMBER" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLUB_ID" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MEMBER_ID_NUMBER" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="TOTAL_PAID" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="15"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="TOTAL_VALUE" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="17"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_CURRENCY_CODE" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="19"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MEMBER_TYPE_ID" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="21"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_ID" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="23"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREATE_DATE" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="25"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREATE_DT" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="27"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="INSERT_DATE" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="29"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SALE_CATEGORY_ID" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="31"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SALE_SUB_CATEGORY_ID" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="33"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_SOURCE" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="35"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PERSON_GK" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="37"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CREDIT_MONTH" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="" id="39"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCInput_1">
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_MEMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_ID_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_PAID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_VALUE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_TYPE_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="CREATE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="ORDER_ID" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ORDER_ID" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="CLUB_ID" id="0"/>
+      <elementValue elementRef="FUNCTION" value="last" id="1"/>
+      <elementValue elementRef="INPUT_COLUMN" value="CLUB_ID" id="2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="CREATE_DATE" id="4"/>
+      <elementValue elementRef="FUNCTION" value="last" id="5"/>
+      <elementValue elementRef="INPUT_COLUMN" value="CREATE_DATE" id="6"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="CREATE_DT" id="8"/>
+      <elementValue elementRef="FUNCTION" value="last" id="9"/>
+      <elementValue elementRef="INPUT_COLUMN" value="CREATE_DT" id="10"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="11"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="CREDIT_MONTH" id="12"/>
+      <elementValue elementRef="FUNCTION" value="last" id="13"/>
+      <elementValue elementRef="INPUT_COLUMN" value="CREDIT_MONTH" id="14"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="15"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="INSERT_DATE" id="16"/>
+      <elementValue elementRef="FUNCTION" value="last" id="17"/>
+      <elementValue elementRef="INPUT_COLUMN" value="INSERT_DATE" id="18"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="19"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="MEMBER_ID_NUMBER" id="20"/>
+      <elementValue elementRef="FUNCTION" value="last" id="21"/>
+      <elementValue elementRef="INPUT_COLUMN" value="MEMBER_ID_NUMBER" id="22"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="23"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="MEMBER_TYPE_ID" id="24"/>
+      <elementValue elementRef="FUNCTION" value="last" id="25"/>
+      <elementValue elementRef="INPUT_COLUMN" value="MEMBER_TYPE_ID" id="26"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="27"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="ORDER_CURRENCY_CODE" id="28"/>
+      <elementValue elementRef="FUNCTION" value="last" id="29"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ORDER_CURRENCY_CODE" id="30"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="31"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="ORDER_SOURCE" id="32"/>
+      <elementValue elementRef="FUNCTION" value="last" id="33"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ORDER_SOURCE" id="34"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="35"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PERSON_GK" id="36"/>
+      <elementValue elementRef="FUNCTION" value="last" id="37"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PERSON_GK" id="38"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="39"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PURCHASING_MEMBER_ID" id="40"/>
+      <elementValue elementRef="FUNCTION" value="last" id="41"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PURCHASING_MEMBER_ID" id="42"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="43"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="RECEIPT_NUMBER" id="44"/>
+      <elementValue elementRef="FUNCTION" value="last" id="45"/>
+      <elementValue elementRef="INPUT_COLUMN" value="RECEIPT_NUMBER" id="46"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="47"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="SALE_CATEGORY_ID" id="48"/>
+      <elementValue elementRef="FUNCTION" value="last" id="49"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SALE_CATEGORY_ID" id="50"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="51"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="SALE_SUB_CATEGORY_ID" id="52"/>
+      <elementValue elementRef="FUNCTION" value="last" id="53"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SALE_SUB_CATEGORY_ID" id="54"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="55"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="STATUS_DATE" id="56"/>
+      <elementValue elementRef="FUNCTION" value="last" id="57"/>
+      <elementValue elementRef="INPUT_COLUMN" value="STATUS_DATE" id="58"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="59"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="STATUS_DT" id="60"/>
+      <elementValue elementRef="FUNCTION" value="last" id="61"/>
+      <elementValue elementRef="INPUT_COLUMN" value="STATUS_DT" id="62"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="63"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="STATUS_ID" id="64"/>
+      <elementValue elementRef="FUNCTION" value="last" id="65"/>
+      <elementValue elementRef="INPUT_COLUMN" value="STATUS_ID" id="66"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="67"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="TOTAL_PAID" id="68"/>
+      <elementValue elementRef="FUNCTION" value="last" id="69"/>
+      <elementValue elementRef="INPUT_COLUMN" value="TOTAL_PAID" id="70"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="71"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="TOTAL_VALUE" id="72"/>
+      <elementValue elementRef="FUNCTION" value="last" id="73"/>
+      <elementValue elementRef="INPUT_COLUMN" value="TOTAL_VALUE" id="74"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="75"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="H_MRR_SOA_ORDERS_Lkp_MRR_SOA_ORDERS_SurviveFields"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="&lt;none>" key="true" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_MEMBER_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="STATUS_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="RECEIPT_NUMBER" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CLUB_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_ID_NUMBER" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_PAID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="TOTAL_VALUE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="10" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="MEMBER_TYPE_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="50" name="STATUS_ID" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="CREATE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="930" posY="510">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="STG_BENEFIT_L_STG_BENEFIT"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="jdbc:"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:5/2cHsSsO0PqeHCqXrD/JMKdUnaPvRlUQPNgaoLe"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;Output for table&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PERSON_GK" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_ID" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_DT" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_DTTM" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CUST_TZ" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_PAYED_AMT" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_COST_AMT" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_CURRENCY_CODE" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_RECEIPT_NUMBER" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CLUB_CODE" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PURCHASING_NUMBER_ID" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MEMBER_TYPE_CODE" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ITEM_CODE" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ITEM_PAYED_PRICE_AMT" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REDUCED_PRICE_AMT" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CLUB_PRICE_AMT" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="COST_PRICE_AMT" id="85"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PAIS_SUBSIDY_AMT" id="90"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PAIS_SUBSIDY_ALLOWED_AMT" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="99"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CURRENCY_CODE" id="100"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="101"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="102"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="103"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="104"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_CODE" id="105"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="106"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="107"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="108"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="109"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_DT" id="110"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="111"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="112"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="113"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="114"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="STATUS_DTTM" id="115"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="116"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="117"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="118"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="119"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PRICELIST_CODE" id="120"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="121"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="122"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="123"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="124"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BROKER_CODE" id="125"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="126"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="127"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="128"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="129"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PROVIDER_CODE" id="130"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="131"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="132"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="133"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="134"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ELIGIIBILITY_TYPE_CODE" id="135"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="136"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="137"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="138"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="139"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ELIGIIBILITY_USAGE_CNT" id="140"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="141"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="142"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="143"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="144"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ELIGIIBILITY_CAT" id="145"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="146"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="147"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="148"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="149"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="COUPON" id="150"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="151"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="152"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="153"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="154"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="COUPON_TYPE_CODE" id="155"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="156"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="157"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="158"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="159"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="COUPON_STATUS_CODE" id="160"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="161"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="162"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="163"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="164"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VENUE_DT" id="165"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="166"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="167"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="168"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="169"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VENUE_DTTM" id="170"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="171"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="172"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="173"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="174"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="HALL_CODE" id="175"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="176"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="177"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="178"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="179"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="HALL_BLOCK_ID" id="180"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="181"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="182"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="183"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="184"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="HALL_SEAT_ROW" id="185"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="186"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="187"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="188"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="189"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="HALL_SEAT_NUMBER" id="190"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="191"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="192"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="193"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="194"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BUSINESS_CODE" id="195"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="196"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="197"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="198"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="199"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LIMIT_NUM" id="200"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="201"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="202"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="203"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="204"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LIMIT_PERIOD_CODE" id="205"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="206"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="207"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="208"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="209"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LIMIT_PERIOD_CNT" id="210"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="211"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="212"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="213"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="214"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IS_CREDIT_USE" id="215"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="216"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="217"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="218"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="219"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CREDIT_MONTH" id="220"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="221"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="222"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="223"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="224"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IS_CREDIT_REFUND" id="225"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="226"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="227"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="228"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="229"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IS_CANCEL" id="230"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="231"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="232"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="233"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="234"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CANCEL_DT" id="235"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="236"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="237"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="238"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="239"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INSERT_DT" id="240"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="241"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="242"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="243"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="244"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REQUEST_DATE" id="245"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="246"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="247"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="248"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="249"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MAIN_CATEGORY_ID" id="250"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="251"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="252"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="253"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="254"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SALE_CATEGORY_ID" id="255"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="256"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="257"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="258"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="259"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SALE_SUB_CATEGORY_ID" id="260"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="261"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="262"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="263"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="264"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IS_PREFERRED_BENEFIT" id="265"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="266"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="267"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="268"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="269"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ORDER_SOURCE" id="270"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="271"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="272"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="273"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="274"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SAVED_AMOUNT" id="275"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="276"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="277"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="278"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="279"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="false"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tJDBCOutput_2">
+      <column comment="&lt;none>" key="false" length="38" name="ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CUST_TZ" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_PAYED_AMT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_COST_AMT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_NUMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="MEMBER_TYPE_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ITEM_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ITEM_PAYED_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="REDUCED_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="COST_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_ALLOWED_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="STATUS_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="PRICELIST_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="BROKER_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PROVIDER_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_TYPE_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ELIGIIBILITY_USAGE_CNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_CAT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_TYPE_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_STATUS_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="HALL_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_BLOCK_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_ROW" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_NUMBER" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="BUSINESS_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_NUM" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CNT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_USE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_REFUND" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CANCEL" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CANCEL_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="REQUEST_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="MAIN_CATEGORY_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="IS_PREFERRED_BENEFIT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SAVED_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="&lt;none>" key="false" length="38" name="ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CUST_TZ" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_PAYED_AMT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_COST_AMT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_RECEIPT_NUMBER" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_NUMBER_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="MEMBER_TYPE_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ITEM_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ITEM_PAYED_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="REDUCED_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="COST_PRICE_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_ALLOWED_AMT" nullable="false" precision="2" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="CURRENCY_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="STATUS_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="PRICELIST_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="BROKER_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PROVIDER_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_TYPE_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ELIGIIBILITY_USAGE_CNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_CAT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_TYPE_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_STATUS_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="HALL_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_BLOCK_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_ROW" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_NUMBER" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="BUSINESS_CODE" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_NUM" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CODE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CNT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_USE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_REFUND" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CANCEL" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CANCEL_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="REQUEST_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="MAIN_CATEGORY_ID" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="IS_PREFERRED_BENEFIT" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SAVED_AMOUNT" nullable="false" precision="0" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="510">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_eFEycAPVEfChsYJPpgDKnA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tmanip"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="row4">
+      <column comment="&lt;none>" key="false" length="38" name="ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PERSON_GK" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="CUST_TZ" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_PAYED_AMT" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ORDER_COST_AMT" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ORDER_CURRENCY_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ORDER_RECEIPT_NUMBER" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="PURCHASING_NUMBER_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="MEMBER_TYPE_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="ITEM_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="ITEM_PAYED_PRICE_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="REDUCED_PRICE_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="CLUB_PRICE_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="COST_PRICE_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PAIS_SUBSIDY_ALLOWED_AMT" nullable="false" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="CURRENCY_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="STATUS_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="STATUS_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="PRICELIST_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="BROKER_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="PROVIDER_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_TYPE_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="ELIGIIBILITY_USAGE_CNT" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="ELIGIIBILITY_CAT" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_TYPE_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="COUPON_STATUS_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="VENUE_DTTM" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="HALL_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_BLOCK_ID" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_ROW" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="255" name="HALL_SEAT_NUMBER" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="BUSINESS_CODE" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_NUM" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CODE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="LIMIT_PERIOD_CNT" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_USE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CREDIT_MONTH" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CREDIT_REFUND" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="100" name="IS_CANCEL" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="CANCEL_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="&lt;none>" key="false" length="38" name="INSERT_DT" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="38" name="REQUEST_DATE" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="255" name="MAIN_CATEGORY_ID" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_CATEGORY_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="SALE_SUB_CATEGORY_ID" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column key="false" length="38" name="IS_PREFERRED_BENEFIT" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="ORDER_SOURCE" nullable="false" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="38" name="SAVED_AMOUNT" nullable="false" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="svAllowedSubsidy" expression="IF MITI.IIF(L_MRR_SOA_ORDER_ITEM.CALC_SUBSIDY_ALLOWED &lt; 60, L_MRR_SOA_ORDER_ITEM.CALC_SUBSIDY_ALLOWED, 60)" type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="row4">
+        <mapperTableEntries name="ID" expression="L_MRR_SOA_ORDER_ITEM.ORDER_ITEM_ID" type="id_Double"/>
+        <mapperTableEntries name="PERSON_GK" expression="Lkp_MRR_SOA_ORDERS.PERSON_GK" type="id_Double"/>
+        <mapperTableEntries name="ORDER_ID" expression="L_MRR_SOA_ORDER_ITEM.ORDER_ID" type="id_Double"/>
+        <mapperTableEntries name="ORDER_DT" expression="Lkp_MRR_SOA_ORDERS.CREATE_DT" type="id_Date"/>
+        <mapperTableEntries name="ORDER_DTTM" expression="Lkp_MRR_SOA_ORDERS.CREATE_DATE" type="id_Date"/>
+        <mapperTableEntries name="CUST_TZ" expression="Lkp_MRR_SOA_ORDERS.MEMBER_ID_NUMBER" type="id_Double"/>
+        <mapperTableEntries name="ORDER_PAYED_AMT" expression="Lkp_MRR_SOA_ORDERS.TOTAL_VALUE" type="id_Double"/>
+        <mapperTableEntries name="ORDER_COST_AMT" expression="Lkp_MRR_SOA_ORDERS.TOTAL_PAID" type="id_Double"/>
+        <mapperTableEntries name="ORDER_CURRENCY_CODE" expression="Lkp_MRR_SOA_ORDERS.ORDER_CURRENCY_CODE" type="id_String"/>
+        <mapperTableEntries name="ORDER_RECEIPT_NUMBER" expression="Lkp_MRR_SOA_ORDERS.RECEIPT_NUMBER" type="id_Double"/>
+        <mapperTableEntries name="CLUB_CODE" expression="Lkp_MRR_SOA_ORDERS.CLUB_ID" type="id_Double"/>
+        <mapperTableEntries name="PURCHASING_NUMBER_ID" expression="Lkp_MRR_SOA_ORDERS.PURCHASING_MEMBER_ID" type="id_Double"/>
+        <mapperTableEntries name="MEMBER_TYPE_CODE" expression="Lkp_MRR_SOA_ORDERS.MEMBER_TYPE_ID" type="id_Double"/>
+        <mapperTableEntries name="ITEM_CODE" expression="L_MRR_SOA_ORDER_ITEM.PRODUCT_ID" type="id_String"/>
+        <mapperTableEntries name="ITEM_PAYED_PRICE_AMT" expression="L_MRR_SOA_ORDER_ITEM.VALUE_AMOUNT" type="id_Double"/>
+        <mapperTableEntries name="REDUCED_PRICE_AMT" expression="L_MRR_SOA_ORDER_ITEM.DISCOUNTED_PRICE" type="id_Double"/>
+        <mapperTableEntries name="CLUB_PRICE_AMT" expression="L_MRR_SOA_ORDER_ITEM.CLUB_PRICE" type="id_Double"/>
+        <mapperTableEntries name="COST_PRICE_AMT" expression="L_MRR_SOA_ORDER_ITEM.PAID_AMOUNT" type="id_Double"/>
+        <mapperTableEntries name="PAIS_SUBSIDY_AMT" expression="L_MRR_SOA_ORDER_ITEM.SUBSIDY_AMOUNT" type="id_Double"/>
+        <mapperTableEntries name="PAIS_SUBSIDY_ALLOWED_AMT" expression="svAllowedSubsidy" type="id_Double"/>
+        <mapperTableEntries name="CURRENCY_CODE" expression="L_MRR_SOA_ORDER_ITEM.CURRENCY_CODE" type="id_String"/>
+        <mapperTableEntries name="STATUS_CODE" expression="L_MRR_SOA_ORDER_ITEM.STATUS_ID" type="id_String"/>
+        <mapperTableEntries name="STATUS_DT" expression="L_MRR_SOA_ORDER_ITEM.STATUS_DT" type="id_Date"/>
+        <mapperTableEntries name="STATUS_DTTM" expression="L_MRR_SOA_ORDER_ITEM.STATUS_DATE" type="id_Date"/>
+        <mapperTableEntries name="PRICELIST_CODE" expression="L_MRR_SOA_ORDER_ITEM.PRICELIST_ID" type="id_Double"/>
+        <mapperTableEntries name="BROKER_CODE" expression="L_MRR_SOA_ORDER_ITEM.CODE_BROKER_ID" type="id_Double"/>
+        <mapperTableEntries name="PROVIDER_CODE" expression="L_MRR_SOA_ORDER_ITEM.PROVIDER_ID" type="id_Double"/>
+        <mapperTableEntries name="ELIGIIBILITY_TYPE_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.ELIGIBILITY_TYPE_ID, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="ELIGIIBILITY_USAGE_CNT" expression="L_MRR_SOA_ORDER_ITEM.ELIGIBILITY_USED" type="id_Double"/>
+        <mapperTableEntries name="ELIGIIBILITY_CAT" expression="L_MRR_SOA_ORDER_ITEM.ELIGIBILITY_CATEGORIES" type="id_String"/>
+        <mapperTableEntries name="COUPON" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.CODE, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="COUPON_TYPE_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.CODE_TYPE_ID, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="COUPON_STATUS_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.CODE_STATUS_ID, - 2)" type="id_String"/>
+        <mapperTableEntries name="VENUE_DT" expression="L_MRR_SOA_ORDER_ITEM.VENUE_DT" type="id_Date"/>
+        <mapperTableEntries name="VENUE_DTTM" expression="L_MRR_SOA_ORDER_ITEM.VENUE_DATE" type="id_Date"/>
+        <mapperTableEntries name="HALL_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.VENUE_HALL_ID, - 2)" type="id_String"/>
+        <mapperTableEntries name="HALL_BLOCK_ID" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.VENUE_HALL_BLOCK_ID, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="HALL_SEAT_ROW" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.VENUE_SEAT_ROW, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="HALL_SEAT_NUMBER" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.VENUE_SEAT_NUMBER, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="BUSINESS_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.BUSINESS_ID, &quot;לא רלוונטי&quot;)" type="id_Double"/>
+        <mapperTableEntries name="LIMIT_NUM" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.PRODUCT_LIMIT_PER_MEBMER, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="LIMIT_PERIOD_CODE" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.PRODUCT_LIMIT_PERIOD_ID, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="LIMIT_PERIOD_CNT" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.PRODUCT_LIMIT_PERIOD_COUNT, &quot;לא רלוונטי&quot;)" type="id_String"/>
+        <mapperTableEntries name="IS_CREDIT_USE" expression="IF MITI.IIF(MITI.equals(L_MRR_SOA_ORDER_ITEM.ELIGIBILITY_USED, 1), &quot;כן&quot;, &quot;לא&quot;)" type="id_String"/>
+        <mapperTableEntries name="CREDIT_MONTH" expression="Lkp_MRR_SOA_ORDERS.CREDIT_MONTH" type="id_Double"/>
+        <mapperTableEntries name="IS_CREDIT_REFUND" expression="IF MITI.IIF(MITI.equals(L_MRR_SOA_ORDER_ITEM.STATUS_ID, &quot;cancelled&quot;), &quot;כן&quot;, &quot;לא&quot;)" type="id_String"/>
+        <mapperTableEntries name="IS_CANCEL" expression="IF MITI.IIF(MITI.equals(L_MRR_SOA_ORDER_ITEM.STATUS_ID, &quot;cancelled&quot;), &quot;כן&quot;, &quot;לא&quot;)" type="id_String"/>
+        <mapperTableEntries name="CANCEL_DT" expression="IF MITI.IIF(MITI.equals(L_MRR_SOA_ORDER_ITEM.STATUS_ID, &quot;cancelled&quot;), L_MRR_SOA_ORDER_ITEM.STATUS_DT, &quot;1900-01-01 00:00:00&quot;)" type="id_Date"/>
+        <mapperTableEntries name="INSERT_DT" expression="L_MRR_SOA_ORDER_ITEM.INSERT_DATE" type="id_Date"/>
+        <mapperTableEntries name="REQUEST_DATE" expression="L_MRR_SOA_ORDER_ITEM.REQUEST_DATE" type="id_Date"/>
+        <mapperTableEntries name="MAIN_CATEGORY_ID" expression="MITI.NVL(L_MRR_SOA_ORDER_ITEM.CLUB_REFERENCE_1, 0)" type="id_String"/>
+        <mapperTableEntries name="SALE_CATEGORY_ID" expression="Lkp_MRR_SOA_ORDERS.SALE_CATEGORY_ID" type="id_Double"/>
+        <mapperTableEntries name="SALE_SUB_CATEGORY_ID" expression="Lkp_MRR_SOA_ORDERS.SALE_SUB_CATEGORY_ID" type="id_Double"/>
+        <mapperTableEntries name="IS_PREFERRED_BENEFIT" expression="L_MRR_SOA_ORDER_ITEM.IS_PREFERRED_BENEFIT" type="id_String"/>
+        <mapperTableEntries name="ORDER_SOURCE" expression="Lkp_MRR_SOA_ORDERS.ORDER_SOURCE" type="id_String"/>
+        <mapperTableEntries name="SAVED_AMOUNT" expression="L_MRR_SOA_ORDER_ITEM.SAVED_AMOUNT" type="id_Double"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="L_MRR_SOA_ORDER_ITEM" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SNAPSHOTID" expression="" type="id_Double"/>
+        <mapperTableEntries name="ORDER_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="ORDER_ITEM_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="PRODUCT_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="STATUS_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="STATUS_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="STATUS_DT" expression="" type="id_Date"/>
+        <mapperTableEntries name="PRICELIST_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="CODE_BROKER_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="PROVIDER_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="ELIGIBILITY_TYPE_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="ELIGIBILITY_USED" expression="" type="id_Double"/>
+        <mapperTableEntries name="CODE" expression="" type="id_String"/>
+        <mapperTableEntries name="PAID_AMOUNT" expression="" type="id_Double"/>
+        <mapperTableEntries name="SUBSIDY_AMOUNT" expression="" type="id_Double"/>
+        <mapperTableEntries name="DISCOUNTED_PRICE" expression="" type="id_Double"/>
+        <mapperTableEntries name="CLUB_PRICE" expression="" type="id_Double"/>
+        <mapperTableEntries name="CODE_STATUS_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="CURRENCY_CODE" expression="" type="id_String"/>
+        <mapperTableEntries name="VENUE_DT" expression="" type="id_Date"/>
+        <mapperTableEntries name="VENUE_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="VENUE_HALL_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="VENUE_HALL_BLOCK_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="VENUE_SEAT_ROW" expression="" type="id_String"/>
+        <mapperTableEntries name="VENUE_SEAT_NUMBER" expression="" type="id_String"/>
+        <mapperTableEntries name="ELIGIBILITY_CATEGORIES" expression="" type="id_String"/>
+        <mapperTableEntries name="INSERT_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="CLUB_REFERENCE_1" expression="" type="id_String"/>
+        <mapperTableEntries name="CLUB_REFERENCE_2" expression="" type="id_String"/>
+        <mapperTableEntries name="CODE_TYPE_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="CODE_STATUS_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="BUSINESS_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="PRODUCT_LIMIT_PER_MEBMER" expression="" type="id_Double"/>
+        <mapperTableEntries name="PRODUCT_LIMIT_PERIOD_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="VALUE_AMOUNT" expression="" type="id_Double"/>
+        <mapperTableEntries name="PRODUCT_LIMIT_PERIOD_COUNT" expression="" type="id_Double"/>
+        <mapperTableEntries name="CALC_SUBSIDY_ALLOWED" expression="" type="id_Double"/>
+        <mapperTableEntries name="REQUEST_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="SAVED_AMOUNT" expression="" type="id_Double"/>
+        <mapperTableEntries name="IS_PREFERRED_BENEFIT" expression="" type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Lkp_MRR_SOA_ORDERS" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ORDER_ID" expression="L_MRR_SOA_ORDER_ITEM.ORDER_ID" type="id_Double"/>
+        <mapperTableEntries name="PURCHASING_MEMBER_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="STATUS_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="STATUS_DT" expression="" type="id_Date"/>
+        <mapperTableEntries name="RECEIPT_NUMBER" expression="" type="id_Double"/>
+        <mapperTableEntries name="CLUB_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="MEMBER_ID_NUMBER" expression="" type="id_Double"/>
+        <mapperTableEntries name="TOTAL_PAID" expression="" type="id_Double"/>
+        <mapperTableEntries name="TOTAL_VALUE" expression="" type="id_Double"/>
+        <mapperTableEntries name="ORDER_CURRENCY_CODE" expression="" type="id_String"/>
+        <mapperTableEntries name="MEMBER_TYPE_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="STATUS_ID" expression="" type="id_String"/>
+        <mapperTableEntries name="CREATE_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="CREATE_DT" expression="" type="id_Date"/>
+        <mapperTableEntries name="INSERT_DATE" expression="" type="id_Date"/>
+        <mapperTableEntries name="SALE_CATEGORY_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="SALE_SUB_CATEGORY_ID" expression="" type="id_Double"/>
+        <mapperTableEntries name="ORDER_SOURCE" expression="" type="id_String"/>
+        <mapperTableEntries name="PERSON_GK" expression="" type="id_Double"/>
+        <mapperTableEntries name="CREDIT_MONTH" expression="" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJDBCInput_2" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_2" target="tJDBCOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="L_MRR_SOA_ORDER_ITEM" lineStyle="0" metaname="tJDBCInput_3" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="L_MRR_SOA_ORDER_ITEM" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJDBCInput_1" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Lkp_MRR_SOA_ORDERS" lineStyle="8" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Lkp_MRR_SOA_ORDERS" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="row4" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJDBCOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <note opaque="true" posX="760" posY="40" sizeHeight="241" sizeWidth="681" text="MRR_SOA_ORDERS_L_MRR_SOA_ORDERS&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;STG_BENEFIT_L_STG_BENEFIT&#xD;&#xA;&#x9;ODBC writer is not supported by the Talend, used JDBC instead&#xD;&#xA;H_MRR_SOA_ORDERS_L_MRR_SOA_ORDERS&#xD;&#xA;&#x9;ODBC writer is not supported by the Talend, used JDBC instead&#xD;&#xA;MRR_SOA_ORDER_ITEM_L_MRR_SOA_ORDER_ITEM&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;Tmanip&#xD;&#xA;&#x9;Original stage had Abort constraint which is not exported&#xD;&#xA;&#x9;Check Tmanip component join expressions.&#xD;&#xA;H_MRR_SOA_ORDERS_Lkp_MRR_SOA_ORDERS&#xD;&#xA;&#x9;ODBC reader is not supported by the Talend, used JDBC instead&#xD;&#xA;">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_2" show="false"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJDBCInput_3" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

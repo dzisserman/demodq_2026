@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_dLoQwAhGEfGnfMsYHCoQGA" name="MySQL_AWS" id="_Ma9v8AhGEfGnfMsYHCoQGA" label="MySQL_AWS" dataPackage="_dORVHghGEfGnfMsYHCoQGA" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://51.16.221.35:3306/training?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="talend" Password="enc:system.encryption.key.v1:+dFm50lE++tvF3WVs8FcgF5CuNFpkEB3wer0KaWr1UWdPzL3mTf1" ServerName="51.16.221.35" DatasourceName="" FileFieldName="" SID="training" SqlSynthax="SQL_92" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_dLoQwQhGEfGnfMsYHCoQGA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_dL7ywAhGEfGnfMsYHCoQGA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_dL9n8AhGEfGnfMsYHCoQGA" tag="Status" value=""/>
+    <taggedValue xmi:id="_dL9n8QhGEfGnfMsYHCoQGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dL9n8ghGEfGnfMsYHCoQGA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_dL9n8whGEfGnfMsYHCoQGA" tag="Description" value=""/>
+    <taggedValue xmi:id="_dL9n9AhGEfGnfMsYHCoQGA" tag="Author" value=""/>
+    <taggedValue xmi:id="_dL9n9QhGEfGnfMsYHCoQGA" tag="otherParameter"/>
+    <taggedValue xmi:id="_dNGQYAhGEfGnfMsYHCoQGA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_dNGQYQhGEfGnfMsYHCoQGA" tag="DB ProductVersion" value="8.0.30"/>
+    <taggedValue xmi:id="_dNGQYghGEfGnfMsYHCoQGA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_dLoQwghGEfGnfMsYHCoQGA" key="CONN_PARA_KEY_USERNAME" value="talend"/>
+    <parameters xmi:id="_ftAoYAhGEfGnfMsYHCoQGA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_dORVHghGEfGnfMsYHCoQGA" name="training" dataManager="_dLoQwAhGEfGnfMsYHCoQGA"/>
+</xmi:XMI>

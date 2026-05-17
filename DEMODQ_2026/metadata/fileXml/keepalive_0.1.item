@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_XP8nwImaEfCMPeNuVvCY-g" name="keepalive" id="_XPxooImaEfCMPeNuVvCY-g" dataPackage="_XP8nzomaEfCMPeNuVvCY-g" XmlFilePath="C:/StudentFiles/xmltest/keepalive.xml" Encoding="UTF-8" fileContent="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2277696E646F77732D31323535223F3E203C50726F66696C65204465736372697074696F6E3D224172616D6973206B65657020616C697665223E203C5265636F726444617461200A415353544D5032494E203D2022323032342D30352D31312D32302E31392E31312E333431303030220A415353544D50324F54203D2022323032342D30352D31312D32302E31392E31312E333431303030220A20415353544D5034494E203D2022546167466F72496E73657274415353544D5034494E220A20415353544D50344F54203D2022546167466F72496E73657274415353544D50344F54220A204170706C69636174696F6E203D20223939220A205265636F7264203D20223031220A204B656570416C69766554696D655374616D70203D2022323032342D30352D31312D32302E31392E31312E333431303030220A20537461747573203D20223030220A205374617475734465736372697074696F6E203D20222A4F4B220A204C6173744D6573736167654944203D202232383036220A204C6173744D65737361676554797065203D2022453034220A204C6173744D6573736167655375636365737354696D655374616D70203D2022323032342D30352D31312D32302E31392E31312E333431303030220A092F3E3C2F50726F66696C653E">
+    <schema xmi:id="_XP8nwYmaEfCMPeNuVvCY-g" LimitBoucle="50" AbsoluteXPathQuery="/Profile/RecordData">
+      <schemaTargets xmi:id="_Zpu6wLmLEfCG3Jz7-pGQhg" RelativeXPathQuery="../@Description" TagName="Description"/>
+      <schemaTargets xmi:id="_XP8nwomaEfCMPeNuVvCY-g" RelativeXPathQuery="@ASSTMP2IN" TagName="ASSTMP2IN"/>
+      <schemaTargets xmi:id="_XP8nw4maEfCMPeNuVvCY-g" RelativeXPathQuery="@ASSTMP2OT" TagName="ASSTMP2OT"/>
+      <schemaTargets xmi:id="_XP8nxImaEfCMPeNuVvCY-g" RelativeXPathQuery="@ASSTMP4IN" TagName="ASSTMP4IN"/>
+      <schemaTargets xmi:id="_XP8nxYmaEfCMPeNuVvCY-g" RelativeXPathQuery="@ASSTMP4OT" TagName="ASSTMP4OT"/>
+      <schemaTargets xmi:id="_XP8nxomaEfCMPeNuVvCY-g" RelativeXPathQuery="@Application" TagName="Application"/>
+      <schemaTargets xmi:id="_XP8nx4maEfCMPeNuVvCY-g" RelativeXPathQuery="@Record" TagName="Record"/>
+      <schemaTargets xmi:id="_XP8nyImaEfCMPeNuVvCY-g" RelativeXPathQuery="@KeepAliveTimeStamp" TagName="KeepAliveTimeStamp"/>
+      <schemaTargets xmi:id="_XP8nyYmaEfCMPeNuVvCY-g" RelativeXPathQuery="@Status" TagName="Status"/>
+      <schemaTargets xmi:id="_XP8nyomaEfCMPeNuVvCY-g" RelativeXPathQuery="@StatusDescription" TagName="StatusDescription"/>
+      <schemaTargets xmi:id="_XP8ny4maEfCMPeNuVvCY-g" RelativeXPathQuery="@LastMessageID" TagName="LastMessageID"/>
+      <schemaTargets xmi:id="_XP8nzImaEfCMPeNuVvCY-g" RelativeXPathQuery="@LastMessageType" TagName="LastMessageType"/>
+      <schemaTargets xmi:id="_XP8nzYmaEfCMPeNuVvCY-g" RelativeXPathQuery="@LastMessageSuccessTimeStamp" TagName="LastMessageSuccessTimeStamp"/>
+      <schemaTargets xmi:id="_ZP1NALmLEfCG3Jz7-pGQhg" RelativeXPathQuery="column" TagName="column"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XP8nzomaEfCMPeNuVvCY-g" name="default" dataManager="_XP8nwImaEfCMPeNuVvCY-g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XP8nz4maEfCMPeNuVvCY-g" id="_KYiQcImaEfCMPeNuVvCY-g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_swCdQLmLEfCG3Jz7-pGQhg" name="Description" label="Description" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n0ImaEfCMPeNuVvCY-g" label="ASSTMP2IN" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n0YmaEfCMPeNuVvCY-g" label="ASSTMP2OT" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n0omaEfCMPeNuVvCY-g" label="ASSTMP4IN" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n04maEfCMPeNuVvCY-g" label="ASSTMP4OT" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n1ImaEfCMPeNuVvCY-g" label="Application" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n1YmaEfCMPeNuVvCY-g" label="Record" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n1omaEfCMPeNuVvCY-g" label="KeepAliveTimeStamp" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n14maEfCMPeNuVvCY-g" label="Status" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP8n2ImaEfCMPeNuVvCY-g" label="StatusDescription" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP9O0ImaEfCMPeNuVvCY-g" label="LastMessageID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP9O0YmaEfCMPeNuVvCY-g" label="LastMessageType" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XP9O0omaEfCMPeNuVvCY-g" label="LastMessageSuccessTimeStamp" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

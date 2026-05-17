@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_NQD0wLwLEeyA3-FKp1aGxQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_NQD0wbwLEeyA3-FKp1aGxQ" comment="" name="Cloud_password" prompt="Cloud_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Md9QF9KklM3o3T1q3paDcKFO+aJ2MAnrlyose0qIVD85TyJuWgxbRv8FHSG2oszeZZ2DbXU4yNLqnkxOLiy4FCnP+AnauR/Hjlvx6B12+G2rB8iG85R9KtMtI0k="/>
+  <contextParameter xmi:id="_NQD0wrwLEeyA3-FKp1aGxQ" comment="" name="Cloud_username" prompt="Cloud_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="apfangert@oha.talend.com"/>
+  <contextParameter xmi:id="_NQD0w7wLEeyA3-FKp1aGxQ" comment="" name="Cloud_url" prompt="Cloud_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.eu.cloud.talend.com/data-stewardship/"/>
+</talendfile:ContextType>

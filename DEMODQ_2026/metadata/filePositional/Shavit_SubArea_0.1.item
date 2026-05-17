@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:PositionalFileConnection xmi:id="_fA_38AqsEfGnfMsYHCoQGA" name="Shavit_SubArea" label="Shavit_SubArea" dataPackage="_cKpV4gqsEfGnfMsYHCoQGA" Server="Localhost 127.0.0.1" FilePath="C:/Talend/NogaFiles/Output/shavit_trans.json" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;4,*&quot;" RowSeparatorValue="&quot;\n&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_cKpV4gqsEfGnfMsYHCoQGA" name="default" dataManager="_fA_38AqsEfGnfMsYHCoQGA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cKpV4wqsEfGnfMsYHCoQGA" id="_r9LP8AqrEfGnfMsYHCoQGA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cKpV5AqsEfGnfMsYHCoQGA" label="Column0" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cKpV5QqsEfGnfMsYHCoQGA" label="Column1" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

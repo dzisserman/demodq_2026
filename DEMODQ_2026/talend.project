@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_0tshYVHbEfGe0dDhfkAo7A" label="DemoDQ_2026" description="" language="java" technicalLabel="DEMODQ_2026" author="_0tshYlHbEfGe0dDhfkAo7A" productVersion="Talend Real-time Big Data Platform-8.0.1.20260422_0906-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/demodq_2026.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_0tshYVHbEfGe0dDhfkAo7A" label="DemoDQ_2026" description="" language="java" technicalLabel="DEMODQ_2026" author="_0tshYlHbEfGe0dDhfkAo7A" productVersion="Talend Real-time Big Data Platform-8.0.1.20260521_1039-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/demodq_2026.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <componentsSettings xmi:id="_YsBn8FI_EfGuXrc6DL_6Xg" name="DI|tHashInput" family="Technical"/>
     <componentsSettings xmi:id="_YsBn8VI_EfGuXrc6DL_6Xg" name="DI|tArrayIn" family="Technical"/>
     <componentsSettings xmi:id="_YsBn8lI_EfGuXrc6DL_6Xg" name="DI|tArray" family="Technical"/>

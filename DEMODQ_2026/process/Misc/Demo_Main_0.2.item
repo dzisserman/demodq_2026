@@ -897,6 +897,26 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_2"/>
   </node>
+  <node componentName="QlikOutput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="960" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cWxpayNRbGlrI091dHB1dA" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.outputAction" value="CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.fileUploadMode" value="SINGLE_FILE"/>
+    <elementParameter field="CHECK" name="configuration.specifyId" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyIdDelete" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.indexKnowledgeBaseFile" value="true"/>
+    <elementParameter field="TEXT" name="configuration.indexationNumberOfRetries" value="10"/>
+    <elementParameter field="TEXT" name="configuration.indexationDelayBetweenRetriesInSeconds" value="10"/>
+    <elementParameter field="TECHNICAL" name="configuration.datastore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tQlikOutput_1"/>
+    <metadata connector="FLOW" name="tQlikOutput_1"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -1047,5 +1067,8 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_1" show="false"/>
   </subjob>
 </talendfile:ProcessType>
